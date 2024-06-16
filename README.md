@@ -1,15 +1,15 @@
 # Anotaçoes
 
 ### Relação 1
-Para dominio X e Y TODO
+Para dominio X e Y TODO:
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
 
 e
-Para dominio X e Y TODO
+Para dominio X e Y TODO:
 $\arccos(\arccos(x))+\arcsin(\arccos(x)) = \frac{\pi}{2}$
 
 e
-Para dominio X e Y TODO
+Para dominio X e Y TODO:
 $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$
 
 ### Simplificação 1
