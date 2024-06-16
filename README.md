@@ -1,7 +1,6 @@
-# anotations-repo
-
 # Anotaçoes
 
+### Relação 1
 $\arccos\left(\tan\left(x\right)\right) = -\arcsin\left(\tan\left(x\right)\right)+\frac{\pi}{2}$
 
 ### Simplificação 1
