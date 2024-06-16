@@ -3,7 +3,8 @@
 ### Relação 1
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
 
-### Relação 2
+e
+
 $\arccos(\arccos(x))+\arcsin(\arccos(x)) = \frac{\pi}{2}$
 
 e
