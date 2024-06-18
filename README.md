@@ -21,7 +21,7 @@ Para todos os outros valores de $x$ as determinadas funções retornam indefinid
 
 ### Relação 2
 1.  Subrelação 1.1 \
-$\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$
+$\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$ \
 fácilmente observavel através de propriedades básicas da trigonometria.
 
 1.  Subrelação 1.2 \
