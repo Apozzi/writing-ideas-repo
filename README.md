@@ -1,6 +1,7 @@
 # Anotaçoes
 
 ### Relação 1
+####  Subrelação 1.1
 Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natural:
 
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
