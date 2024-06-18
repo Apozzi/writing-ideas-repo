@@ -6,7 +6,8 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
 
 e
-Para dominio X e Y TODO:
+
+Para dominio $x \in [\cos(1), 1]$:
 $\arccos(\arccos(x))+\arcsin(\arccos(x)) = \frac{\pi}{2}$
 
 e
