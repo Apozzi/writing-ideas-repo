@@ -58,6 +58,7 @@ $$x_{\text{fire}}(t) = \begin{cases}
     f(\tan(x)), & \text{if } f(\cot(x)) \text{ is undefined}, \\
     f(\cot(x)), & \text{if } f(\tan(x)) \text{ is undefined}
 \end{cases}$$
+A seguinte condicional foi criada de forma a reparar a simetria.
 
 # Código 
 Implementação que retorna um ponto dado a triangle wave:
