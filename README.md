@@ -23,6 +23,23 @@ $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\f
 ### Simplificação 2
 $\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{5}{4})|$
 
+# Código 
+Implementação que retorna um ponto dado a triangle wave:
+```python 
+def triangle_wave_point(t, frequency, amplitude):
+    """
+    Generate a single point of a triangle wave.
 
+    :param t: Time point
+    :param frequency: Frequency of the triangle wave in Hz
+    :param amplitude: Amplitude of the triangle wave
+    :return: The amplitude of the triangle wave at time t
+    """
+    t_mod = (t % (1.0 / frequency)) * frequency
+    if t_mod < 0.5:
+        return 4 * amplitude * t_mod - amplitude
+    else:
+        return -4 * amplitude * t_mod + 3 * amplitude
+```
 
 
