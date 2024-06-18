@@ -15,7 +15,9 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
 
 3.  Subrelação 1.3 \
  Para dominio $x \in [\sin(1), -\sin(1)]$ temos: \
- $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$ 
+ $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$
+
+Para todos os outros valores de x as determinadas funções retornam indefinido.
 
 ### Simplificação 1
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ 
