@@ -21,7 +21,7 @@ Para todos os outros valores de $x$ as determinadas funções retornam indefinid
 
 ### Relação 2
 
-$ \arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$
+$\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$
 
 ### Simplificação 1
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ 
