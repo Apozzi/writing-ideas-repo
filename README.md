@@ -52,7 +52,7 @@ $\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  \
 $\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$ 
 
 ### Gráficos 1
-Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ temos:
+Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ ou alguma função periodica com periodo e amplitude pi/2 temos:
 
 $$x_{\text{fire}}(t) = \begin{cases} 
     f(\tan(x)), & \text{if } f(\cot(x)) \text{ is undefined}, \\
