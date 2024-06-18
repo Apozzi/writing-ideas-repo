@@ -20,7 +20,7 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
 Para todos os outros valores de $x$ as determinadas funções retornam indefinido.
 
 ### Relação 2
-$\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$
+$\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$ \
 Fácilmente observavel através de propriedades básicas da trigonometria.
 
 ### Simplificação 1
