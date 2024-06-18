@@ -21,10 +21,12 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ 
 
 Aqui está uma implementação eficiente da função.
-```python 
+```python
+tau = 2 * math.pi
+half_pi = math.pi / 2
 def arcsin_cos(x):
-    x_normalized = (x + math.pi) % (2 * math.pi)
-    return math.pi / 2 - x_normalized if x_normalized < math.pi else x_normalized - (3 * math.pi) / 2
+    x_normalized = (x + math.pi) % tau
+    return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
 ```
 
 
