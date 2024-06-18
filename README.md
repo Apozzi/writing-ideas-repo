@@ -34,7 +34,7 @@ def arcsin_cos(x):
 ### Simplificação 2
 $\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{5}{4})|$
 
-Implementação eficiente desta função agora, a mesma lógica que o anterior:
+Implementação eficiente desta função, usando a mesma lógica que o anterior:
 ```python
 tau = 2 * math.pi
 half_pi = math.pi / 2
