@@ -1,7 +1,7 @@
 # Anotaçoes
 
 ### Relação 1
-Para dominio X e Y TODO:
+Para dominio $x \exists [-n\frac{\pi}{4}, n\frac{\pi}{4}]$:
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
 
 e
