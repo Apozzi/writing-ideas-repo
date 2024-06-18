@@ -6,7 +6,7 @@ Repositório com algumas notações:
 
 ### Relação 1
 1.  Subrelação 1.1 \
-Para dominio $x \in [-\frac{\pi}{4} + \frac{n\pi}{2}, \frac{\pi}{4} + \frac{n\pi}{2}]$ aonde $n$ é numero natural temos: \
+Para dominio $x \in [-\frac{\pi}{4} + n\pi, \frac{\pi}{4} + n\pi]$ aonde $n$ é numero natural temos: \
  $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$ 
 
 2.  Subrelação 1.2 \
