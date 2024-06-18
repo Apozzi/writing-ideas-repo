@@ -20,8 +20,8 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
 Para todos os outros valores de $x$ as determinadas funções retornam indefinido.
 
 ### Relação 2
+Fácilmente observavel através de propriedades básicas da trigonometria:
 $\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$ \
-Fácilmente observavel através de propriedades básicas da trigonometria.
 
 ### Simplificação 1
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ 
