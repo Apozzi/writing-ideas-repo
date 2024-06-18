@@ -1,6 +1,6 @@
 # Anotaçoes
 
-Repositório com algumas notações de A.Pozzi.
+Repositório com algumas notações:
 
 # Trigonométricas
 
