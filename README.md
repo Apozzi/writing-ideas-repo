@@ -1,7 +1,7 @@
 # Anotaçoes
 
 ### Relação 1
-Para dominio $x \exists [-n\frac{\pi}{4}, n\frac{\pi}{4}]$:
+Para dominio $x \in [-n\frac{\pi}{4}, n\frac{\pi}{4}]$ aonde $n$ é numero natural:
 $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$
 
 e
