@@ -12,7 +12,7 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
  $\arccos(\arccos(x))+\arcsin(\arccos(x)) = \frac{\pi}{2}$ 
 
 3.  Subrelação 1.3 \
- Para dominio X e Y TODO temos: \
+ Para dominio $x \in [\sin(1), -\sin(1)]$ temos: \
  $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$ 
 
 ### Simplificação 1
