@@ -1,5 +1,7 @@
 # Anotaçoes
 
+Repositório com algumas notações de A.Pozzi.
+
 # Trigonométricas
 
 ### Relação 1
