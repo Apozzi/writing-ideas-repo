@@ -54,7 +54,7 @@ $\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$
 ### Gráficos 1
 Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ temos:
 
-$$x_{fire}(t) = \begin{cases} f(\tan(x)),& \text{if } f(\cot(x))\text{is undefined}, f(\cot(x)) & \text{otherwise} \end{cases}$$
+$$x_{fire}(t) = \begin{cases} f(\tan(x)),& \text{if } f(\cot(x))\text{is undefined}, & f(\cot(x)) \text{otherwise} \end{cases}$$
 
 # Código 
 Implementação que retorna um ponto dado a triangle wave:
