@@ -18,7 +18,7 @@ Para dominio $x \in [-\frac{n\pi}{4}, \frac{n\pi}{4}]$ aonde $n$ é numero natur
  $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$ 
 
 ### Simplificação 1
-$\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ \
+$\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)|-\frac{\pi}{2}$ 
 
 Aqui está uma implementação eficiente da função.
 ```python 
