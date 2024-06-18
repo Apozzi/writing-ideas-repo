@@ -56,7 +56,7 @@ Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ o
 
 $$x_{\text{fire}}(t) = \begin{cases} 
     f(\tan(x)), & \text{if } f(\cot(x)) \text{ is undefined}, \\
-    f(\cot(x)), & \text{otherwise} 
+    f(\cot(x)), & \text{if } f(\tan(x)) \text{ is undefined}
 \end{cases}$$
 
 # Código 
