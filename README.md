@@ -51,6 +51,15 @@ Fácilmente observavel através de propriedades básicas da trigonometria: \
 $\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  \
 $\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$ 
 
+### Gráficos 1
+Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ temos:
+$$x_{fire}(t)=
+\begin{cases}
+    \frac{x^2-x}{x},& \text{if } x\geq 1\\
+    0,              & \text{otherwise}
+\end{cases}
+$$
+
 # Código 
 Implementação que retorna um ponto dado a triangle wave:
 ```python 
