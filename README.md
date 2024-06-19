@@ -48,7 +48,7 @@ def arccos_sin(x):
 
 ### Simplificação 3
 A função $\arctan(\tan(x))$ é somente uma inversão no dominio $x \in [\pi/2, -\pi/2]$, para todo x nos reais temos: <br/><br/>
-$\arctan(\tan(x))= x - \pi\lfloor \frac{x}{\pi} + \frac{1}{2}\rfloor$
+$\arctan(\tan(x))= x - \pi\lfloor \frac{x}{\pi} + \frac{1}{2}\rfloor$ <br/><br/>
 
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: \
