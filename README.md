@@ -46,6 +46,9 @@ def arccos_sin(x):
     return x_normalized if x_normalized < math.pi else -x_normalized + tau
 ```
 
+### Simplificação 3
+A função $\arctan(\tan(x))$ é somente uma inversão no dominio $x \in [\pi/2, -\pi/2]$
+
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: \
 $\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  \
