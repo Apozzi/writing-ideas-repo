@@ -59,7 +59,7 @@ def arccos_sin(x):
 A função $\arctan(\tan(x))$  é somente uma inversão no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$, para todo x nos reais temos: <br/><br/>
 $\arctan(\tan(x))= x - \pi\lceil \frac{x}{\pi} - \frac{1}{2}\rceil$ <br/><br/>
 Também para $\arctan(\cot(x))$ temos: <br/><br/>
-$\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/><br/>
+$\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/>
 
 ### Simplificação 4
 A função $\arccos(\cos(x))$ é somente uma função inversa própria no dominio $x \in [0, \pi]$ \
