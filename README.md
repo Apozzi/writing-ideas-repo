@@ -64,8 +64,8 @@ $\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/><br/>
 ### Simplificação 4
 A função $\arccos(\cos(x))$ é somente uma função inversa própria no dominio $x \in [0, \pi]$ \
 A função $\arcsin(\sin(x))$ é somente uma função inversa própria no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$ \
-Para todos o $x$ nos Reais temos: <br/>
-$\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{4}\rceil|-\frac{\pi}{2}$
+Para todos o $x$ nos reais temos: <br/><br/>
+$\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{4}\rceil|-\frac{\pi}{2}$ <br/><br/>
 
 
 
