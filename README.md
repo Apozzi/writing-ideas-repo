@@ -43,7 +43,7 @@ def arcsin_cos(x):
 
 
 ### Simplificação 2
-$\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lfloor(\frac{x}{2\pi}+\frac{5}{4})\rfloor|$
+$\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{1}{4})\rceil|$
 
 Implementação eficiente desta função, usando a mesma lógica que o anterior:
 ```python
