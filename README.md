@@ -66,7 +66,7 @@ A função $\arccos(\cos(x))$ é somente uma função inversa própria no domini
 A função $\arcsin(\sin(x))$ é somente uma função inversa própria no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$ \
 Para todos o $x$ nos reais temos: <br/><br/>
 $\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{4}\rceil|-\frac{\pi}{2}$ <br/><br/>
-
+$\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$
 
 
 ### Trivial 1
