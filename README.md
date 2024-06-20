@@ -68,6 +68,15 @@ Para todos o $x$ nos reais temos: <br/><br/>
 $\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{4}\rceil|-\frac{\pi}{2}$ <br/><br/>
 $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$ <br/><br/>
 
+```python
+tau = 2 * math.pi
+half_pi = math.pi / 2
+
+def arcsin_sin(x):
+    x_normalized = (x + 3*half_pi) % tau
+    return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
+```
+
 E para todo $n>1$ temos: <br/><br/>
 $\arcsin^{*n}(\sin^{*n}(x))= \arcsin(\sin(x))$  <br/><br/>
 $\arccos^{*n}(\cos^{*n}(x))= \pi|\frac{x}{\pi}+1-\lceil\frac{x}{\pi}+\frac{1}{2}\rceil|$  <br/><br/>
