@@ -71,6 +71,7 @@ $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$
 E para todo $n>1$ temos: <br/><br/>
 $\arcsin^{*n}(\sin^{*n}(x))= \arcsin(\sin(x))$  <br/><br/>
 $\arccos^{*n}(\cos^{*n}(x))= \pi|\frac{x}{\pi}+1-\lceil\frac{x}{\pi}+\frac{1}{2}\rceil|$  <br/><br/>
+É importante deixar claro que a mesma relação que ocorre com seno não ocorre com cosseno ou seja $\arccos^{*n}(\cos^{*n}(x)) \neq \arccos(\cos(x))$.
 
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: <br/><br/>
