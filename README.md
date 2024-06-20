@@ -70,7 +70,7 @@ $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$
 
 Uma generalização recursiva seria: <br/><br/>
 $\arcsin^{*n}(\sin^{*n}(x))=$  <br/><br/>
-$\arcsin^{*n}(\sin^{*n}(x))=$  <br/><br/>
+$\arccos^{*n}(\cos^{*n}(x))=$  <br/><br/>
 
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: <br/><br/>
