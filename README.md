@@ -75,6 +75,10 @@ half_pi = math.pi / 2
 def arcsin_sin(x):
     x_normalized = (x + 3*half_pi) % tau
     return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
+
+def arccos_cos(x):
+    x_normalized = (x + math.pi) % tau
+    return math.pi - x_normalized if x_normalized < math.pi else x_normalized - math.pi
 ```
 
 E para todo $n>1$ temos: <br/><br/>
