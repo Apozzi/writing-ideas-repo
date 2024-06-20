@@ -10,7 +10,7 @@ para trigonométricas compostas, em que: <br/>
 $\cos_2(x)=\cos(\cos(x))$
 também: <br/>
 $\cos^{*n}(x)=\cos \circ \cos \circ ... \circ \cos(x)$
-\break
+<br/>
 A mesma notação também pode ser utilizada para demais funções trigonométricas. <br/>
 
 ### Relação 1
