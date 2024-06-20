@@ -70,9 +70,9 @@ $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$
 
 
 ### Trivial 1
-Fácilmente observavel através de propriedades básicas da trigonometria: \
-$\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  \
-$\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$
+Fácilmente observavel através de propriedades básicas da trigonometria: <br/><br/>
+$\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  <br/><br/>
+$\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$ <br/><br/>
 
 ### Gráficos 1
 Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ ou alguma função periodica com periodo e amplitude pi/2 temos:
