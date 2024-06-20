@@ -41,7 +41,7 @@ def arcsin_cos(x):
     return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
 ```
 
-Aqui está uma generalização recursiva para essa Simpl.1 <br/>
+Aqui está uma generalização recursiva para essa Simpl.1 <br/><br/>
 $\arcsin^{*n}(\cos(x)^{*n})=$ <br/>
 
 
@@ -58,7 +58,7 @@ def arccos_sin(x):
     return x_normalized if x_normalized < math.pi else -x_normalized + tau
 ```
 
-Aqui está uma generalização recursiva para essa Simpl.2 <br/>
+Aqui está uma generalização recursiva para essa Simpl.2 <br/><br/>
 $\arccos^{*n}(\sin(x)^{*n})=$ <br/>
 
 ### Simplificação 3
