@@ -68,9 +68,9 @@ Para todos o $x$ nos reais temos: <br/><br/>
 $\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{4}\rceil|-\frac{\pi}{2}$ <br/><br/>
 $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$ <br/><br/>
 
-Uma generalização recursiva seria:
-$\arcsin^{*n}(\sin^{*n}(x))=$ 
-$\arcsin^{*n}(\sin^{*n}(x))=$ 
+Uma generalização recursiva seria: <br/><br/>
+$\arcsin^{*n}(\sin^{*n}(x))=$  <br/><br/>
+$\arcsin^{*n}(\sin^{*n}(x))=$  <br/><br/>
 
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: <br/><br/>
