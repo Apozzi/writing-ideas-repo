@@ -69,7 +69,7 @@ $\arcsin(\sin(x))=2\pi|\frac{x}{2\pi}+\frac{5}{4}-\lceil\frac{x}{2\pi}+\frac{3}{
 $\arccos(\cos(x))=2\pi|\frac{x}{2\pi}+1-\lceil\frac{x}{2\pi}+\frac{1}{2}\rceil|$ <br/><br/>
 
 E para todo $n>1$ temos: <br/><br/>
-$\arcsin^{*n}(\sin^{*n}(x))=$  <br/><br/>
+$\arcsin^{*n}(\sin^{*n}(x))= \arcsin(\sin(x))$  <br/><br/>
 $\arccos^{*n}(\cos^{*n}(x))= \pi|\frac{x}{\pi}+1-\lceil\frac{x}{\pi}+\frac{1}{2}\rceil|$  <br/><br/>
 
 ### Trivial 1
