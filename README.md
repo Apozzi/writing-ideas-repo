@@ -41,6 +41,9 @@ def arcsin_cos(x):
     return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
 ```
 
+Aqui está uma generalização recursiva para essa Simpl.1 <br/>
+$\arcsin^{*n}(\cos(x)^{*n})=$ <br/>
+
 
 ### Simplificação 2
 $\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{5}{4})\rceil|$
@@ -55,10 +58,14 @@ def arccos_sin(x):
     return x_normalized if x_normalized < math.pi else -x_normalized + tau
 ```
 
+Aqui está uma generalização recursiva para essa Simpl.2 <br/>
+$\arccos^{*n}(\sin(x)^{*n})=$ <br/>
+
 ### Simplificação 3
 A função $\arctan(\tan(x))$ e $\arctan(\cot(x))$  é somente uma inversão no dominio $x \in [\pi/2, -\pi/2]$, para todo x nos reais temos: <br/><br/>
 $\arctan(\tan(x))= x - \pi\lceil \frac{x}{\pi} - \frac{1}{2}\rceil$ <br/><br/>
 $\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/><br/>
+
 
 ### Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: \
