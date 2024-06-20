@@ -7,7 +7,7 @@ Repositório com algumas notações:
 ### Notação
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
 para trigonométricas compostas, em que: <br/>
-$\cos_2(x)=\cos(\cos(x))$ <br/>
+$\cos^{*2}(x)=\cos(\cos(x))$ <br/>
 também: <br/>
 $\cos^{*n}(x)=\cos \circ \cos \circ ... \circ \cos(x)$
 <br/>
