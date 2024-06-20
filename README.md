@@ -5,9 +5,9 @@ Repositório com algumas notações:
 # Trigonométricas
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
 para trigonométricas compostas, em que: 
-$$\cos_2(x)=\cos(\cos(x))$$
+$\cos_2(x)=\cos(\cos(x))$
 também: 
-$$\cos^{*n}(x)=\cos \circ \cos \circ ... \circ \cos(x)$$
+$\cos^{*n}(x)=\cos \circ \cos \circ ... \circ \cos(x)$
 \break
 A mesma notação também pode ser utilizada para demais funções trigonométricas.
 
