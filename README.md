@@ -62,7 +62,7 @@ $\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/><br/>
 
 ### Simplificação 4
 A função $\arccos(\cos(x))$ é somente uma função inversa própria no dominio $x \in [0, \pi]$ \
-A função $\arcsin(\sin(x))$ é somente uma função inversa própria no dominio $x \in [\pi/2, -/pi/2]$ \
+A função $\arcsin(\sin(x))$ é somente uma função inversa própria no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$ \
 
 
 ### Trivial 1
