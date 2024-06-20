@@ -26,7 +26,7 @@ Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é n
  Para dominio $x \in [\sin(1), -\sin(1)]$ temos: <br/>
  $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$  <br/>
 
-Para todos os outros valores de $x$ as determinadas funções retornam indefinido.
+Para todos os outros valores de $x$ as determinadas funções acima retornam indefinido.
 
 ### Simplificação 1
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)\rceil|-\frac{\pi}{2}$
