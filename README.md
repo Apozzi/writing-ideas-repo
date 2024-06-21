@@ -16,7 +16,7 @@ onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{Z}$ e também $a_n= a_0 
 
 Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
 
- $$S = \bigcup_{n=-\infty}^{\infty} I_n$$
+ $$S = \bigcup_{n \in \mathbb{Z}} I_n$$
 
 ## Propriedades de $S$
 
@@ -41,7 +41,7 @@ da mesma forma se ele for right open e left closed o complemento também será i
 
 O conjunto $S^c$ pode então ser definido como:
 
-$$S^c = \bigcup_{n=0}^{\infty} J_n$$
+$$S^c = \bigcup_{n \in \mathbb{Z}} J_n$$
 
 onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ de $S$.
 
@@ -67,9 +67,9 @@ Vamos tomar $a_0 = - \frac{\pi}{4}$ e $\delta = \pi$ e $d = \frac{\pi}{2}$ logo:
 
 Então:
 
-$$S = \bigcup_{n=0}^{\infty} [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$$
+$$S = \bigcup_{n \in \mathbb{Z}} [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$$
 
-$$S^c = \bigcup_{n=0}^{\infty} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})$$
+$$S^c = \bigcup_{n \in \mathbb{Z}} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})$$
 
 Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero natural.
 
