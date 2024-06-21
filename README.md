@@ -66,8 +66,8 @@ Vamos tomar $a_0 = - \frac{\pi}{4}$ e $\delta = \pi$ e $d = \frac{\pi}{2}$ logo:
 
 Então:
 
-$$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$
-$$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
+$$S = \bigcup_{n=0}^{\infty} [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$$
+$$S^c = \bigcup_{n=0}^{\infty} (n\pi + \frac{\pi}{4}, n\pi + \frac{\pi}{8})$$
 
 # Trigonométricas
 
