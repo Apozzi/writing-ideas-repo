@@ -47,7 +47,7 @@ onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ 
 
 ## Exemplo
 
-Vamos tomar $a_0 = 0$ e $\delta = 2$ e $d = 1$ novamente:
+Vamos tomar $a_0 = 0$ e $\delta = 2$ e $d = 1$ logo:
 
 - Para intervalos fechados: $I_n = [2n, 2n+1]$.
 - Os intervalos complementares são $J_n = (2n+1, 2n+2)$.
