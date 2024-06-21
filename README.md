@@ -59,13 +59,6 @@ $$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
 
 Ambos os conjuntos $S$ e $S^c$ são compostos por intervalos de tamanhos constantes (1), e juntos cobrem toda a reta real $\mathbb{R}$
 
-## Generalização
-
-Essa abordagem pode ser adaptada para intervalos abertos ou semi-abertos, ajustando a definição dos intervalos \( J_n \) correspondentes. Por exemplo:
-
-- Se $I_n = (2n, 2n+1)$, então $J_n = [2n+1, 2n+2)$.
-- Se $I_n = [2n, 2n+1)$, então $J_n = (2n+1, 2n+2]$.
-
 # Trigonométricas
 
 ### Notação
