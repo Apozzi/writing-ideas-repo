@@ -12,19 +12,19 @@ Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho consta
 
 onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$.
 
-## Conjunto  $S$
+### Conjunto  $S$
 
 Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
 
  $$S = \bigcup_{n=0}^{\infty} I_n$$
 
-## Propriedades de \( S \)
+### Propriedades de \( S \)
 
 1. **Intervalos de Tamanho Constante**: Todos os intervalos  $I_n$ têm o mesmo comprimento $\delta$.
 2. **Intervalos Separados**: A distância entre dois intervalos consecutivos $I_n$ e $I_{n+1}$ é $d$.
 3. **Infinito**: O conjunto $S$ é infinito porque é a união de uma sequência infinita de intervalos.
 
-## Complemento de $S$ com Mesmo Tamanho
+### Complemento de $S$ com Mesmo Tamanho
 
 O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consistir em intervalos de tamanho $d$ e separados por $\delta$. Assim, definimos:
 
@@ -45,7 +45,7 @@ $$S^c = \bigcup_{n=0}^{\infty} J_n$$
 
 onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ de $S$.
 
-## Exemplo
+### Exemplo
 
 Vamos tomar $\delta = 1$ e $d = 1$ novamente:
 
