@@ -16,7 +16,7 @@ onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$.
 
 Podemos definir o conjunto  $ S  $ como a união de todos esses intervalos:
 
- $S = \bigcup_{n=0}^{\infty} I_n$
+ $$S = \bigcup_{n=0}^{\infty} I_n$$
 
 ## Propriedades de \( S \)
 
@@ -28,38 +28,38 @@ Podemos definir o conjunto  $ S  $ como a união de todos esses intervalos:
 
 O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consistir em intervalos de tamanho $d$ e separados por $\delta$. Assim, definimos:
 
-- Os intervalos complementares \( J_n \) são os intervalos entre os intervalos \( I_n \).
-- Se \( I_n = [a_n, a_n + \delta] \), então \( J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d) \).
-- Se \( I_n = (a_n, a_n + \delta) \), então \( J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d) \).
-- Se \( I_n = [a_n, a_n + \delta) \), então \( J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d) \).
-- Se \( I_n = (a_n, a_n + \delta] \), então \( J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d) \).
+- Os intervalos complementares $J_n$ são os intervalos entre os intervalos $I_n$.
+- Se $I_n = [a_n, a_n + \delta]$, então $J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d)$.
+- Se $I_n = (a_n, a_n + \delta)$, então $J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d)$.
+- Se $I_n = [a_n, a_n + \delta)$, então $J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d)$.
+- Se $I_n = (a_n, a_n + \delta]$, então $J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d)$.
 
-O conjunto \( S^c \) pode então ser definido como:
+O conjunto $S^c$ pode então ser definido como:
 
-\[ S^c = \bigcup_{n=0}^{\infty} J_n \]
+$$S^c = \bigcup_{n=0}^{\infty} J_n$$
 
-onde \( J_n \) são intervalos de tamanho \( d \) que complementam os intervalos \( I_n \) de \( S \).
+onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ de $S$.
 
 ## Exemplo
 
-Vamos tomar \( \delta = 1 \) e \( d = 1 \) novamente:
+Vamos tomar $\delta = 1$ e $d = 1$ novamente:
 
-- Para intervalos fechados: \( I_n = [2n, 2n+1] \).
-- Os intervalos complementares são \( J_n = (2n+1, 2n+2) \).
+- Para intervalos fechados: $I_n = [2n, 2n+1]$.
+- Os intervalos complementares são $J_n = (2n+1, 2n+2)$.
 
 Então:
 
-\[ S = \bigcup_{n=0}^{\infty} [2n, 2n+1] \]
-\[ S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2) \]
+$$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$
+$$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
 
-Ambos os conjuntos \( S \) e \( S^c \) são compostos por intervalos de tamanhos constantes (1), e juntos cobrem toda a reta real \( \mathbb{R} \).
+Ambos os conjuntos $S$ e $S^c$ são compostos por intervalos de tamanhos constantes (1), e juntos cobrem toda a reta real $\mathbb{R}$
 
 ## Generalização
 
 Essa abordagem pode ser adaptada para intervalos abertos ou semi-abertos, ajustando a definição dos intervalos \( J_n \) correspondentes. Por exemplo:
 
-- Se \( I_n = (2n, 2n+1) \), então \( J_n = [2n+1, 2n+2) \).
-- Se \( I_n = [2n, 2n+1) \), então \( J_n = (2n+1, 2n+2] \).
+- Se $I_n = (2n, 2n+1)$, então $J_n = [2n+1, 2n+2)$.
+- Se $I_n = [2n, 2n+1)$, então $J_n = (2n+1, 2n+2]$.
 
 # Trigonométricas
 
