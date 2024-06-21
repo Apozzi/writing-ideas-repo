@@ -6,7 +6,7 @@ Repositório com algumas notações:
 
 # Trigonométricas
 
-Dado $\mathbb{R}$
+Dado $\mathbb{R} \subseteq X, Y$
 
 ### Notação
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
