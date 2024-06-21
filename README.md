@@ -6,6 +6,8 @@ Repositório com algumas notações:
 
 # Trigonométricas
 
+Dado $\mathbb{R}$
+
 ### Notação
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
 para trigonométricas compostas, em que: <br/><br/>
