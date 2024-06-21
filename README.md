@@ -12,19 +12,19 @@ Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho consta
 
 onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$.
 
-### Conjunto  $S$
+## Conjunto  $S$
 
 Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
 
  $$S = \bigcup_{n=0}^{\infty} I_n$$
 
-### Propriedades de \( S \)
+## Propriedades de \( S \)
 
 1. **Intervalos de Tamanho Constante**: Todos os intervalos  $I_n$ têm o mesmo comprimento $\delta$.
 2. **Intervalos Separados**: A distância entre dois intervalos consecutivos $I_n$ e $I_{n+1}$ é $d$.
 3. **Infinito**: O conjunto $S$ é infinito porque é a união de uma sequência infinita de intervalos.
 
-### Complemento de $S$ com Mesmo Tamanho
+## Complemento de $S$ com Mesmo Tamanho
 
 O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consistir em intervalos de tamanho $d$ e separados por $\delta$. Assim, definimos:
 
@@ -37,7 +37,7 @@ O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consisti
 Temos como propriedade de caso o conjunto for left-open e right-closed, o complemento também será left-open e right closed,
 da mesma forma se ele for right open e left closed o complemento também será intervalos right open e left closed, já conjuntos abertos tem complementos fechados e fechados tem complementos abertos.
 
-### Definição de $S^c$
+## Definição de $S^c$
 
 O conjunto $S^c$ pode então ser definido como:
 
@@ -45,7 +45,7 @@ $$S^c = \bigcup_{n=0}^{\infty} J_n$$
 
 onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ de $S$.
 
-### Exemplo
+## Exemplo
 
 Vamos tomar $\delta = 1$ e $d = 1$ novamente:
 
@@ -61,7 +61,7 @@ Ambos os conjuntos $S$ e $S^c$ são compostos por intervalos de tamanhos constan
 
 # Trigonométricas
 
-### Notação
+## Notação
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
 para trigonométricas compostas, em que: <br/><br/>
 $\cos^{*2}(x)=\cos(\cos(x))$ <br/><br/>
@@ -70,7 +70,7 @@ $\cos^{*n}(x)=\cos \circ \cos \circ ... \circ \cos(x)$
 <br/><br/>
 A mesma notação também pode ser utilizada para demais funções trigonométricas. <br/>
 
-### Relação 1
+## Relação 1
 1.  Subrelação 1.1 \
 Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é numero natural temos: <br/>
  $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$  <br/>
@@ -85,7 +85,7 @@ Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é n
 
 Para todos os outros valores de $x$ as determinadas funções acima retornam indefinido.
 
-### Simplificação 1
+## Simplificação 1
 $\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi}+1)\rceil|-\frac{\pi}{2}$
 
 Aqui está uma implementação eficiente da função, utiliza modulo ao invés de gambiarras matématicas, ignore a formula anterior e de preferencia a essa:
@@ -99,7 +99,7 @@ def arcsin_cos(x):
 ```
 
 
-### Simplificação 2
+## Simplificação 2
 $\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{1}{4})\rceil|$
 
 Implementação eficiente desta função, usando a mesma lógica que o anterior:
@@ -112,13 +112,13 @@ def arccos_sin(x):
     return x_normalized if x_normalized < math.pi else -x_normalized + tau
 ```
 
-### Simplificação 3
+## Simplificação 3
 A função $\arctan(\tan(x))$  é somente uma inversão no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$, para todo x nos reais temos: <br/><br/>
 $\arctan(\tan(x))= x - \pi\lceil \frac{x}{\pi} - \frac{1}{2}\rceil$ <br/><br/>
 Também para $\arctan(\cot(x))$ temos: <br/><br/>
 $\arctan(\cot(x))= \pi\lceil \frac{x}{\pi}\rceil - x - \frac{\pi}{2}$ <br/>
 
-### Simplificação 4
+## Simplificação 4
 A função $\arccos(\cos(x))$ é somente uma função inversa própria no dominio $x \in [0, \pi]$ \
 A função $\arcsin(\sin(x))$ é somente uma função inversa própria no dominio $x \in [\frac{\pi}{2}, - \frac{\pi}{2}]$ \
 Para todos o $x$ nos reais temos: <br/><br/>
@@ -143,12 +143,12 @@ $\arcsin^{*n}(\sin^{*n}(x))= \arcsin(\sin(x))$  <br/><br/>
 $\arccos^{*n}(\cos^{*n}(x))= \pi|\frac{x}{\pi}+1-\lceil\frac{x}{\pi}+\frac{1}{2}\rceil|$  <br/><br/>
 É importante deixar claro que a mesma relação que ocorre com seno não ocorre com cosseno ou seja $\arccos^{*n}(\cos^{*n}(x)) \neq \arccos(\cos(x))$.
 
-### Trivial 1
+## Trivial 1
 Fácilmente observavel através de propriedades básicas da trigonometria: <br/><br/>
 $\arcsin(\tan(x)) = -\arcsin(\cot(x+\frac{\pi}{2}))$  <br/><br/>
 $\arccos(\tan(x)) = -\arccos(\cot(x+\frac{\pi}{2}))+\pi$ <br/><br/>
 
-### Gráficos 1
+## Gráficos 1
 Esse gráfico vou chamar de fire-wave pela aparencia, dado $f$ sendo $\arccos$ ou $\arcsin$ ou alguma função periodica com periodo e amplitude pi/2 temos:
 
 $$x_{\text{fire}}(t) = \begin{cases} 
