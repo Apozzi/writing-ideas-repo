@@ -2,9 +2,10 @@
 
 Repositório com algumas notações:
 
-# Topologia
+# Conjuntos
 Dado $X, Y \subseteq \mathbb{R}$, com as propriedades.
  1. $X \cup Y = \mathbb{R}$
+ 2. 
 
 
 # Trigonométricas
