@@ -2,12 +2,6 @@
 
 Repositório com algumas notações:
 
-# Conjuntos
-Dado $X, Y \subset \mathbb{R}$, com as propriedades.
- 1. $X \cup Y = \mathbb{R}$
- 2. $\exists A',\forall A,B \in X: A \subset A' \land A|B \land A'|B, $
-
-
 # Trigonométricas
 
 ### Notação
