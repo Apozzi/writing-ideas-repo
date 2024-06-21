@@ -31,8 +31,8 @@ O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consisti
 - Os intervalos complementares $J_n$ são os intervalos entre os intervalos $I_n$.
 - Se $I_n = [a_n, a_n + \delta]$, então $J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d)$.
 - Se $I_n = (a_n, a_n + \delta)$, então $J_n = [a_n + \delta, a_{n+1}] = [a_n + \delta, a_n + \delta + d]$.
-- Se $I_n = [a_n, a_n + \delta)$, então $J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d)$.
-- Se $I_n = (a_n, a_n + \delta]$, então $J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d)$.
+- Se $I_n = [a_n, a_n + \delta)$, então $J_n = [a_n + \delta, a_{n+1}) = [a_n + \delta, a_n + \delta + d)$.
+- Se $I_n = (a_n, a_n + \delta]$, então $J_n = (a_n + \delta, a_{n+1}] = (a_n + \delta, a_n + \delta + d]$.
 
 O conjunto $S^c$ pode então ser definido como:
 
