@@ -57,8 +57,6 @@ Então:
 $$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$
 $$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
 
-Ambos os conjuntos $S$ e $S^c$ são compostos por intervalos de tamanhos constantes (1), e juntos cobrem toda a reta real $\mathbb{R}$
-
 # Trigonométricas
 
 ## Notação
