@@ -71,6 +71,8 @@ $$S = \bigcup_{n=0}^{\infty} [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$$
 
 $$S^c = \bigcup_{n=0}^{\infty} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})$$
 
+Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero natural.
+
 # Trigonométricas
 
 ## Notação
