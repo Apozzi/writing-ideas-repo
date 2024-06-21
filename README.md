@@ -37,6 +37,8 @@ O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consisti
 Temos como propriedade de caso o conjunto for left-open e right-closed, o complemento também será left-open e right closed,
 da mesma forma se ele for right open e left closed o complemento também será intervalos right open e left closed, já conjuntos abertos tem complementos fechados e fechados tem complementos abertos.
 
+### Definição de $S^c$
+
 O conjunto $S^c$ pode então ser definido como:
 
 $$S^c = \bigcup_{n=0}^{\infty} J_n$$
