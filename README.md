@@ -14,7 +14,7 @@ onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$.
 
 ## Conjunto  $S$
 
-Podemos definir o conjunto  $ S  $ como a união de todos esses intervalos:
+Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
 
  $$S = \bigcup_{n=0}^{\infty} I_n$$
 
