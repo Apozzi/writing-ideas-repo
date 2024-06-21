@@ -10,7 +10,7 @@ Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho consta
 - Intervalos abertos:  $I_n = (a_n, a_n + \delta)$
 - Intervalos semi-abertos (semi-fechados):  $I_n = [a_n, a_n + \delta)$ ou $I_n = (a_n, a_n + \delta]$
 
-onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$.
+onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{N}$ e a_n= a_0 + n\delta + nd.
 
 ## Conjunto  $S$
 
