@@ -44,7 +44,6 @@ O conjunto $S^c$ pode então ser definido como:
 $$S^c = \bigcup_{n \in \mathbb{Z}} J_n$$
 
 onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ de $S$. <br/><br/>
-É importante reparar que temos como resultado que $S \cup S^c = \mathbb{R}$
 
 ## Exemplo
 
