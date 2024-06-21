@@ -4,19 +4,19 @@ Repositório com algumas notações:
 
 # Conjunto de Intervalos Repetidos
 
-Vamos definir um conjunto \( S \subset \mathbb{R} \) de intervalos de tamanho constante \( \delta > 0 \) e separados por uma distância fixa \( d > 0 \). Cada intervalo \( I_n \) do conjunto \( S \) pode ser da forma:
+Vamos definir um conjunto $ S \subset \mathbb{R}  $ de intervalos de tamanho constante  $ \delta > 0  $ e separados por uma distância fixa  $ d > 0  $. Cada intervalo  $ I_n  $ do conjunto  $ S  $ pode ser da forma:
 
-- Intervalos fechados: \( I_n = [a_n, a_n + \delta] \)
-- Intervalos abertos: \( I_n = (a_n, a_n + \delta) \)
-- Intervalos semi-abertos (semi-fechados): \( I_n = [a_n, a_n + \delta) \) ou \( I_n = (a_n, a_n + \delta] \)
+- Intervalos fechados:  $ I_n = [a_n, a_n + \delta]  $
+- Intervalos abertos:  $ I_n = (a_n, a_n + \delta)  $
+- Intervalos semi-abertos (semi-fechados):  $ I_n = [a_n, a_n + \delta) \) ou \( I_n = (a_n, a_n + \delta]  $
 
-onde \( a_{n+1} = a_n + \delta + d \) para \( n \in \mathbb{N} \).
+onde  $ a_{n+1} = a_n + \delta + d  $ para  $ n \in \mathbb{N}  $.
 
-## Conjunto \( S \)
+## Conjunto  $ S $
 
-Podemos definir o conjunto \( S \) como a união de todos esses intervalos:
+Podemos definir o conjunto  $ S  $ como a união de todos esses intervalos:
 
-\[ S = \bigcup_{n=0}^{\infty} I_n \]
+ $ S = \bigcup_{n=0}^{\infty} I_n  $
 
 ## Propriedades de \( S \)
 
