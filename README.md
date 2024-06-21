@@ -2,6 +2,8 @@
 
 Repositório com algumas notações:
 
+# Topologia
+
 # Trigonométricas
 
 ### Notação
