@@ -62,7 +62,7 @@ $$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
 Vamos tomar $a_0 = - \frac{\pi}{4}$ e $\delta = \pi$ e $d = \frac{\pi}{2}$ logo:
 
 - Para intervalos fechados: $I_n = [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$.
-- Os intervalos complementares são $J_n = [n\pi + \frac{\pi}{4}, n\pi + \frac{\pi}{8}]$.
+- Os intervalos complementares são $J_n = (n\pi + \frac{\pi}{4}, n\pi + \frac{\pi}{8})$.
 
 Então:
 
