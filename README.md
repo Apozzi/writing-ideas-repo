@@ -57,6 +57,18 @@ Então:
 $$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$
 $$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
 
+## Exemplo 2
+
+Vamos tomar $a_0 = 0$ e $\delta = 2$ e $d = 1$ logo:
+
+- Para intervalos fechados: $I_n = [2n, 2n+1]$.
+- Os intervalos complementares são $J_n = (2n+1, 2n+2)$.
+
+Então:
+
+$$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$
+$$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
+
 # Trigonométricas
 
 ## Notação
