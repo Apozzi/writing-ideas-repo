@@ -86,7 +86,7 @@ A mesma notação também pode ser utilizada para demais funções trigonométri
 
 ## Relação 1
 1.  Subrelação 1.1 \
-Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é numero natural temos: <br/>
+Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é numero inteiro temos: <br/>
  $\arccos(\tan(x)) + \arcsin(\tan(x)) = \frac{\pi}{2}$  <br/>
 
 2.  Subrelação 1.2 \
