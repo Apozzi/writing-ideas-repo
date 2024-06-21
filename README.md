@@ -5,7 +5,7 @@ Repositório com algumas notações:
 # Conjuntos
 Dado $X, Y \subset \mathbb{R}$, com as propriedades.
  1. $X \cup Y = \mathbb{R}$
- 2. $\exists A',\forall A \in X: A \subset A', $
+ 2. $\exists A',\forall A,B \in X: A \subset A'  A|B A'|B, $
 
 
 # Trigonométricas
