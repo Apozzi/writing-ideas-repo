@@ -54,9 +54,9 @@ Vamos tomar $a_0 = 0$ e $\delta = 2$ e $d = 1$ logo:
 
 Então:
 
-$$S = \bigcup_{n=0}^{\infty} [2n, 2n+1]$$ 
+$$S = \bigcup_{n \in \mathbb{Z}} [2n, 2n+1]$$ 
 
-$$S^c = \bigcup_{n=0}^{\infty} (2n+1, 2n+2)$$
+$$S^c = \bigcup_{n \in \mathbb{Z}} (2n+1, 2n+2)$$
 
 ## Exemplo 2
 
@@ -71,7 +71,7 @@ $$S = \bigcup_{n \in \mathbb{Z}} [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$$
 
 $$S^c = \bigcup_{n \in \mathbb{Z}} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})$$
 
-Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero natural.
+Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero inteiro.
 
 # Trigonométricas
 
