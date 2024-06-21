@@ -173,7 +173,7 @@ $$x_{\text{fire}}(t) = \begin{cases}
 A seguinte condicional foi criada de forma a reparar a simetria.
 
 TODO: Inversas precisas
-
+TODO: Relação entre condicionais e uniões de conjuntos.
 # Código 
 Implementação que retorna um ponto dado a triangle wave:
 ```python 
