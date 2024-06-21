@@ -3,11 +3,11 @@
 Repositório com algumas notações:
 
 # Topologia
-
-# Trigonométricas
-
 Dado $X, Y \subseteq \mathbb{R}$, com as propriedades.
  1. $X \cup Y = \mathbb{R}$
+
+
+# Trigonométricas
 
 ### Notação
 Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
