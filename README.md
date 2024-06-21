@@ -4,29 +4,29 @@ Repositório com algumas notações:
 
 # Conjunto de Intervalos Repetidos
 
-Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho constante  $ \delta > 0  $ e separados por uma distância fixa  $ d > 0  $. Cada intervalo  $ I_n  $ do conjunto  $ S  $ pode ser da forma:
+Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho constante  $\delta > 0$ e separados por uma distância fixa  $d > 0$. Cada intervalo  $I_n$ do conjunto  $S$ pode ser da forma:
 
-- Intervalos fechados:  $ I_n = [a_n, a_n + \delta]  $
-- Intervalos abertos:  $ I_n = (a_n, a_n + \delta)  $
-- Intervalos semi-abertos (semi-fechados):  $ I_n = [a_n, a_n + \delta) \) ou \( I_n = (a_n, a_n + \delta]  $
+- Intervalos fechados:  $I_n = [a_n, a_n + \delta]$
+- Intervalos abertos:  $I_n = (a_n, a_n + \delta)$
+- Intervalos semi-abertos (semi-fechados):  $I_n = [a_n, a_n + \delta) \) ou \( I_n = (a_n, a_n + \delta]$
 
-onde  $ a_{n+1} = a_n + \delta + d  $ para  $ n \in \mathbb{N}  $.
+onde  $a_{n+1} = a_n + \delta + d  $ para  $ n \in \mathbb{N}$.
 
-## Conjunto  $ S $
+## Conjunto  $S$
 
 Podemos definir o conjunto  $ S  $ como a união de todos esses intervalos:
 
- $ S = \bigcup_{n=0}^{\infty} I_n  $
+ $S = \bigcup_{n=0}^{\infty} I_n$
 
 ## Propriedades de \( S \)
 
-1. **Intervalos de Tamanho Constante**: Todos os intervalos \( I_n \) têm o mesmo comprimento \( \delta \).
-2. **Intervalos Separados**: A distância entre dois intervalos consecutivos \( I_n \) e \( I_{n+1} \) é \( d \).
-3. **Infinito**: O conjunto \( S \) é infinito porque é a união de uma sequência infinita de intervalos.
+1. **Intervalos de Tamanho Constante**: Todos os intervalos  $I_n$ têm o mesmo comprimento $\delta$.
+2. **Intervalos Separados**: A distância entre dois intervalos consecutivos $I_n$ e $I_{n+1}$ é $d$.
+3. **Infinito**: O conjunto $S$ é infinito porque é a união de uma sequência infinita de intervalos.
 
-## Complemento de \( S \) com Mesmo Tamanho
+## Complemento de $S$ com Mesmo Tamanho
 
-O complemento de \( S \), denotado por \( S^c \), no espaço \( \mathbb{R} \) deve consistir em intervalos de tamanho \( d \) e separados por \( \delta \). Assim, definimos:
+O complemento de $S$, denotado por $S^c$ , no espaço $\mathbb{R}$ deve consistir em intervalos de tamanho $d$ e separados por $\delta$. Assim, definimos:
 
 - Os intervalos complementares \( J_n \) são os intervalos entre os intervalos \( I_n \).
 - Se \( I_n = [a_n, a_n + \delta] \), então \( J_n = (a_n + \delta, a_{n+1}) = (a_n + \delta, a_n + \delta + d) \).
