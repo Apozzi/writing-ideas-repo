@@ -2,7 +2,7 @@
 
 Repositório com algumas notações:
 
-# Conjunto de Intervalos Repetidos
+# Conjunto dos Intervalos Repetidos Infinitos Complementares
 
 Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho constante  $\delta > 0$ e separados por uma distância fixa  $d > 0$. Cada intervalo  $I_n$ do conjunto  $S$ pode ser da forma:
 
