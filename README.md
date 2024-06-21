@@ -18,7 +18,7 @@ Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
 
  $$S = \bigcup_{n=0}^{\infty} I_n$$
 
-## Propriedades de \( S \)
+## Propriedades de $S$
 
 1. **Intervalos de Tamanho Constante**: Todos os intervalos  $I_n$ têm o mesmo comprimento $\delta$.
 2. **Intervalos Separados**: A distância entre dois intervalos consecutivos $I_n$ e $I_{n+1}$ é $d$.
