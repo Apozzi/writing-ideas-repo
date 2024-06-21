@@ -4,7 +4,7 @@ Repositório com algumas notações:
 
 # Conjunto de Intervalos Repetidos
 
-Vamos definir um conjunto $ S \subset \mathbb{R}  $ de intervalos de tamanho constante  $ \delta > 0  $ e separados por uma distância fixa  $ d > 0  $. Cada intervalo  $ I_n  $ do conjunto  $ S  $ pode ser da forma:
+Vamos definir um conjunto $S \subset \mathbb{R}$ de intervalos de tamanho constante  $ \delta > 0  $ e separados por uma distância fixa  $ d > 0  $. Cada intervalo  $ I_n  $ do conjunto  $ S  $ pode ser da forma:
 
 - Intervalos fechados:  $ I_n = [a_n, a_n + \delta]  $
 - Intervalos abertos:  $ I_n = (a_n, a_n + \delta)  $
