@@ -82,9 +82,13 @@ f(x)= \begin{cases}
     g_0(x), & \text{Se} P_0 \text{ é Verdadeiro}, \\
     g_1(x), & \text{Se} P_1 \text{ é Verdadeiro}, \\
     \vdots, & \vdots, \\
-    g_n(x), & \text{Se} P_n \text{ é Verdadeiro} \\
+    g_k(x), & \text{Se} P_k \text{ é Verdadeiro} \\
 \end{cases}
 $$
+
+Utilizando notação de iverson temos como equivalente.
+
+$$f(x)=\bigsum_{n=0}^{k}{g_n(x)[P_n]}$$
 
 # Trigonométricas
 
