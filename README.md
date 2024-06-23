@@ -73,7 +73,7 @@ $$S^c = \bigcup_{n \in \mathbb{Z}} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})
 
 Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero inteiro.
 
-# Conjunto Condicional (TODO)
+# Conjunto Imagem Condicional (TODO)
 
 Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornam Verdadeiro ou Falso, aonde $n$ é um numero natural, temos:
 
