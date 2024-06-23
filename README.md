@@ -96,7 +96,7 @@ Dado $k$ uma constante iremos definir o seguinte:
 
 $$P_k = \bigvee_{i=0}^{k-1}{\neg P_i}$$
 
-Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como:
+Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como: <br/>
 
 $$
 f(x)= \begin{cases} 
@@ -106,9 +106,11 @@ f(x)= \begin{cases}
     g_{k-1}(x), & \text{Se } P_{k-1} \text{ é Verdadeiro} \\
     g_{k}(x), & \text{Diferente} \\
 \end{cases}
-$$
+$$ <br/>
 
-Com essa nova definição de $P_k$ e utilizando Notação de Iverson temos como equivalente.
+Com essa nova definição de $P_k$ e utilizando Notação de Iverson temos como equivalente. <br/>
+
+$$f(x)=\sum_{i=0}^{k-1}{g_i(x)[P_i]} + g_k(x)\prod_{i=0}^{k-1}(1-[P_i])$$
 
 
 
