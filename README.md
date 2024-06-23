@@ -90,11 +90,13 @@ Utilizando notação de iverson, temos como equivalente.
 
 $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
-<hr/>
+### Nova Definição para $P_k$:
 
-Dado $k$ uma constante, iremos definir o seguinte: <br/><br/>
+Para garantir que $f(x)$ selecione $g_k(x)$ quando nenhuma das proposições $P_0$ a $P_{k-1}$ for verdadeira, definimos $P_k$, aonde k é uma constante, como:
 
-$$P_k = \bigwedge_{i=0}^{k-1}{\neg P_i}$$ <br/><br/>
+$$
+P_k = \bigwedge_{i=0}^{k-1}{\neg P_i}
+$$ <br/><br/>
 
 Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como: <br/><br/>
 
