@@ -92,9 +92,9 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 <hr/>
 
-Dado $k$ uma constante iremos definir o seguinte:
+Dado $k$ uma constante iremos definir o seguinte: <br/><br/>
 
-$$P_k = \bigvee_{i=0}^{k-1}{\neg P_i}$$
+$$P_k = \bigvee_{i=0}^{k-1}{\neg P_i}$$ <br/><br/>
 
 Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como: <br/><br/>
 
