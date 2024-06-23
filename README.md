@@ -98,7 +98,7 @@ $$
 P_k = \bigwedge_{i=0}^{k-1}{\neg P_i}
 $$ <br/><br/>
 
-Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como: <br/><br/>
+Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso $f(x)$ se torna: <br/><br/>
 
 $$
 f(x)= \begin{cases} 
