@@ -125,6 +125,19 @@ def f(x, propositions, functions):
             return functions[i](x)
     return functions[k](x)
 
+'''
+A mesma função utilizado outra lógica (Não é muito ineficiente, porém a funcionalidade é a mesma).
+def f(x, propositions, functions):
+    result = 0
+    k = len(functions) - 1
+    for i in range(k):
+        if propositions[i](x):
+            result += functions[i](x)
+    if all(not propositions[i](x) for i in range(k)):
+        result += functions[k](x)
+    return result
+'''
+
 # Exemplos de proposições e funções
 propositions = [
     lambda x: x < 0,
