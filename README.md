@@ -112,7 +112,38 @@ Com essa nova definição de $P_k$ e utilizando Notação de Iverson, temos como
 
 $$f(x)=\sum_{i=0}^{k-1}{g_i(x)[P_i]} + g_k(x)\prod_{i=0}^{k-1}(1-[P_i])$$
 
+## Código Exemplo
 
+```
+# Função piecewise definida em Python
+def f(x, propositions, functions):
+    result = 0
+    k = len(functions) - 1
+    for i in range(k):
+        if propositions[i](x):
+            result += functions[i](x)
+    if all(not propositions[i](x) for i in range(k)):
+        result += functions[k](x)
+    return result
+
+# Exemplos de proposições e funções
+propositions = [
+    lambda x: x < 0,
+    lambda x: x >= 0 and x < 5,
+    lambda x: x >= 5
+]
+
+functions = [
+    lambda x: x**2,
+    lambda x: 3*x + 1,
+    lambda x: -x + 10
+]
+
+# Teste da função
+print(f(-2, propositions, functions))  # Deve usar a primeira função: (-2)^2 = 4
+print(f(3, propositions, functions))   # Deve usar a segunda função: 3*3 + 1 = 10
+print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 = 4
+```
 
 
 # Trigonométricas
