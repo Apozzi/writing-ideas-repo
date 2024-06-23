@@ -132,6 +132,7 @@ def f(x, propositions, functions):
 propositions = [
     lambda x: x < 0,
     lambda x: x >= 0 and x < 5
+    #, lambda x: x >= 5
 ]
 
 functions = [
