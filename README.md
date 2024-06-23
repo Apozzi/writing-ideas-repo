@@ -92,7 +92,7 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 <br\>
 
-Dado $k$ uma constante definirmos $P_k = \neg{\bigvee_{i=0}^{k-1}{P_n}}$, ou seja $P_k$ 
+Dado $k$ uma constante definirmos $P_k = \neg{\bigwedge_{i=0}^{k-1}{P_n}}$, ou seja $P_k$ 
 
 # Trigonométricas
 
