@@ -75,7 +75,7 @@ Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ par
 
 # Conjunto Condicional (TODO)
 
-Dado $f$ uma função da qual $f: A \implies B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornar Verdadeiro ou Falso, temos:
+Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornar Verdadeiro ou Falso, temos:
 
 $$
 f(x)= \begin{cases} 
