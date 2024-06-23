@@ -90,7 +90,7 @@ Utilizando notação de iverson temos como equivalente.
 
 $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
-<br/>
+<hr/>
 
 Dado $k$ uma constante iremos definir o seguinte:
 
