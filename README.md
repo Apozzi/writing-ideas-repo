@@ -98,13 +98,14 @@ $$P_k = \bigvee_{i=0}^{k-1}{\neg P_n}$$
 
 Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$.
 Como resultado disso temos $f(x)$ definido de forma no qual.
+
 $$
 f(x)= \begin{cases} 
     g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
     g_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
     \vdots, & \vdots, \\
     g_{k-1}(x), & \text{Se } P_{k-1} \text{ é Verdadeiro} \\
-    g_k(x), & \text{ Diferente} \\
+    g_{k}(x), & \text{Diferente} \\
 \end{cases}
 $$
 
