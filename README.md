@@ -108,6 +108,10 @@ f(x)= \begin{cases}
 \end{cases}
 $$
 
+Com essa nova definição de $P_k$ e utilizando Notação de Iverson temos como equivalente.
+
+
+
 
 # Trigonométricas
 
