@@ -73,6 +73,8 @@ $$S^c = \bigcup_{n \in \mathbb{Z}} (n\pi + \frac{\pi}{4}, n\pi + \frac{3\pi}{4})
 
 Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ para todo $n$ é numero inteiro.
 
+# Conjunto Condicional (TODO)
+
 # Trigonométricas
 
 ## Notação
