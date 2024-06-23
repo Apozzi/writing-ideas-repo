@@ -92,12 +92,11 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 <br/>
 
-Dado $k$ uma constante definirmos:
+Dado $k$ uma constante iremos definir o seguinte:
 
 $$P_k = \bigvee_{i=0}^{k-1}{\neg P_n}$$
 
-Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$.
-Como resultado disso temos $f(x)$ definido de forma no qual.
+Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como:
 
 $$
 f(x)= \begin{cases} 
