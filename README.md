@@ -92,7 +92,7 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 <hr/>
 
-Dado $k$ uma constante iremos definir o seguinte: <br/><br/>
+Dado $k$ uma constante, iremos definir o seguinte: <br/><br/>
 
 $$P_k = \bigwedge_{i=0}^{k-1}{\neg P_i}$$ <br/><br/>
 
