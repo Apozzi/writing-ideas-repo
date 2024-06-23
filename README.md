@@ -94,7 +94,7 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 Dado $k$ uma constante iremos definir o seguinte:
 
-$$P_k = \bigvee_{i=0}^{k-1}{\neg P_n}$$
+$$P_k = \bigvee_{i=0}^{k-1}{\neg P_i}$$
 
 Ou seja $P_k$ é "diferente" de $P_0$ até $P_k-1$, como resultado disso temos $f(x)$ como:
 
