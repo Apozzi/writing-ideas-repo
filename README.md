@@ -88,7 +88,7 @@ $$
 
 Utilizando notação de iverson temos como equivalente.
 
-$$f(x)=\bigsum_{n=0}^{k}{g_n(x)[P_n]}$$
+$$f(x)=\sum_{n=0}^{k}{g_n(x)[P_n]}$$
 
 # Trigonométricas
 
