@@ -79,10 +79,10 @@ Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções
 
 $$
 f(x)= \begin{cases} 
-    g_0(x), & \text{Se} P_0 \text{ é Verdadeiro}, \\
-    g_1(x), & \text{Se} P_1 \text{ é Verdadeiro}, \\
+    g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    g_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
     \vdots, & \vdots, \\
-    g_k(x), & \text{Se} P_k \text{ é Verdadeiro} \\
+    g_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}
 $$
 
