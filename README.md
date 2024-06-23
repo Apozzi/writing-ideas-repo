@@ -116,7 +116,7 @@ $$f(x)=\sum_{i=0}^{k-1}{g_i(x)[P_i]} + g_k(x)\prod_{i=0}^{k-1}(1-[P_i])$$
 
 ## Código Exemplo
 
-```
+```python
 # Função piecewise definida em Python
 def f(x, propositions, functions):
     result = 0
