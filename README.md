@@ -75,7 +75,7 @@ Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ par
 
 # Conjunto Condicional (TODO)
 
-Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornar Verdadeiro ou Falso, temos:
+Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornar Verdadeiro ou Falso, aonde $n$ é um numero natural, temos:
 
 $$
 f(x)= \begin{cases} 
@@ -88,7 +88,11 @@ $$
 
 Utilizando notação de iverson temos como equivalente.
 
-$$f(x)=\sum_{n=0}^{k}{g_n(x)[P_n]}$$
+$$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
+
+</br>
+
+Caso definirmos P_k = \bigcap_{}
 
 # Trigonométricas
 
