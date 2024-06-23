@@ -86,7 +86,7 @@ f(x)= \begin{cases}
 \end{cases}
 $$
 
-Utilizando notação de iverson temos como equivalente.
+Utilizando notação de iverson, temos como equivalente.
 
 $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
