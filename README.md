@@ -81,7 +81,7 @@ $$
 f(x)= \begin{cases} 
     g_0(x), & \text{Se} P_0 \text{ é Verdadeiro}, \\
     g_1(x), & \text{Se} P_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots. \\
+    \vdots, & \vdots, \\
     g_n(x), & \text{Se} P_n \text{ é Verdadeiro} \\
 \end{cases}
 $$
