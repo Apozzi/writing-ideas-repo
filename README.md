@@ -101,7 +101,6 @@ $$g_n(x)[P_n] = \begin{cases}
 
 Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. <br/><br/>
 -->
-
 ### Nova Definição para $P_k$:
 
 Para garantir que $f(x)$ selecione $g_k(x)$ quando nenhuma das proposições $P_0$ a $P_{k-1}$ for verdadeira, definimos $P_k$, aonde $k$ é uma constante, como:
