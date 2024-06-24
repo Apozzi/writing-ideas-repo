@@ -75,7 +75,7 @@ Que também equivale que S é $[n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ par
 
 # Funções Piecewise
 
-Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornam Verdadeiro ou Falso, aonde $n$ é um numero natural, temos:
+Dado $f$ uma função da qual $f: A \to B$, $g_n$ uma sequencia de sub-funções e $P_n$ uma sequencia de proposições lógicas que retornam Verdadeiro ou Falso, aonde $n$ é um número natural, temos:
 
 $$
 f(x)= \begin{cases} 
@@ -89,6 +89,13 @@ $$
 Utilizando notação de iverson, temos como equivalente.
 
 $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
+
+Também é importante reparar que, para todo $n$ aonde $n$ é número natural:
+
+$$g_n(x)[P_n] = f(x)= \begin{cases}
+    g_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
+    0, & \text{Diferente} \\
+\end{cases}$$
 
 ### Nova Definição para $P_k$:
 
