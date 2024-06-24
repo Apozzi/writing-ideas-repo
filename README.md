@@ -95,7 +95,8 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$ <br/><br/>
 $$g_n(x)[P_n] = \begin{cases}
     g_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
     0, & \text{Diferente} \\
-\end{cases}$$ <br/><br/><br/>
+\end{cases}$$ 
+<br/><br/>>
 
 Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. <br/><br/>
 
