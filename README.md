@@ -88,9 +88,9 @@ $$
 
 Utilizando notação de iverson, temos como equivalente.
 
-$$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
+$$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$ <br/><br/>
 
-É importante reparar que, para todo $n$ aonde $n$ é número natural:
+É importante reparar que, para todo $n$ aonde $n$ é número natural: <br/><br/>
 
 $$g_n(x)[P_n] = \begin{cases}
     g_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
