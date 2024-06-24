@@ -95,9 +95,9 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$ <br/><br/>
 $$g_n(x)[P_n] = \begin{cases}
     g_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
     0, & \text{Diferente} \\
-\end{cases}$$
+\end{cases}$$ <br/><br/>
 
-Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. <br/><br/>
+Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. 
 
 ### Nova Definição para $P_k$:
 
@@ -117,9 +117,9 @@ f(x)= \begin{cases}
     g_{k-1}(x), & \text{Se } P_{k-1} \text{ é Verdadeiro} \\
     g_{k}(x), & \text{Diferente} \\
 \end{cases}
-$$ <br/><br/>
+$$ <br/><br/> 
 
-Com essa nova definição de $P_k$ e utilizando Notação de Iverson, temos como equivalente. <br/><br/>
+Com essa nova definição de $P_k$ e utilizando Notação de Iverson, temos como equivalente. 
 
 $$f(x)=\sum_{i=0}^{k-1}{g_i(x)[P_i]} + g_k(x)\prod_{i=0}^{k-1}(1-[P_i])$$
 
