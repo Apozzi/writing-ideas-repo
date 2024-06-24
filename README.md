@@ -92,7 +92,7 @@ $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$
 
 Também é importante reparar que, para todo $n$ aonde $n$ é número natural:
 
-$$g_n(x)[P_n] = f(x)= \begin{cases}
+$$g_n(x)[P_n] = \begin{cases}
     g_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
     0, & \text{Diferente} \\
 \end{cases}$$
