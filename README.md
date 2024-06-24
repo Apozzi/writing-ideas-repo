@@ -97,7 +97,7 @@ $$g_n(x)[P_n] = \begin{cases}
     0, & \text{Diferente} \\
 \end{cases}$$
 
-Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise.
+Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. <br/><br/>
 
 ### Nova Definição para $P_k$:
 
