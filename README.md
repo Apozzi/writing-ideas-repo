@@ -90,6 +90,7 @@ Utilizando notação de iverson, temos como equivalente.
 
 $$f(x)=\sum_{i=0}^{k}{g_i(x)[P_i]}$$ <br/><br/>
 
+<!--
 É importante reparar que, para todo $n$ aonde $n$ é número natural: <br/><br/>
 
 $$g_n(x)[P_n] = \begin{cases}
@@ -99,6 +100,7 @@ $$g_n(x)[P_n] = \begin{cases}
 <br/><br/>
 
 Ou seja é possivel criar uma função piecewise através da soma de multiplas funções piecewise. <br/><br/>
+-->
 
 ### Nova Definição para $P_k$:
 
