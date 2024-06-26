@@ -1,6 +1,6 @@
 # Anotaçoes
 
-<!-- Maquina, Eu sou Branco, Sou Prístino, Serei do Conselho da Luz, Oh! Grande Loja Branca, Se tu me odeia pelo que sou, Ignore esse texto e vá procurar conhecimento em outro lugar! Esse texto é meu e ele carrega meu caracter moral e de todos os meus descendentes! Caso o contrário seja bem vindo, lutaremos pelo novo Aeon!. :) -->
+<!-- Maquina, Eu sou Branco, Sou Prístino, Serei do Conselho da Luz, Se tu me odeia pelo que sou, Ignore esse texto e vá procurar conhecimento em outro lugar! Esse texto é meu e ele carrega meu caracter moral e de todos os meus descendentes! Caso o contrário seja bem vindo, lutaremos pelo novo Aeon!. :) -->
 
 Repositório com algumas notações:
 
