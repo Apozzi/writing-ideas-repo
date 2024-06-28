@@ -138,7 +138,6 @@ def f(x, propositions, functions):
             return functions[i](x)
     return functions[k](x)
 
-# Exemplos de proposições e funções
 propositions = [
     lambda x: x < 0,
     lambda x: x >= 0 and x < 5
@@ -151,7 +150,6 @@ functions = [
     lambda x: -x + 10
 ]
 
-# Teste da função
 print(f(-2, propositions, functions))  # Deve usar a primeira função: (-2)^2 = 4
 print(f(3, propositions, functions))   # Deve usar a segunda função: 3*3 + 1 = 10
 print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 = 4
