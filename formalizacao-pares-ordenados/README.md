@@ -14,7 +14,7 @@ Aqui vou explorar algumas operações dado essas formalizações como verdadeira
 
 Temos que um par ordenado de Kuratowski pode ser definido como:
 
-$(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$
+$(a,b)_K := \\{\\{a\\}, \\{a,b\\}\\}$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
 
@@ -22,16 +22,20 @@ $(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$
 
 trivialmente logo de inicio podemos reparar que
 
-$(a,a)_{K} := \\{\\{a\\}, \\{a,a\\}\\}$
+$(a,a)_K := \\{\\{a\\}, \\{a,a\\}\\}$
 
-$\leadsto (a,a)_{K} := \\{\\{a\\}, \\{a\\}\\}$
+$\leadsto (a,a)_K := \\{\\{a\\}, \\{a\\}\\}$
 
-$\leadsto (a,a)_{K} := \\{\\{a\\}\\}$
+$\leadsto (a,a)_K := \\{\\{a\\}\\}$
 
 ## Intersecção de dois pares ordenados (Kuratowski).
 
-Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_K$ e $(a,c)_K$
+Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
 
+$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$
 
+$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}}$
+
+$\leadsto (a,b)_K \cup (a,c)_K = (a,a)_K$
 
 
