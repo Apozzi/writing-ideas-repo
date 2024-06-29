@@ -87,18 +87,18 @@ Também por motivos triviais é fácilmente demonstravel que $(a,b)_K \cup (a,c)
 
 Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equivalente $((a,b), c)$ mas de vez enquanto é definido como $(a, (b, c))$, ambas estão "certas" - digo com tom ironico - e na matemática é dito que "não importa" qual definição é utilizada e sim que autor mantenha a consistencia, mas vale lembrar que elas não são definições iguais e isso ao meu ver gera mais problemas por falta de uma definição sequer consistente.
 
-$((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\}\\}$
+$$((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\}\\}$$
 
 e
 
-$(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$
+$$(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$$
 
 Com isso já se torna claro que $((a, b)_K, c)_K \neq (a, (b, c)_K)_K$, é claro qualquer um desses pode se tornar definição de $(a,b,c)_K$, temos que:
 
-$((a, b)_K, c)_K = (a, b, c)_K \implies (a, (b, c)_K)_K \neq (a, b, c)_K$
+$$((a, b)_K, c)_K = (a, b, c)_K \implies (a, (b, c)_K)_K \neq (a, b, c)_K$$
 
 Simétricamente, 
 
-$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$
+$$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$$
 
 Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
