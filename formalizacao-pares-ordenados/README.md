@@ -49,4 +49,7 @@ $(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
 
 $\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 
+Que não nos leva a simplificação nenhuma e parece já causar problemas com formalização inicial, o que $\\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
+tenta significar? Que is elementos $b$ e $c$ são simultaneamente o segundo item do par ordenado?
+
 
