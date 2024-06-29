@@ -32,7 +32,7 @@ $\leadsto (a,a)_K := \\{\\{a\\}\\}$
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
 
-$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
+$(a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
 
 $\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$
 
@@ -40,6 +40,17 @@ $\leadsto (a,b)_K \cap (a,c)_K = (a,a)_K$
 
 Assim é demonstrado que $(a,b)_K \cap (a,c)_K = (a,a)_K$ um resultado um tanto curioso e consequencia da formalização,
 que não parece se identificar com matemática padrão.
+
+## Intersecção de dois pares ordenados com "segundo valor igual" (Kuratowski).
+
+Agora vamos aplicar com $(b,a)_K$ e $(c,a)_K$, temos:
+
+$(b,a)_K \cap (c,a)_K$
+
+$\leadsto (b,a)_K \cap (c,a)_K = \\{\\{b\\}, \\{b,a\\}\\} \cap \\{\\{c\\}, \\{c,a\\}\\}$
+
+$\leadsto (b,a)_K \cap (c,a)_K = \emptyset$
+
 
 ## União de dois pares ordenados (Kuratowski).
 
