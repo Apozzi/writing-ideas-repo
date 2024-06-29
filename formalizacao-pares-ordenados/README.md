@@ -38,6 +38,13 @@ $\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$
 
 $\leadsto (a,b)_K \cap (a,c)_K = (a,a)_K$
 
-Assim é demonstrado que $(a,b)_K \cap (a,c)_K = (a,a)_K$ um resultado um tanto curioso e consequencia da formalização, não parece se identificar com matematica padrão.
+Assim é demonstrado que $(a,b)_K \cap (a,c)_K = (a,a)_K$ um resultado um tanto curioso e consequencia da formalização,
+que não parece se identificar com matemática padrão.
+
+## União de dois pares ordenados (Kuratowski).
+
+$(a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
+
+$\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 
 
