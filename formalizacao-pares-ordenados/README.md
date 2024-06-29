@@ -99,4 +99,4 @@ $((a, b)_K, c)_K = (a, b_K, c)_K \implies (a, (b, c)_K)_K \neq (a, b_K, c)_K$
 
 Simétricamente, 
 
-$ (a, (b, c)_K)_K = (a, b_K, c)_K \implies ((a, b)_K, c)_K \neq (a, b_K, c)_K$
+$(a, (b, c)_K)_K = (a, b_K, c)_K \implies ((a, b)_K, c)_K \neq (a, b_K, c)_K$
