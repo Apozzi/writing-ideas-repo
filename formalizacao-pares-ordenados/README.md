@@ -85,4 +85,4 @@ Também por motivos triviais é fácilmente demonstravel que $(a,b)_K \cup (a,c)
 
 ## Triplos ordenados com definição de Kuratowski
 
-Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equivalente $((a,b), c)$ mas de vez enquanto é definido como $(a, (b, c))$, ambas estão "certas" - digo com tom ironico - e na matemática é dito que "não importa" qual definição é utilizada, mas vale lembrar que elas não são definições iguais.
+Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equivalente $((a,b), c)$ mas de vez enquanto é definido como $(a, (b, c))$, ambas estão "certas" - digo com tom ironico - e na matemática é dito que "não importa" qual definição é utilizada e sim que autor mantenha a consistencia, mas vale lembrar que elas não são definições iguais o que ao meu ver gera mais problemas.
