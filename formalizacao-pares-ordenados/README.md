@@ -92,3 +92,11 @@ $((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\
 e
 
 $(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$
+
+Com isso já se torna claro que $((a, b)_K, c)_K \neq (a, (b, c)_K)_K$, é claro qualquer um desses pode se tornar definição de $(a,b,c)$, temos que:
+
+$((a, b)_K, c)_K = (a, b_K, c)_K \implies (a, (b, c)_K)_K \neq (a, b_K, c)_K$
+
+Simétricamente, 
+
+$ (a, (b, c)_K)_K = (a, b_K, c)_K \implies ((a, b)_K, c)_K \neq (a, b_K, c)_K$
