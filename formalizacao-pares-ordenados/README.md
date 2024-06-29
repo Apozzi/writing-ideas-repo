@@ -28,6 +28,8 @@ $\leadsto (a,a)_{K} := \\{\\{a\\}\\}$
 
 que é um caso degenerado.
 
+Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_{K}$ e $(a,c)_{K}$
+
 
 
 
