@@ -8,5 +8,7 @@ Vale a ideia de pares ordenados é altamente fundamental para toda matemática m
 
 Não é de alta supresa para mim, isso só demonstra uma grande decadencia no desenvolvimento matemático humano.
 
+Aqui vou explorar algumas operações dado essas formalizações como verdadeiras.
+
 
 
