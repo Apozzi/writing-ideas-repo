@@ -52,4 +52,8 @@ $\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 Que não nos leva a simplificação nenhuma e parece já causar problemas com formalização inicial, o que $\\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 tenta significar? Que elementos $b$ e $c$ são simultaneamente o segundo item do par ordenado?
 
+Vale reparar também que.
+
+$(a,b)_K \cup (a,c)_K /meq (a,b \cup c)_K$
+
 
