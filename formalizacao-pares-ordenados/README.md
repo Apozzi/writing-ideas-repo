@@ -34,7 +34,7 @@ Se aplicamos intersecção de conjuntos e dois pares ordenados com formalizaçã
 
 $(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$
 
-$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}}$
+$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}\\}$
 
 $\leadsto (a,b)_K \cup (a,c)_K = (a,a)_K$
 
