@@ -10,5 +10,11 @@ Não é de alta supresa para mim, isso só demonstra uma grande decadencia no de
 
 Aqui vou explorar algumas operações dado essas formalizações como verdadeiras.
 
+# Formalização de Kuratowski
+
+Temos que um par ordenado de Kuratowski pode ser definido como:
+
+$(a,b)_{K} := \{\{a\}, \{a,b\}\}$
+
 
 
