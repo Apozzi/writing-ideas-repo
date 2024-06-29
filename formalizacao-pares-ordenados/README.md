@@ -100,3 +100,5 @@ $((a, b)_K, c)_K = (a, b_K, c)_K \implies (a, (b, c)_K)_K \neq (a, b, c)_K$
 Simétricamente, 
 
 $(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$
+
+Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
