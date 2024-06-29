@@ -32,7 +32,7 @@ $\leadsto (a,a)_K := \\{\\{a\\}\\}$
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
 
-$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$
+$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
 
 $\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$
 
