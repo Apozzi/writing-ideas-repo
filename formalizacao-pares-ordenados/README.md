@@ -82,3 +82,7 @@ Não é dificil reparar que $\\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \
 Assim provamos que $(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$.
 
 Também por motivos triviais é fácilmente demonstravel que $(a,b)_K \cup (a,c)_K \neq (a \cup a,b \cup c)_K$
+
+## Triplos ordenados com definição de Kuratowski
+
+Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equivalente $((a,b), c)$ mas de vez enquanto é definido como $(a, (b, c))$, ambas estão "certas" - digo com tom ironico - e na matemática é dito que "não importa" qual definição é utilizada, mas vale lembrar que elas não são definições iguais.
