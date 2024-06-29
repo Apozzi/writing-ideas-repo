@@ -38,4 +38,6 @@ $\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$
 
 $\leadsto (a,b)_K \cap (a,c)_K = (a,a)_K$
 
+Assim é demonstrado que $(a,b)_K \cap (a,c)_K = (a,a)_K$ um resultado um tanto curioso e consequencia da formalização, não parece se identificar com matematica padrão.
+
 
