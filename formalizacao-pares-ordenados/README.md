@@ -67,3 +67,7 @@ e paralelamente verificamos $(a,b)_K \cup (a,c)_K$ ou seja dado $(a,b)_K \cup (a
 $\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$
 
 Não é dificil reparar que $\\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \\} \neq \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$
+
+Assim provamos que $(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$.
+
+Também por motivos triviais é fácilmente demonstravel que $(a,b)_K \cup (a,c)_K \neq (a \cup a,b \cup c)_K$
