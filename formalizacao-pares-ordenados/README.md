@@ -30,7 +30,7 @@ $\leadsto (a,a)_{K} := \\{\\{a\\}\\}$
 
 ## Intersecção de dois pares ordenados (Kuratowski).
 
-Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $ (a,b)_{K} $ e $ (a,c)_{K} $
+Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)$ e $(a,c)_{K}$
 
 
 
