@@ -89,3 +89,6 @@ Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equi
 
 $((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\}\\}$
 
+e
+
+$(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$
