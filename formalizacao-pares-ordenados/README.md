@@ -18,5 +18,10 @@ $(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
 
+trivialmente logo de inicio podemos reparar que
+
+$(a,a)_{K} := \\{\\{a\\}, \\{a,a\\}\\}$
+$\leadsto (a,a)_{K} := \\{\\{a\\}, \\{a\\}\\}$
+
 
 
