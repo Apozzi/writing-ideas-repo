@@ -6,7 +6,7 @@ Existem algumas definições de pares ordenados na matemática sendo elas de Wie
 
 Vale a ideia de pares ordenados é altamente fundamental para toda matemática moderna sendo talvez podendo ser considerada um dos blocos de contrução fundamentais, sendo vista em Espaços métricos e Espaços topológicos e em toda matemática abstrata.
 
-Não é de alta supresa para mim, isso só demonstra uma grande decadencia no desenvolvimento matemático humano.
+Não é de alta supresa para mim, isso só demonstra uma grande decadencia no desenvolvimento matemático humano, ou melhor sua formalização ou falta dela.
 
 Aqui vou explorar algumas operações dado essas formalizações como verdadeiras.
 
