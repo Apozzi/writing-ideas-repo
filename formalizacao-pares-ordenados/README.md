@@ -56,8 +56,12 @@ Vale reparar também que.
 
 $(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$
 
-Suponhamos que elementos $a$ e $b$ são conjuntos do qual $a=\\{a_1,a_2, \dots\\}$ e  $b=\\{b_1,b_2, \dots\\}$
+Suponhamos que elementos $a$ e $b$ são conjuntos do qual $b=\\{b_1,b_2, \dots\\}$ e  $c=\\{c_1,c_2, \dots\\}$
 
-Dado $(a,b \cup c)_K$
+Dado $(a,b \cup c)_K$.
 
-$\leadsto (a,b \cup c)_K = \\{\\{a\\}, \\{a_1,a_2, \dots\\,b_1,b_2, \dots\\} \\}$
+$\leadsto (a,b \cup c)_K = \\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \\}$
+
+e paralelamente verificamos $(a,b)_K \cup (a,c)_K$ ou seja dado $(a,b)_K \cup (a,c)_K$.
+
+$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$
