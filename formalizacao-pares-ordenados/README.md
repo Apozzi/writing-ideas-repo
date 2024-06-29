@@ -26,6 +26,8 @@ $\leadsto (a,a)_{K} := \\{\\{a\\}, \\{a\\}\\}$
 
 $\leadsto (a,a)_{K} := \\{\\{a\\}\\}$
 
+que é um caso degenerado.
+
 
 
 
