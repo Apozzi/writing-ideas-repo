@@ -16,5 +16,7 @@ Temos que um par ordenado de Kuratowski pode ser definido como:
 
 $$(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$$
 
+<!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
+
 
 
