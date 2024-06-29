@@ -43,8 +43,8 @@ que não parece se identificar com matemática padrão.
 
 ## União de dois pares ordenados (Kuratowski).
 
-$(a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
+$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
 
-$\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
+$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 
 
