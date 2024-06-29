@@ -18,6 +18,8 @@ $(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
 
+## Caso degenerado.
+
 trivialmente logo de inicio podemos reparar que
 
 $(a,a)_{K} := \\{\\{a\\}, \\{a,a\\}\\}$
@@ -26,7 +28,7 @@ $\leadsto (a,a)_{K} := \\{\\{a\\}, \\{a\\}\\}$
 
 $\leadsto (a,a)_{K} := \\{\\{a\\}\\}$
 
-que é um caso degenerado.
+## Intersecção de dois pares ordenados (Kuratowski).
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_{K}$ e $(a,c)_{K}$
 
