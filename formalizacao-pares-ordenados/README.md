@@ -49,7 +49,7 @@ $(b,a)_K \cap (c,a)_K$
 
 $\leadsto (b,a)_K \cap (c,a)_K = \\{\\{b\\}, \\{b,a\\}\\} \cap \\{\\{c\\}, \\{c,a\\}\\}$
 
-$\leadsto (b,a)_K \cap (c,a)_K = \emptyset$
+$\leadsto (b,a)_K \cap (c,a)_K = \varnothing$
 
 
 ## União de dois pares ordenados (Kuratowski).
