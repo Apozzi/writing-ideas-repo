@@ -56,4 +56,4 @@ Vale reparar também que.
 
 $(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$
 
-Suponhamos que elementos $a$ e $b$ são conjuntos do tipo $a=\\{a_1,a_2, \dots\\}$
+Suponhamos que elementos $a$ e $b$ são conjuntos do qual $a=\\{a_1,a_2, \dots\\}$ e  $b=\\{b_1,b_2, \dots\\}$
