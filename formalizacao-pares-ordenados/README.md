@@ -14,7 +14,7 @@ Aqui vou explorar algumas operações dado essas formalizações como verdadeira
 
 Temos que um par ordenado de Kuratowski pode ser definido como:
 
-$(a,b)_{K} := \{\{a\}, \{a,b\}\}$
+$(a,b)_{K} := /{/{a/}, /{a,b/}/}$
 
 
 
