@@ -54,6 +54,6 @@ tenta significar? Que elementos $b$ e $c$ são simultaneamente o segundo item do
 
 Vale reparar também que.
 
-$(a,b)_K \cup (a,c)_K /neq (a,b \cup c)_K$
+$(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$
 
 
