@@ -45,7 +45,7 @@ que não parece se identificar com matemática padrão.
 
 Se dessa vez aplicarmos a união:
 
-$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
+$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$
 
 $\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 
