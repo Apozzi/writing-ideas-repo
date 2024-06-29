@@ -21,6 +21,7 @@ $(a,b)_{K} := \\{\\{a\\}, \\{a,b\\}\\}$
 trivialmente logo de inicio podemos reparar que
 
 $(a,a)_{K} := \\{\\{a\\}, \\{a,a\\}\\}$
+
 $\leadsto (a,a)_{K} := \\{\\{a\\}, \\{a\\}\\}$
 
 
