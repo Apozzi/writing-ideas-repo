@@ -102,3 +102,11 @@ Simétricamente,
 $(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$
 
 Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
+
+# Formalização de Hausdorff
+
+Temos que um par ordenado com definição de Hausdorff pode ser definido como:
+
+$(a,b)_K := \\{\\{a, 1\\}, \\{a, 2\\}\\}$
+
+<!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
