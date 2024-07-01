@@ -114,7 +114,7 @@ Se dar como verdade $((a, b)_K, c)_K = (a, b, c)_K$ temos de forma semelhante pa
 
 $$(a,a,a,a) \subseteq (a,a,a,d) \subseteq (a,a,c,d) \subseteq (a,b,c,d) $$
 
-É fácilmente verficavel através de um trabalho manual.
+É fácilmente verificavel através de um trabalho manual.
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
