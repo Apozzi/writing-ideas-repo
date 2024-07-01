@@ -131,7 +131,7 @@ Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se
 
 Agora aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff em $(b,a)_H$ e $(c,a)_H$, temos:
 
-$(b,a)_H \cap (c,a)_H := \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2\\}\\}$
+$(b,a)_H \cap (c,a)_H = \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2\\}\\}$
 
 $\leadsto (b,a)_H \cap (c,a)_H =  \\{\\{a, 2\\}\\}$ 
 
