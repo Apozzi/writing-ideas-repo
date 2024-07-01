@@ -108,7 +108,7 @@ Como vimos anteriormente temos como resultado:
 $$(a,b)_K \cap (a,c)_K = (a,a)_K$$
 Isso implica que:
 $$(a,a)_K \subseteq (a,b)_K$$
-É $\\{a\\} \nsubseteq (a,b)_K$ outro resultado um tanto quando incomodo, dado que $\\{\\{a\\}\\}$ é subconjunto válido.
+É $\\{a\\} \nsubseteq (a,b)_K$ outro resultado um tanto quando incomodo, dado que $\\{\\{a\\}\\}$ é subconjunto de $(a,b)_K$.
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
