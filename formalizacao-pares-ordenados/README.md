@@ -107,7 +107,7 @@ Toda vez que um matemático faz um artigo ele define qual das definições vai e
 Como vimos anteriormente temos como resultado 
 $$(a,b)_K \cap (a,c)_K = (a,a)_K$$
 Isso implica que:
-$$\leadsto (a,a)_K \subseteq (a,b)_K$$
+$$(a,a)_K \subseteq (a,b)_K$$
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
