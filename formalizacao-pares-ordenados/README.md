@@ -140,4 +140,4 @@ Ou seja $(b,a)_H \cap (c,a)_H = \\{\\{a, 2\\}\\}$ o que me parece também intuit
 ## Triplos ordenados e generalizações com formalização de Hausdorff.
 
 Já de inicio é possivel ver definição recursiva normalmente usada em Kuratowski não funciona ou seja $((a,b),c) = (a,b,c)$ ou $(a,(b,c)) = (a,b,c)$,
-se utilizassemos a formalização de Haurdorff algo como $(a,(b,c)_H)_H = \\{\\{a, 1\\}, \\{\\{\\{B, 1\\}, \\{c, 2\\}\\}, 2\\}\\}$ o que é um tanto absurdo.
+se utilizassemos a formalização de Haurdorff algo como $(a,(b,c)_H)_H = \\{\\{a, 1\\}, \\{\\{\\{b, 1\\}, \\{c, 2\\}\\}, 2\\}\\}$ o que é um tanto absurdo.
