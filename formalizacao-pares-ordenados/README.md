@@ -135,7 +135,8 @@ $(b,a)_H \cap (c,a)_H = \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2
 
 $\leadsto (b,a)_H \cap (c,a)_H =  \\{\\{a, 2\\}\\}$ 
 
-Ou seja $(b,a)_H \cap (c,a)_H = \\{\\{a, 2\\}\\}$ o que me parece também intuitivo já que ele retorna exatamente o segundo elemento, poderia ter fácilmente uma notação do tipo $(,a)_H := \\{\\{a, 2\\}\\}$ para casos como esse.
+Ou seja $(b,a)_H \cap (c,a)_H = \\{\\{a, 2\\}\\}$ o que me parece também intuitivo já que ele retorna exatamente o segundo elemento, poderia ter fácilmente uma notação do tipo $(,a)_H := \\{\\{a, 2\\}\\}$ para casos como esse, é claro para manter tal notação consistente deve ser claro que 
+$(,a)_H \neq (\varnothing, a)_H$.
 
 ## Triplos ordenados e generalizações com formalização de Hausdorff.
 
