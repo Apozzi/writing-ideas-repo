@@ -119,7 +119,7 @@ Que pode ser considerado mais consistente no caso $(a,a)$.
 
 ## Intersecção de dois pares ordenados (Hausdorff, 1914).
 
-Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
+Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff sendo eles $(a,b)_H$ e $(a,c)_H$, temos:
 
 $(a,b)_H \cap (a,c)_H = \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 2\\}\\}$
 
