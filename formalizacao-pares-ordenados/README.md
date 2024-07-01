@@ -110,3 +110,9 @@ Temos que um par ordenado com definição de Hausdorff (Grundzüge der Mengenleh
 $(a,b)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\}$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
+
+Já de antemão conseguimos perceber que:
+
+$(a,a)_H := \\{\\{a, 1\\}, \\{a, 2\\}\\}$
+
+Que pode ser considerado mais consistente no caso $(a,a)$.
