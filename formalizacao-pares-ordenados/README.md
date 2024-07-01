@@ -14,7 +14,7 @@ Aqui vou explorar algumas operações dado essas formalizações como verdadeira
 
 Temos que um par ordenado de Kuratowski pode ser definido como:
 
-$(a,b)_K := \\{\\{a\\}, \\{a,b\\}\\}$
+$$(a,b)_K := \\{\\{a\\}, \\{a,b\\}\\}$$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
 
@@ -22,11 +22,11 @@ $(a,b)_K := \\{\\{a\\}, \\{a,b\\}\\}$
 
 trivialmente logo de inicio podemos reparar que
 
-$(a,a)_K := \\{\\{a\\}, \\{a,a\\}\\}$
+$$(a,a)_K := \\{\\{a\\}, \\{a,a\\}\\}$$
 
-$\leadsto (a,a)_K := \\{\\{a\\}, \\{a\\}\\}$
+$$\leadsto (a,a)_K := \\{\\{a\\}, \\{a\\}\\}$$
 
-$\leadsto (a,a)_K := \\{\\{a\\}\\}$
+$$\leadsto (a,a)_K := \\{\\{a\\}\\}$$
 
 ## Intersecção de dois pares ordenados (Kuratowski).
 
