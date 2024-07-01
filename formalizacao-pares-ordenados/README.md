@@ -113,7 +113,7 @@ $(a,b)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\}$
 
 Já de antemão conseguimos perceber que:
 
-$(a,a)_H := \\{\\{a, 1\\}, \\{a, 2\\}\\}$
+$(a,a)_H = \\{\\{a, 1\\}, \\{a, 2\\}\\}$
 
 Que pode ser considerado mais consistente no caso $(a,a)$.
 
@@ -121,9 +121,9 @@ Que pode ser considerado mais consistente no caso $(a,a)$.
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
 
-$(a,b)_H \cap (a,c)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 2\\}\\}$
+$(a,b)_H \cap (a,c)_H = \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 2\\}\\}$
 
-$\leadsto (a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$ 
+$\leadsto (a,b)_H \cap (a,c)_H =  \\{\\{a, 1\\}\\}$ 
 
 Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H:=\\{\\{a, 1\\}\\}$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
 
