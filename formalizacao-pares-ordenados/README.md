@@ -130,7 +130,7 @@ Já de antemão conseguimos perceber que:
 
 $$(a,a)_H = \\{\\{a, 1\\}, \\{a, 2\\}\\}$$
 
-Que pode ser considerado mais consistente no caso $(a,a)$.
+Que pode ser considerado mais consistente e intuitivo no caso $(a,a)$.
 
 ## Intersecção de dois pares ordenados (Hausdorff, 1914).
 
