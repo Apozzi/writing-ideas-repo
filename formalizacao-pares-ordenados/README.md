@@ -126,3 +126,13 @@ $(a,b)_H \cap (a,c)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 
 $\leadsto (a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$ 
 
 Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
+
+## Intersecção de dois pares ordenados, "com segundo valor igual" (Hausdorff, 1914).
+
+Agora aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff em $(b,a)_H$ e $(c,a)_H$, temos:
+
+$(b,a)_H \cap (c,a)_H := \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2\\}\\}$
+
+$\leadsto (b,a)_H \cap (c,a)_H :=  \\{\\{a, 2\\}\\}$ 
+
+Ou seja $(b,a)_H \cap (c,a)_H :=  \\{\\{a, 2\\}\\}$ o que me parece também intuitivo, poderia ter facilmente uma notação do tipo $(,a)_H$ para casos como esse.
