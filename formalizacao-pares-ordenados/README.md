@@ -142,7 +142,7 @@ $$\leadsto (a,b)_H \cap (a,c)_H =  \\{\\{a, 1\\}\\}$$
 
 Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H:=\\{\\{a, 1\\}\\}$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
 
-É claro reparamos que:
+Também quero que reparem que:
 
 $$(a,b)_H \cap (a,c)_H \neq (a \cap a, b \cap c)_H$$
 
