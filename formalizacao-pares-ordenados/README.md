@@ -142,9 +142,11 @@ $$\leadsto (a,b)_H \cap (a,c)_H =  \\{\\{a, 1\\}\\}$$
 
 Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H:=\\{\\{a, 1\\}\\}$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
 
-Infelizmente uma propriedade que poderia ser útil e intuitiva, ainda não é dada como equivalente, ou seja.
+É claro reparamos que:
 
 $$(a,b)_H \cap (a,c)_H \neq (a \cap a, b \cap c)_H$$
+
+O que não é necessariamente é um problema já que $a,b,c$ são objectos que podem não ser necessáriamente conjuntos.
 
 
 ## Intersecção de dois pares ordenados, "com segundo valor igual" (Hausdorff, 1914).
