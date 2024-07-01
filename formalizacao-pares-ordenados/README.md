@@ -110,9 +110,11 @@ Isso implica que:
 $$(a,a)_K \subseteq (a,b)_K$$
 É $\\{a\\} \nsubseteq (a,b)_K$ outro resultado um tanto quando incomodo, dado que $\\{\\{a\\}\\}$ é subconjunto de $(a,b)_K$.
 
-De forma semelhante para um quádruplo ordenado:
+De forma semelhante para um quádruplo ordenado temos:
 
 $$(a,a,a,a) \subseteq (a,a,a,d) \subseteq (a,a,c,d) \subseteq (a,b,c,d) $$
+
+É fácilmente verficavel através de um trabalho manual.
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
