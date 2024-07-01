@@ -142,9 +142,9 @@ Ou seja $(b,a)_H \cap (c,a)_H = \\{\\{a, 2\\}\\}$ o que me parece também intuit
 Já de inicio é possivel ver definição recursiva normalmente usada em Kuratowski não funciona ou seja $((a,b),c) = (a,b,c)$ ou $(a,(b,c)) = (a,b,c)$,
 se utilizassemos a formalização de Haurdorff algo como $(a,(b,c)_H)_H = \\{\\{a, 1\\}, \\{\\{\\{b, 1\\}, \\{c, 2\\}\\}, 2\\}\\}$ já é aparente que é algo um tanto absurdo e nada intuitivo afirmar que algo assim seria $(a, b, c)$, a formalização de Hausdorff não parece bater com essa definição de tripos ordenados, mesmo assim podemos definir de forma mais intuitiva como:
 
-$(a,b,c)=\\{\\{a,1\\},\\{b,2\\},\\{c,3\\}\\}$
+$(a,b,c)_H=\\{\\{a,1\\},\\{b,2\\},\\{c,3\\}\\}$
 
 E ainda generalizar para n-úplos ordenados:
 
-$(a_1, a_2, \ldots, a_n) = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}$
+$(a_1, a_2, \ldots, a_n)_H = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}$
 
