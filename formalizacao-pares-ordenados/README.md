@@ -146,9 +146,10 @@ Também quero que reparem que:
 
 $$(a,b)_H \cap (a,c)_H \neq (a \cap a, b \cap c)_H$$
 
-O que não é necessariamente é um problema já que $a,b,c$ são objectos que podem não ser necessáriamente conjuntos, porém se definirmos todos objetos através de conjuntos - talvez como Ordinais de Von Neumann - talvez se os dois fossem iguais seria uma propriedade extra interessante, vou demonstrar:
-Suponha $a$ e $b$ são Ordinais de Von Neumann:
-Vamos dar como verdadeira o seguinte: 
+O que não é necessariamente é um problema já que $a,b,c$ são objectos que podem não ser necessáriamente conjuntos, porém se definirmos todos objetos através de conjuntos - talvez como Ordinais de Von Neumann - talvez se os dois fossem iguais seria uma propriedade extra interessante, irei demonstrar.
+
+Suponha $a$ e $b$ são Ordinais de Von Neumann, e vamos dar como verdadeira o seguinte afirmação: 
+
 $$(a,b) \cap (c,d) = (a \cap b, c \cap d)$$
 Logo:
 $$(a,b) \cap (c,d) = (\min(a,b), \min(c,d))$$
