@@ -112,7 +112,7 @@ $$(a,a)_K \subseteq (a,b)_K$$
 
 Se dar como verdade $((a, b)_K, c)_K = (a, b, c)_K$ temos de forma semelhante para um quádruplo ordenado temos:
 
-$$(a,a,a,a) \subseteq (a,a,a,d) \subseteq (a,a,c,d) \subseteq (a,b,c,d) $$
+$$(a,a,a,a)_K \subseteq (a,a,a,d)_K \subseteq (a,a,c,d)_K \subseteq (a,b,c,d)_K $$
 
 É fácilmente verificavel através de um trabalho manual.
 
