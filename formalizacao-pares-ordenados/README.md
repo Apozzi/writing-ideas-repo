@@ -108,6 +108,7 @@ Como vimos anteriormente temos como resultado:
 $$(a,b)_K \cap (a,c)_K = (a,a)_K$$
 Isso implica que:
 $$(a,a)_K \subseteq (a,b)_K$$
+É ${a} \nsubseteq (a,b)_K$ outro resultado um tanto quando incomodo.
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
