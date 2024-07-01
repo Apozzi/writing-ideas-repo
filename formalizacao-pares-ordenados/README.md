@@ -125,4 +125,4 @@ $(a,b)_H \cap (a,c)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 
 
 $\leadsto (a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$ 
 
-Ou seja $(a,b)_H \cap $(a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
+Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
