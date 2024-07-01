@@ -107,6 +107,6 @@ Toda vez que um matemático faz um artigo ele define qual das definições vai e
 
 Temos que um par ordenado com definição de Hausdorff pode ser definido como:
 
-$(a,b)_H := \\{\\{a, 1\\}, \\{a, 2\\}\\}$
+$(a,b)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\}$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
