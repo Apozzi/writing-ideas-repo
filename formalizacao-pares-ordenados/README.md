@@ -103,6 +103,8 @@ $$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$$
 
 Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
 
+### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
+
 # Formalização de Hausdorff
 
 Temos que um par ordenado com definição de Hausdorff (Grundzüge der Mengenlehre (1914)) pode ser definido como:
