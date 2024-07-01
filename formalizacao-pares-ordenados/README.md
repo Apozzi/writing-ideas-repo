@@ -151,7 +151,7 @@ Suponha $a$ e $b$ são Ordinais de Von Neumann:
 Vamos dar como verdadeira o seguinte: 
 $$(a,b) \cap (c,d) = (a \cap b, c \cap d)$$
 Logo:
-$$(a,b) \cap (c,d) = (\min(a,b), \min(c,d))$.
+$$(a,b) \cap (c,d) = (\min(a,b), \min(c,d))$$
 
 
 ## Intersecção de dois pares ordenados, "com segundo valor igual" (Hausdorff, 1914).
