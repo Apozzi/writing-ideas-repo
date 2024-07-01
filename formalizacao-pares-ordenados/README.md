@@ -104,7 +104,7 @@ $$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$$
 Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
 
 ## Subconjuntos com formalização Kuratowski
-Como vimos anteriormente temos como resultado 
+Como vimos anteriormente temos como resultado:
 $$(a,b)_K \cap (a,c)_K = (a,a)_K$$
 Isso implica que:
 $$(a,a)_K \subseteq (a,b)_K$$
