@@ -146,7 +146,5 @@ $(a,b,c)=\\{\\{a,1\\},\\{b,2\\},\\{c,3\\}\\}$
 
 E ainda generalizar para n-úplos ordenados:
 
-$
-(a_1, a_2, \ldots, a_n) = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}
-$
+$(a_1, a_2, \ldots, a_n) = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}$
 
