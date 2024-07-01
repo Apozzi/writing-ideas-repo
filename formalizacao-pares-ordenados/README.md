@@ -32,11 +32,11 @@ $$\leadsto (a,a)_K := \\{\\{a\\}\\}$$
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Kuratowski sendo eles $(a,b)_K$ e $(a,c)_K$, temos:
 
-$(a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$
+$$(a,b)_K \cap (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cap \\{\\{a\\}, \\{a,c\\}\\}$$
 
-$\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$
+$$\leadsto (a,b)_K \cap (a,c)_K = \\{\\{a\\}\\}$$
 
-$\leadsto (a,b)_K \cap (a,c)_K = (a,a)_K$
+$$\leadsto (a,b)_K \cap (a,c)_K = (a,a)_K$$
 
 Assim é demonstrado que $(a,b)_K \cap (a,c)_K = (a,a)_K$ um resultado um tanto curioso e consequencia da formalização,
 que não parece se identificar com matemática padrão.
@@ -45,37 +45,37 @@ que não parece se identificar com matemática padrão.
 
 Agora vamos aplicar com $(b,a)_K$ e $(c,a)_K$, temos:
 
-$(b,a)_K \cap (c,a)_K$
+$$(b,a)_K \cap (c,a)_K$$
 
-$\leadsto (b,a)_K \cap (c,a)_K = \\{\\{b\\}, \\{b,a\\}\\} \cap \\{\\{c\\}, \\{c,a\\}\\}$
+$$\leadsto (b,a)_K \cap (c,a)_K = \\{\\{b\\}, \\{b,a\\}\\} \cap \\{\\{c\\}, \\{c,a\\}\\}$$
 
-$\leadsto (b,a)_K \cap (c,a)_K = \varnothing$
+$$\leadsto (b,a)_K \cap (c,a)_K = \varnothing$$
 
 
 ## União de dois pares ordenados (Kuratowski).
 
 Se dessa vez aplicarmos a união:
 
-$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$
+$$(a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}\\} \cup \\{\\{a\\}, \\{a,c\\}\\}$$
 
-$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
+$$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$$
 
 Que não nos leva a simplificação nenhuma e parece já causar problemas com formalização inicial, o que $\\{\\{a\\}, \\{a,b\\}, \\{a,c\\}\\}$
 tenta significar? Que elementos $b$ e $c$ são simultaneamente o segundo item do par ordenado?
 
 Vale reparar também que.
 
-$(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$
+$$(a,b)_K \cup (a,c)_K \neq (a,b \cup c)_K$$
 
 Suponhamos que elementos $a$ e $b$ são conjuntos do qual $b=\\{b_1,b_2, \dots\\}$ e  $c=\\{c_1,c_2, \dots\\}$
 
 Dado $(a,b \cup c)_K$.
 
-$\leadsto (a,b \cup c)_K = \\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \\}$
+$$\leadsto (a,b \cup c)_K = \\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \\}$$
 
 e paralelamente verificamos $(a,b)_K \cup (a,c)_K$ ou seja dado $(a,b)_K \cup (a,c)_K$.
 
-$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$
+$$\leadsto (a,b)_K \cup (a,c)_K = \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$$
 
 Não é dificil reparar que $\\{\\{a\\}, \\{b_1,b_2, \dots\\,c_1,c_2, \dots\\} \\} \neq \\{\\{a\\}, \\{a,\\{b_1,b_2, \dots\\}\\}, \\{a,\\{c_1,c_2, \dots\\}\\}\\}$
 
@@ -87,19 +87,19 @@ Também por motivos triviais é fácilmente demonstravel que $(a,b)_K \cup (a,c)
 
 Na matematica é comum definimos tripos ordenados de forma que $(a,b,c)$ é equivalente $((a,b), c)$ mas de vez enquanto é definido como $(a, (b, c))$, ambas estão "certas" - digo com tom ironico - e na matemática é dito que "não importa" qual definição é utilizada e sim que autor mantenha a consistencia, mas vale lembrar que elas não são definições iguais e isso ao meu ver gera mais problemas por falta de uma definição sequer consistente.
 
-$((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\}\\}$
+$$((a, b)_K, c)_K =  \\{\\{\\{a\\}, \\{a,b\\}\\}, \\{\\{\\{a\\}, \\{a,b\\}\\},c\\}\\}$$
 
 e
 
-$(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$
+$$(a, (b, c)_K)_K =  \\{\\{a\\}, \\{a,\\{\\{b\\}, \\{b,c\\}\\}\\}\\}$$
 
 Com isso já se torna claro que $((a, b)_K, c)_K \neq (a, (b, c)_K)_K$, é claro qualquer um desses pode se tornar definição de $(a,b,c)_K$, temos que:
 
-$((a, b)_K, c)_K = (a, b, c)_K \implies (a, (b, c)_K)_K \neq (a, b, c)_K$
+$$((a, b)_K, c)_K = (a, b, c)_K \implies (a, (b, c)_K)_K \neq (a, b, c)_K$$
 
 Simétricamente, 
 
-$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$
+$$(a, (b, c)_K)_K = (a, b, c)_K \implies ((a, b)_K, c)_K \neq (a, b, c)_K$$
 
 Toda vez que um matemático faz um artigo ele define qual das definições vai estar utilizando por meio um cara ou coroa.
 
@@ -107,13 +107,13 @@ Toda vez que um matemático faz um artigo ele define qual das definições vai e
 
 Temos que um par ordenado com definição de Hausdorff (Grundzüge der Mengenlehre (1914)) pode ser definido como:
 
-$(a,b)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\}$
+$$(a,b)_H := \\{\\{a, 1\\}, \\{b, 2\\}\\}$$
 
 <!-- Repare que esses \\ são meras consequencias do LaTeX utilizado no Markdown --> 
 
 Já de antemão conseguimos perceber que:
 
-$(a,a)_H = \\{\\{a, 1\\}, \\{a, 2\\}\\}$
+$$(a,a)_H = \\{\\{a, 1\\}, \\{a, 2\\}\\}$$
 
 Que pode ser considerado mais consistente no caso $(a,a)$.
 
@@ -121,9 +121,9 @@ Que pode ser considerado mais consistente no caso $(a,a)$.
 
 Se aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff sendo eles $(a,b)_H$ e $(a,c)_H$, temos:
 
-$(a,b)_H \cap (a,c)_H = \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 2\\}\\}$
+$$(a,b)_H \cap (a,c)_H = \\{\\{a, 1\\}, \\{b, 2\\}\\} \cap \\{\\{a, 1\\}, \\{c, 2\\}\\}$$
 
-$\leadsto (a,b)_H \cap (a,c)_H =  \\{\\{a, 1\\}\\}$ 
+$$\leadsto (a,b)_H \cap (a,c)_H =  \\{\\{a, 1\\}\\}$$
 
 Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se algo do tipo tivesse ter uma notação como $(a)_H:=\\{\\{a, 1\\}\\}$ que aparentaria correto intuitivamente, e faz sentido que intersecção seja apenas o primeiro elemento.
 
@@ -131,9 +131,9 @@ Ou seja $(a,b)_H \cap (a,c)_H :=  \\{\\{a, 1\\}\\}$, não seria de se esperar se
 
 Agora aplicamos intersecção de conjuntos e dois pares ordenados com formalização de Hausdorff em $(b,a)_H$ e $(c,a)_H$, temos:
 
-$(b,a)_H \cap (c,a)_H = \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2\\}\\}$
+$$(b,a)_H \cap (c,a)_H = \\{\\{b, 1\\}, \\{a, 2\\}\\} \cap \\{\\{c, 1\\}, \\{a, 2\\}\\}$$
 
-$\leadsto (b,a)_H \cap (c,a)_H =  \\{\\{a, 2\\}\\}$ 
+$$\leadsto (b,a)_H \cap (c,a)_H =  \\{\\{a, 2\\}\\}$$ 
 
 Ou seja $(b,a)_H \cap (c,a)_H = \\{\\{a, 2\\}\\}$ o que me parece também intuitivo já que ele retorna exatamente o segundo elemento, poderia ter fácilmente uma notação do tipo $(,a)_H := \\{\\{a, 2\\}\\}$ para casos como esse. - para manter tal notação consistente deve ser claro que 
 $(,a)_H \neq (\varnothing, a)_H$.
@@ -143,9 +143,9 @@ $(,a)_H \neq (\varnothing, a)_H$.
 Já de inicio é possivel ver definição recursiva normalmente usada em Kuratowski não funciona ou seja $((a,b),c) = (a,b,c)$ ou $(a,(b,c)) = (a,b,c)$,
 se utilizassemos a formalização de Haurdorff algo como $(a,(b,c)_H)_H = \\{\\{a, 1\\}, \\{\\{\\{b, 1\\}, \\{c, 2\\}\\}, 2\\}\\}$ já é aparente que é algo um tanto absurdo e nada intuitivo afirmar que algo assim seria $(a, b, c)$, a formalização de Hausdorff não parece bater com essa definição de tripos ordenados, mesmo assim podemos definir de forma mais intuitiva como:
 
-$(a,b,c)_H=\\{\\{a,1\\},\\{b,2\\},\\{c,3\\}\\}$
+$$(a,b,c)_H=\\{\\{a,1\\},\\{b,2\\},\\{c,3\\}\\}$$
 
 E ainda generalizar para n-úplos ordenados:
 
-$(a_1, a_2, \ldots, a_n)_H = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}$
+$$(a_1, a_2, \ldots, a_n)_H = \\{ \\{a_1, 1\\}, \\{a_2, 2\\}, \ldots, \\{a_n, n\\} \\}$$
 
