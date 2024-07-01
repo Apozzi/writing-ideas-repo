@@ -151,7 +151,9 @@ O que não é necessariamente é um problema já que $a,b,c$ são objectos que p
 Suponha $a$ e $b$ são Ordinais de Von Neumann, e vamos dar como verdadeira o seguinte afirmação: 
 
 $$(a,b) \cap (c,d) = (a \cap b, c \cap d)$$
+
 Logo:
+
 $$(a,b) \cap (c,d) = (\min(a,b), \min(c,d))$$
 
 
