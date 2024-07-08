@@ -106,15 +106,11 @@ Toda vez que um matemático faz um artigo, ele define qual das definições vai 
 ## Subconjuntos com formalização Kuratowski
 Como vimos anteriormente temos como resultado:
 $$(a,b)_K \cap (a,c)_K = (a,a)_K$$
-Isso implica que:
+Isso prova que:
 $$(a,a)_K \subseteq (a,b)_K$$
+
 É $\\{a\\} \nsubseteq (a,b)_K$ outro resultado um tanto quando incomodo, dado que $\\{\\{a\\}\\}$ é subconjunto de $(a,b)_K$.
 
-Se dar como verdade $(a, (b, c)_K)_K = (a, b, c)_K$ temos de forma semelhante para um quádruplo ordenado temos:
-
-$$(a,a,a,a)_K \subseteq (a,a,a,d)_K \subseteq (a,a,c,d)_K \subseteq (a,b,c,d)_K $$
-
-É fácilmente verificavel através de um trabalho manual.
 
 ### TODO Problematica com subconjuntos, Talvez adicionar algumas propriedades.
 
