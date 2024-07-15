@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[OT6,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb} 
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{conjectura}{Conjectura}
+\newtheorem{proposicao}{Proposição}
+\newtheorem{corolario}{Corolário}
+\renewenvironment{proof}[1][Prova]{\par\noindent\textbf{#1.} \rmfamily}{\hfill$\square$\par}
+\newcommand{\armenian}{\fontencoding{OT6}\fontfamily{cmr}\selectfont}
+\DeclareTextFontCommand{\textarmenian}{\armenian}
+\author{Anjo}
+\begin{document}
+\title{Funções Trigonométricas Compostas e Recursivas}
+\sloppy
+\maketitle
+
+\section{Introdução}
+Quando eu era jovem eu gostava muito de explorar
+funções mátematicas e entre uma das minhas explorações mais comuns estavam
+com o fato de eu brincar com as funçoes trigonométricas mais especificamente
+composições do tipo $\cos(\cos(x))$ e $\arcsin(\cos(x))$, meu interesse na criação desse documento se 
+iniciou com amigo Hobbista Mátematico Novato chamado Kaio, que criou determina
+qual hora o sol nasce ou se põe em determinada latitude e longitude do planeta.
+Esse programa que Kaio criou em suas exploraçoes pessoas faziam bastante uso funções trigonométricas compostas.
+
+Vejo que é muito comum na parte de pesquisa matématica que matemáticos se concentrem na criação de teorias e resolução de problemas complexos
+e acabem se esquecendo de resolver e catalogar problemas trigonométricos simples porém pouco explorados. Um dos poucos lugares que eu encontrei fala sobre esses tipos de composições mais incomuns de funções trigonométricas se
+encontram em alguns exercicios do livro de Calculo de Spivak(exercicio 15-18) que fala justamente sobre $arcsin(cos(x))$, mesmo assim pouco se é falado e catalogado sobre elas
+talvez, porque muito se ve que tais composiçoes não envolvem identidades trigonométricas simples e se crer que muitas dessas expressões não se simplificam sem retrições adicionais.
+
+Porém é importante que exista estudo sobre elas, já que mais e mais matemáticos novatos irão se deparar com elas, mas não só por isso mas como também o fato que "olhar aonde não é olhado" 
+pode trazer resultados relevantes ou até criação de novas teorias. 
+
+Também caso for de interesse a utização dessas funções trigonométricas compostas em programas
+como foi no caso do Kaio, eu posso dizer com garantia que é possivel criar programas performaticos simples sem necessáriamente calcular $arcsin(cos(x))$ 
+diretamente, tornando tal conhecimento util para optimização dessas trigonométricas compostas em computadores.
+
+\section{Notação}
+
+Para que não tenha confusões com notação já conhecida $\cos^2(x)=(\cos(x))^2$ eu proponho a seguinte notação
+para trigonométricas compostas, em que: 
+$$\cos_2(x)=\cos(\cos(x))$$
+também: 
+$$\cos_n(x)=\cos \circ \cos \circ ... \circ \cos(x)$$
+\break
+A mesma notação também pode ser utilizada para demais funções trigonométricas.
+
+\section{Resultados Operações Recursivas }
+
+Dado $x \in \mathbb{R}$ recursão infinita abaixo.
+
+$$ \lim\limits_{n \to \infty} \cos_n(x) =  0.739085.. $$
+A constante $0.739085..$ se refere conhecido Número de Dottie denotado por $\textarmenian{ա} = 0.739085..$
+quando aplicamos a função cosseno repetidademente tende a converger para ponto fixo, 
+o ponto fixo pode ser encontrado como sendo  a unica solução real para equação $\cos(x)=x$, da mesma forma para o seno temos:
+
+$$ \lim\limits_{n \to \infty} \sin_n(x) =  0 $$ 
+Sendo também ponto fixo de seno, ou seja a solução para equação $\sin(x)=x$ dado 
+$x \in \mathbb{R}$. 
+
+\begin{conjectura}
+  Dado uma sequencia infinita de funções recursivas $\{f_n\}_{n \in \mathbb{N}}$ aonde $f_0=f$ e $f_n=f_{n-1} \circ f$ e dado conjunto S temos $Y_n, X_n \subseteq S$ $f_n:X_n \to Y_n$ e um $x \in X_0$  aonde $x$ é ponto fixo do qual
+  $f(x)=x$, para todo $y \in X_0$ aonde $\exists k \in \mathbb{N}:f_k(y)=x$  temos que:
+$$\lim\limits_{n \to \infty} f_n(y) =  x$$  
+
+\end{conjectura}
+
+\begin{conjectura}
+  Dado uma sequencia infinita de funções periódicas recursivas nos numéros reais  $\{f_n\}_{n \in \mathbb{N}}$ 
+  aonde $f_0=f$ tal que existe um intervalo I aonde $I \subseteq \mathbb{R}$ que $\exists T \in I, \forall x \in \mathbb{R}: f(x)=f(x+T)$ e $f_n=f_{n-1} \circ f$ e $f_n$ é uma sobrejeção 
+   e $\{i \in I : f(i)\} := \mathbb{R}$, para todo $x \in \mathbb{R}$  aonde $x$ é ponto fixo do qual $f(x)=x$ temos que:
+  $$\exists k \in I, \forall m \in \mathbb{N}: \lim\limits_{n \to \infty} f_n(k+mT) =  x$$  
+
+\end{conjectura}
+\break
+
+Para função tangente sendo aplicada recursivamente temos que a função
+diverge, porém há valores em $x$ no quais a sequencia converge, dado $k \in \mathbb{N}$ os pontos no qual $\tan(x)=0$ são $x=k\pi$
+como sabemos $\tan(0)=0$ a aplicação da função recursivamente naturalmente resultará em zero. Esses também são resultados para equação $\tan(x)=x$.
+
+Logo temos para para todo $k \in \mathbb{N}$ temos:
+$$\lim\limits_{n \to \infty} \tan_n(k\pi) =  0$$
+
+Para função $\arctan$ já temos um ponto fixo de imediato que é $\arctan(0)=0$ e $\frac{d}{dx}(\arctan(x)) = \frac{1}{1 + x^2}$
+o seguinte resultado pode ser provado através do Método de Newton aonde sequencia passa se aproximar de zero:
+$$\lim\limits_{n \to \infty} \arctan_n(x) =  0$$
+
+Para as funções $\arccos$ e $\arcsin$ certos detalhes devem ser reparados elas não são definida para todos números reais
+e sim para intervalo $[-1,1]$, então a medida que elas são aplicadas recursivamente seu dominio vai diminuindo, convergendo para um dominio de um unico ponto.
+
+$$ \text{Dom}(\lim\limits_{n \to \infty} \arccos_n):= \{\textarmenian{ա} \}$$
+$$ \text{Dom}(\lim\limits_{n \to \infty} \arcsin_n):= \{0\}$$
+
+\begin{conjectura}
+  Dado uma sequencia infinita de funções recursivas $\{f_n\}_{n \in \mathbb{N}}$ aonde $f_0=f$ e $f_n=f_{n-1} \circ f$ e dado conjunto S temos $Y_n, X_n \subseteq S$ e $Y_0=X_0$ $f_n:X_n \cap Y_{n} \to Y_{n+1}$,
+  temos que conjunto dominio e imagem de $f_n$ são filtros em S e:
+$$\text{Dom}(f_n):=\bigcap_{k \leq n}{\text{Dom}(f_k)} $$
+$$\text{Img}(f_n):=\bigcap_{k \leq n}{\text{Img}(f_k)} $$ 
+
+\end{conjectura}
+
+O dominio de $\arccos_n$ e $\arcsin_n$ são pontos fixos, mas deve ser reparado que imagem se mantém um intervalo fixo e a medida razão entre o dominio e imagem vai mudando,
+por exemplo imagem de $\arccos_n$ é $[0, \pi]$ logo:
+
+
+$$\{\forall n \in \mathbb{N} \land n > 1:x \in \text{Dom}(\arccos_n): \arccos_n(x)\} := [0, \frac{\pi}{2}]$$
+o que implica que o limite do conjunto imagem:
+
+$$\lim\limits_{n \to \infty}\{x \in \{\textarmenian{ա} \}: \arccos_n(x)\} := [0, \frac{\pi}{2}]$$
+
+\break
+\begin{corolario}
+  $$\arccos_n: {\textarmenian{ա}} \to [0, \frac{\pi}{2}]$$
+\end{corolario}
+
+
+Nesse caso apesar que limite ordinário da função converge em determinado ponto, o limite do 
+conjunto demonstra que resultado diverge.
+
+
+\end{document}
