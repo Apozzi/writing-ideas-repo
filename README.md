@@ -274,10 +274,10 @@ Logo
 
 $$f(x)= 
 \begin{cases} 
-    f(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
-    f(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    f(x), & \text{Se } p_0(x) \text{ é verdadeiro}, \\
+    f(x), & \text{Se } p_1(x) \text{ é verdadeiro}, \\
     \vdots, & \vdots, \\
-    f(x), & \text{Se } P_k \text{ é verdadeiro}
+    f(x), & \text{Se } p_k(x) \text{ é verdadeiro}
 \end{cases}$$
 
 temos que
