@@ -227,13 +227,11 @@ $$f(x)=
 
 # Extensão de Funções para Funções Piecewise
 
-Dado $f$ uma função e uma sequencia de funções que retornam uma proposição lógica $p_n(x)$ aonde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\}$, e uma constante $k$. Definimos uma sequencia de funções $g_n$ aonde:
+Dado $f$ uma função com uma definição qualquer e uma sequencia de funções que retornam uma proposição lógica $p_n(x)$ aonde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\}$, e uma constante $k$. Definimos uma sequencia de funções $g_n$ aonde:
 
 $$g_n(x) = f(x)  \text{se} \quad p_n(x) \quad \text{ é verdadeiro}$$
 
-Repare que para todo $n$ se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$ é possivel que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes.
-
-Logo:
+Repare que para todo $n$ se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$ é possivel que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes. Logo:
 
 $$f(x)= \begin{cases} 
     g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
@@ -242,7 +240,7 @@ $$f(x)= \begin{cases}
     g_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
-Nesse caso transformamos uma função qualquer em uma função piecewise.
+Nesse caso transformamos uma função qualquer em uma função piecewise e suas subfunções podem ou não podem ter uma definição igual a de $f$.
 
 # Trigonométricas
 
