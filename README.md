@@ -183,6 +183,17 @@ $$f(x)=
     h_{k,k}(x), & \text{Se } P_k \text{ é verdadeiro}
 \end{cases}$$
 
+# Extensão de Funções para Funções Piecewise
+
+Dado $f$ uma função aonde $f: A \implies B$ e uma sequencia de proposições lógicas, e uma constante $k$, temos:
+
+$$f(x)= \begin{cases} 
+    f(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    f(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    f(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
 ## Prova
 
 ### Passo 1: Demonstração que $f(x) = g_n(x)$ para algum $n$ com $P_n$ verdadeiro
