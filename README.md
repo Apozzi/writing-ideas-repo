@@ -185,7 +185,7 @@ $$f(x)=
 
 ## Prova
 
-### Passo 1: Demonstração que $f(x) = g_n(x)$ para algum $n$ com $P_n$ verdadeiro}
+### Passo 1: Demonstração que $f(x) = g_n(x)$ para algum $n$ com $P_n$ verdadeiro
 
 Escolhemos um valor $n$ tal que $P_n$ é verdadeiro e $n \leq k$. Pela definição de $f(x)$, temos:
 
@@ -195,7 +195,7 @@ $$f(x) = g_n(x) \quad \text{se} \quad P_n \text{ é verdadeiro}$$
 
 Sabemos que $P_n \implies \neg P_m$ para $m \neq n$. Isso implica que $f(x) \neq g_m(x)$ para todos os $m \neq n$. Portanto, a função $f(x)$ é unicamente determinada por $g_n(x)$ quando $P_n$ é verdadeiro.
 
-### Passo 3: Relação entre $g_n(x)$ e $h_{n,n}(x)$}
+### Passo 3: Relação entre $g_n(x)$ e $h_{n,n}(x)$
 
 Sabemos que $P_n \implies Q_n$. Então, pela definição de $g_n(x)$, temos:
 
