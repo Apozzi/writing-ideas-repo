@@ -252,7 +252,7 @@ Vamos provar que $f(x)$ e sua definição por função piecewise são equivalent
 
 Para cada $n$, escolhemos um $g_n(x)$ tal que:
 
-$$g_n(x) = f(x) \quad \text{se} \quad p_n(x) \text{ é verdadeiro}$
+$$g_n(x) = f(x) \quad \text{se} \quad p_n(x) \text{ é verdadeiro}$$
 
 ### Passo 2: Função $f(x)$ como uma função piecewise
 
