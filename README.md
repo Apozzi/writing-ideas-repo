@@ -229,20 +229,17 @@ $$f(x)=
 
 Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $k$. Definimos uma sequência de funções $g_n$ onde:
 
-$$g_n(x) = 
-\begin{cases}
-    f(x) & \text{se} \quad p_n(x) \text{ é verdadeiro} \\
-    h_n(x) & \text{caso contrário}
-\end{cases}$$
+
+$$g_n(x) = f(x) \quad \text{se} \quad p_0(x) \text{ é verdadeiro}$$
 
 Note que para todo $n$, se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$; é possível que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes. Portanto:
 
 $$f(x)= 
 \begin{cases} 
-    g_0(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
-    g_1(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    g_0(x), & \text{Se } p_0(x) \text{ é verdadeiro}, \\
+    g_1(x), & \text{Se } p_1(x) \text{ é verdadeiro}, \\
     \vdots, & \vdots, \\
-    g_k(x), & \text{Se } P_k \text{ é verdadeiro}
+    g_k(x), & \text{Se } p_k(x) \text{ é verdadeiro}
 \end{cases}$$
 
 Neste caso, transformamos uma função qualquer em uma função piecewise, e suas subfunções podem ou não ter uma definição igual à de $f$.
