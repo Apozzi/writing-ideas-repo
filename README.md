@@ -157,7 +157,7 @@ print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 
 
 # Exclusão em Funções Piecewise
 
-Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $P_n \implies Q_n$ e $g_n$ e $h_n$ sendo duas sequencias de subfunções, e $k$ uma constante, definimos:
+Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $P_n \implies Q_n$ e $g_n$ e $h_{n,m}$ sendo duas sequencias de subfunções, e $k$ uma constante, definimos:
 
 $$f(x)= \begin{cases} 
     g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
@@ -166,20 +166,20 @@ $$f(x)= \begin{cases}
     g_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
-$$g(x)= \begin{cases} 
-    h_0(x), & \text{Se } Q_0 \text{ é Verdadeiro}, \\
-    h_1(x), & \text{Se } Q_1 \text{ é Verdadeiro}, \\
+$$g_n(x)= \begin{cases} 
+    h_{n,0}(x), & \text{Se } Q_0 \text{ é Verdadeiro}, \\
+    h_{n,1}(x), & \text{Se } Q_1 \text{ é Verdadeiro}, \\
     \vdots, & \vdots, \\
-    h_k(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
+    h_{n,k}(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
 Logo:
 
 $$f(x)= \begin{cases} 
-    h_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
-    h_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    h_{0,0}(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    h_{1,1}(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
     \vdots, & \vdots, \\
-    h_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+    h_{k,k}(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
 
