@@ -280,9 +280,11 @@ $$f(x)=
     f(x), & \text{Se } p_k(x) \text{ é verdadeiro}
 \end{cases}$$
 
-temos que
+Para todo $p_n(x)$, temos que:
 
 $$f(x)=f(x)$$
+
+O inverso desse processo lógico também é válido.
 
 Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem das proposições $P_n$.
 
