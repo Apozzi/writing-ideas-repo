@@ -174,6 +174,7 @@ $$g(x)= \begin{cases}
 \end{cases}$$
 
 Logo:
+
 $$f(x)= \begin{cases} 
     h_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
     h_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
