@@ -251,7 +251,7 @@ Neste caso, transformamos uma função qualquer em uma função piecewise, e sua
 
 Vamos provar que $f(x)$ pode ser reescrita como uma função piecewise utilizando as subfunções $g_n$.
 
-## Passo 1: Definição de $g_n(x)$
+### Passo 1: Definição de $g_n(x)$
 
 Para cada $n$, definimos $g_n(x)$ como:
 
@@ -261,9 +261,9 @@ $$g_n(x) =
     h_n(x) & \text{caso contrário}
 \end{cases}$$
 
-onde $h_n(x)$ é alguma função definida em \( X \).
+onde $h_n(x)$ é alguma função definida em $X$.
 
-## Passo 2: Função $f(x)$ como uma função piecewise
+### Passo 2: Função $f(x)$ como uma função piecewise
 
 Queremos mostrar que:
 
@@ -279,11 +279,11 @@ Por definição de $g_n(x)$, se $P_n$ é verdadeiro, então $g_n(x) = f(x)$. Por
 
 $$f(x) = g_n(x)$$
 
-## Passo 3: Exclusão das outras possibilidades $P_m$ com $m \neq n$
+### Passo 3: Exclusão das outras possibilidades $P_m$ com $m \neq n$
 
 Sabemos que $P_n \implies \neg P_m$ para $m \neq n$. Isso implica que $f(x) \neq g_m(x)$ para todos os $m \neq n$. Portanto, a função $f(x)$ é unicamente determinada por $g_n(x)$ quando $P_n$ é verdadeiro.
 
-## Conclusão
+### Conclusão
 
 Reescrevendo $f(x)$ de forma piecewise, obtemos:
 
