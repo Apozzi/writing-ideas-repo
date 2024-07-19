@@ -286,7 +286,7 @@ $$f(x)=f(x)$$
 
 O inverso desse processo lógico também é válido.
 
-Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem das proposições $P_n$.
+Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem de $p_n(x)$.
 
 # Trigonométricas
 
