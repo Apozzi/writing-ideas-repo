@@ -231,9 +231,20 @@ Dado $f$ uma função e uma sequencia de funções que retornam uma proposição
 
 Definimos uma sequencia de funções $g_n$ aonde:
 
-$$g_n(x) = f(x)  \text{se}  p_n(x) \text{ é verdadeiro}$$
+$$g_n(x) = f(x)  \text{se} \quad p_n(x) \quad \text{ é verdadeiro}$$
 
-Repare que: 
+Repare que para todo $n$ se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$ é possivel que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes.
+
+Logo:
+
+$$f(x)= \begin{cases} 
+    g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    g_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    g_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
+Nesse caso transformamos uma função qualquer em uma função piecewise.
 
 # Trigonométricas
 
