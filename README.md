@@ -227,7 +227,7 @@ $$f(x)=
 
 # Extensão de Funções para Funções Piecewise
 
-Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $ k $. Definimos uma sequência de funções $g_n$ onde:
+Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $k$. Definimos uma sequência de funções $g_n$ onde:
 
 $$g_n(x) = 
 \begin{cases}
