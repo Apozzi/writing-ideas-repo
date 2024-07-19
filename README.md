@@ -227,20 +227,75 @@ $$f(x)=
 
 # Extensão de Funções para Funções Piecewise
 
-Dado $f$ uma função com uma definição qualquer e uma sequencia de funções que retornam uma proposição lógica $p_n(x)$ aonde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\}$, e uma constante $k$. Definimos uma sequencia de funções $g_n$ aonde:
+Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $ k $. Definimos uma sequência de funções $g_n$ onde:
 
-$$g_n(x) = f(x) \quad  \text{se} \quad p_n(x) \quad \text{ é verdadeiro}$$
-
-Repare que para todo $n$ se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$ é possivel que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes. Logo:
-
-$$f(x)= \begin{cases} 
-    g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
-    g_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    g_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+$$g_n(x) = 
+\begin{cases}
+    f(x) & \text{se} \quad p_n(x) \text{ é verdadeiro} \\
+    h_n(x) & \text{caso contrário}
 \end{cases}$$
 
-Nesse caso transformamos uma função qualquer em uma função piecewise e suas subfunções podem ou não podem ter uma definição igual a de $f$.
+Note que para todo $n$, se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$; é possível que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes. Portanto:
+
+$$f(x)= 
+\begin{cases} 
+    g_0(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
+    g_1(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    \vdots, & \vdots, \\
+    g_k(x), & \text{Se } P_k \text{ é verdadeiro}
+\end{cases}$$
+
+Neste caso, transformamos uma função qualquer em uma função piecewise, e suas subfunções podem ou não ter uma definição igual à de $f$.
+
+## Prova
+
+Vamos provar que $f(x)$ pode ser reescrita como uma função piecewise utilizando as subfunções $g_n$.
+
+## Passo 1: Definição de $g_n(x)$
+
+Para cada $n$, definimos $g_n(x)$ como:
+
+$$g_n(x) = 
+\begin{cases}
+    f(x) & \text{se} \quad p_n(x) \text{ é verdadeiro} \\
+    h_n(x) & \text{caso contrário}
+\end{cases}$$
+
+onde $h_n(x)$ é alguma função definida em \( X \).
+
+## Passo 2: Função $f(x)$ como uma função piecewise
+
+Queremos mostrar que:
+
+$$f(x)= 
+\begin{cases} 
+    g_0(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
+    g_1(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    \vdots, & \vdots, \\
+    g_k(x), & \text{Se } P_k \text{ é verdadeiro}
+\end{cases}$$
+
+Por definição de $g_n(x)$, se $P_n$ é verdadeiro, então $g_n(x) = f(x)$. Portanto, para todo $n$ com $P_n$ verdadeiro, temos:
+
+$$f(x) = g_n(x)$$
+
+## Passo 3: Exclusão das outras possibilidades $P_m$ com $m \neq n$
+
+Sabemos que $P_n \implies \neg P_m$ para $m \neq n$. Isso implica que $f(x) \neq g_m(x)$ para todos os $m \neq n$. Portanto, a função $f(x)$ é unicamente determinada por $g_n(x)$ quando $P_n$ é verdadeiro.
+
+## Conclusão
+
+Reescrevendo $f(x)$ de forma piecewise, obtemos:
+
+$$f(x)= 
+\begin{cases} 
+    g_0(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
+    g_1(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    \vdots, & \vdots, \\
+    g_k(x), & \text{Se } P_k \text{ é verdadeiro}
+\end{cases}$$
+
+Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem das proposições $P_n$.
 
 # Trigonométricas
 
