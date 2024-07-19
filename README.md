@@ -175,23 +175,33 @@ $$g_n(x)= \begin{cases}
 
 Logo:
 
-Passo 1: Demonstração que $f(x) = g_n(x)$ para algum $n$ com $P_n$ verdadeiro}
+$$f(x)= 
+\begin{cases} 
+    h_{0,0}(x), & \text{Se } P_0 \text{ é verdadeiro}, \\
+    h_{1,1}(x), & \text{Se } P_1 \text{ é verdadeiro}, \\
+    \vdots, & \vdots, \\
+    h_{k,k}(x), & \text{Se } P_k \text{ é verdadeiro}
+\end{cases}$$
+
+## Prova
+
+### Passo 1: Demonstração que $f(x) = g_n(x)$ para algum $n$ com $P_n$ verdadeiro}
 
 Escolhemos um valor $n$ tal que $P_n$ é verdadeiro e $n \leq k$. Pela definição de $f(x)$, temos:
 
 $$f(x) = g_n(x) \quad \text{se} \quad P_n \text{ é verdadeiro}$$
 
-Passo 2: Exclusão das outras possibilidades $P_m$ com $m \neq n $
+### Passo 2: Exclusão das outras possibilidades $P_m$ com $m \neq n $
 
 Sabemos que $P_n \implies \neg P_m$ para $m \neq n$. Isso implica que $f(x) \neq g_m(x)$ para todos os $m \neq n$. Portanto, a função $f(x)$ é unicamente determinada por $g_n(x)$ quando $P_n$ é verdadeiro.
 
-Passo 3: Relação entre $g_n(x)$ e $h_{n,n}(x)$}
+### Passo 3: Relação entre $g_n(x)$ e $h_{n,n}(x)$}
 
 Sabemos que $P_n \implies Q_n$. Então, pela definição de $g_n(x)$, temos:
 
 $$g_n(x) = h_{n,n}(x) \quad \text{se} \quad Q_n \text{ é verdadeiro}$$
 
-Passo 4: Conclusão final sobre $f(x)$
+### Passo 4: Conclusão final sobre $f(x)$
 
 Combinando os resultados anteriores, para todo $n$ com $n \leq k$ e $P_n$ verdadeiro, temos:
 
