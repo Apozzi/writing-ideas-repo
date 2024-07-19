@@ -231,7 +231,7 @@ Dado $f$ uma função e uma sequencia de funções que retornam uma proposição
 
 Definimos uma sequencia de funções $g_n$ aonde:
 
-$$g_n(x) = f(x) \quad \text{se} \quad P_n(x) \text{ é verdadeiro}$$
+$$g_n(x) = f(x)  \text{se}  p_n(x) \text{ é verdadeiro}$$
 
 Repare que: 
 
