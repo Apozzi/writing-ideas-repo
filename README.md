@@ -155,6 +155,10 @@ print(f(3, propositions, functions))   # Deve usar a segunda função: 3*3 + 1 =
 print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 = 4
 ```
 
+# Exclusão em Funções Piecewise
+
+Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \not P_m$ e $P_n \implies Q_n$.
+
 
 # Trigonométricas
 
