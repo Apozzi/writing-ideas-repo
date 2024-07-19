@@ -201,6 +201,10 @@ Sabemos que $P_n \implies Q_n$. Então, pela definição de $g_n(x)$, temos:
 
 $$g_n(x) = h_{n,n}(x) \quad \text{se} \quad Q_n \text{ é verdadeiro}$$
 
+implica em: 
+
+$$g_n(x) = h_{n,n}(x) \quad \text{se} \quad P_n \text{ é verdadeiro}$$
+
 ### Passo 4: Conclusão final sobre $f(x)$
 
 Combinando os resultados anteriores, para todo $n$ com $n \leq k$ e $P_n$ verdadeiro, temos:
