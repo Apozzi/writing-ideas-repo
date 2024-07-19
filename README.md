@@ -173,6 +173,15 @@ $$g(x)= \begin{cases}
     h_k(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
+Logo:
+$$f(x)= \begin{cases} 
+    h_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    h_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    h_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
+
 
 # Trigonométricas
 
