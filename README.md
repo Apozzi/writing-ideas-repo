@@ -157,7 +157,7 @@ print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 
 
 # Exclusão em Funções Piecewise
 
-Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \not P_m$ e $P_n \implies Q_n$.
+Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $P_n \implies Q_n$ e $g_n$ sendo uma sequencia de subfunções.
 
 
 # Trigonométricas
