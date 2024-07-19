@@ -227,7 +227,7 @@ $$f(x)=
 
 # Extensão de Funções para Funções Piecewise
 
-Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $k$. Definimos uma sequência de funções $g_n$ onde:
+Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $k$. Existe uma sequência de funções $g_n$ onde:
 
 
 $$g_n(x) = f(x) \quad \text{se} \quad p_0(x) \text{ é verdadeiro}$$
@@ -248,15 +248,15 @@ Neste caso, transformamos uma função qualquer em uma função piecewise, e sua
 
 Vamos provar que $f(x)$ e sua definição por função piecewise são equivalentes.
 
-### Passo 1: Definição de $g_n(x)$
+### Passo 1: Existência de $g_n(x)$
 
-Para cada $n$, definimos $g_n(x)$ como:
+Para cada $n$, escolhemos um $g_n(x)$ tal que:
 
-$$g_n(x) = f(x) \quad \text{se} \quad p_0(x) \text{ é verdadeiro}$$
+$$g_n(x) = f(x) \quad \text{se} \quad p_n(x) \text{ é verdadeiro}$
 
 ### Passo 2: Função $f(x)$ como uma função piecewise
 
-Dado
+Dado:
 
 $$f(x)= 
 \begin{cases} 
@@ -266,11 +266,15 @@ $$f(x)=
     g_k(x), & \text{Se } p_k(x) \text{ é verdadeiro}
 \end{cases}$$
 
-Por definição de $g_n(x)$, se $P_n$ é verdadeiro, então $g_n(x) = f(x)$. Portanto, para todo $n$ com $P_n$ verdadeiro, temos:
+### Passo 3: Equivalência entre $f(x)$ e $g_n(x)$
+
+Por definição de $g_n(x)$, se $p_n(x)$ é verdadeiro, então $g_n(x) = f(x)$. Portanto, para todo $n$ com $p_n(x)$ verdadeiro, temos:
 
 $$f(x) = g_n(x)$$
 
-Logo
+### Passo 4: Reescrita de $f(x)$
+
+Logo:
 
 $$f(x)= 
 \begin{cases} 
@@ -279,6 +283,8 @@ $$f(x)=
     \vdots, & \vdots, \\
     f(x), & \text{Se } p_k(x) \text{ é verdadeiro}
 \end{cases}$$
+
+### Passo 5: Conclusão
 
 Para todo $p_n(x)$, temos que:
 
