@@ -157,7 +157,7 @@ print(f(6, propositions, functions))   # Deve usar a terceira função: -6 + 10 
 
 # Exclusão em Funções Piecewise
 
-Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $P_n \implies Q_n$ e $g_n$ e $h_{n,m}$ sendo duas sequencias de subfunções, e $k$ uma constante, definimos:
+Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $P_n \implies Q_n$ e $g_n$ e $h_{n,m}$ sendo duas sequencias de subfunções, e $k$ uma constante e $n \leq k$, definimos:
 
 $$f(x)= \begin{cases} 
     g_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
@@ -182,7 +182,22 @@ $$f(x)= \begin{cases}
     h_{k,k}(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
+## Prova
 
+Escolhemos um valor $P_n$ aonde $P_n$ é dado como verdadeiro e $n \leq k$, logo $f(x)= g_n(x)$ através da definição de $f(x)$ e sabemos também que  $P_n \implies \neg P_m$ logo $f(x) \neq g_m(x)$.
+
+Temos também que  $P_n \implies Q_n$, logo $g_n(x) = h_{n,n}(x)$ através da definição de $g_n(x)$.
+
+Logo, para todo $n$ aonde $n \leq k$ temos $f(x)= g_n(x)$ e $g_n(x) = h_{n,n}(x)$ então $f(x)=h_{n,n}(x)$ 
+
+Reescrevendo $f(x)$ de forma condicional temos:
+
+$$f(x)= \begin{cases} 
+    h_{0,0}(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    h_{1,1}(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    h_{k,k}(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
 
 # Trigonométricas
 
