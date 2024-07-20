@@ -229,7 +229,6 @@ $$f(x)=
 
 Dada uma função $f$ com uma definição qualquer e uma sequência de funções que retornam uma proposição lógica $p_n(x)$, onde $p_n: X \to \\{\text{Verdadeiro}, \text{Falso}\\} $, e uma constante $k$. Existe uma sequência de funções $g_n$ onde:
 
-
 $$g_n(x) = f(x) \quad \text{se} \quad p_0(x) \text{ é verdadeiro}$$
 
 Note que para todo $n$, se $p_n(x)$ for falso, não necessariamente $g_n(x) = f(x)$; é possível que $g_n(x) \neq f(x)$, logo $g_n$ e $f$ podem ser funções diferentes. Portanto:
@@ -293,6 +292,41 @@ $$f(x)=f(x)$$
 O inverso desse processo lógico também é válido.
 
 Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem de $p_n(x)$.
+
+# Funções Piecewise Compostas
+
+Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $r_n$ e $t_{n,m}$ sendo duas sequencias de subfunções, e $k$ uma constante e $n \leq k$, dado um valor $n$ definimos:
+
+$$f(x)= \begin{cases} 
+    r_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    r_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    r_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
+$$r_n(x)= \begin{cases} 
+    t_{n,0}(x), & \text{Se } Q_0 \text{ é Verdadeiro}, \\
+    t_{n,1}(x), & \text{Se } Q_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    t_{n,k}(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
+Podemos simplificar a expressão para:
+
+$$f(x)= \begin{cases} 
+    r_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
+    r_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    t_{n,0}(x), & \text{Se } P_n \text{ e } Q_0 \text{ é Verdadeiro}, \\
+    t_{n,1}(x), & \text{Se } P_n \text{ e } Q_1 \text{ é Verdadeiro}, \\
+    \vdots, & \vdots, \\
+    t_{n,k}(x), & \text{Se } P_n \text{ e } Q_k \text{ é Verdadeiro} \\
+    \vdots, & \vdots, \\
+    r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
+\end{cases}$$
+
 
 # Trigonométricas
 
