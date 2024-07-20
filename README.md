@@ -341,6 +341,78 @@ $$f(x)= \begin{cases}
     r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
 \end{cases}$$
 
+##  Prova
+
+Dado sequências de proposições lógicas $P_n$ e $Q_n$ onde para todo $m, n \in \mathbb{N}$ com $m \neq n$, temos $P_n \implies \neg P_m$, e $r_n$ e \$t_{n,m}$ sendo duas sequências de subfunções, e $k$ uma constante com $n \leq k $, definimos:
+
+$$f(x) = \begin{cases} 
+    r_0(x), & \text{se } P_0 \text{ é verdadeiro}, \\
+    r_1(x), & \text{se } P_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    r_n(x), & \text{se } P_n \text{ é verdadeiro}, \\
+    \vdots \\
+    r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
+\end{cases} $$
+
+onde cada \( r_n(x) \) é definido por:
+
+$$r_n(x) = \begin{cases} 
+    t_{n,0}(x), & \text{se } Q_0 \text{ é verdadeiro}, \\
+    t_{n,1}(x), & \text{se } Q_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    t_{n,k}(x), & \text{se } Q_k \text{ é verdadeiro} \\
+\end{cases} $$
+
+Vamos simplificar essa expressão substituindo $r_n(x)$ na definição de $f(x)$:
+
+$$f(x) = \begin{cases} 
+    r_0(x), & \text{se } P_0 \text{ é verdadeiro}, \\
+    r_1(x), & \text{se } P_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    \begin{cases} 
+        t_{n,0}(x), & \text{se } Q_0 \text{ é verdadeiro}, \\
+        t_{n,1}(x), & \text{se } Q_1 \text{ é verdadeiro}, \\
+        \vdots \\
+        t_{n,k}(x), & \text{se } Q_k \text{ é verdadeiro} \\
+    \end{cases}, & \text{se } P_n \text{ é verdadeiro}, \\
+    \vdots \\
+    r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
+\end{cases} $$
+
+Podemos juntar as condições para os valores de $f(x)$ correspondentes a $r_n(x)$:
+
+$$f(x) = \begin{cases} 
+    r_0(x), & \text{se } P_0 \text{ é verdadeiro}, \\
+    r_1(x), & \text{se } P_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    t_{n,0}(x), & \text{se } P_n \text{ e } Q_0 \text{ são verdadeiros}, \\
+    t_{n,1}(x), & \text{se } P_n \text{ e } Q_1 \text{ são verdadeiros}, \\
+    \vdots \\
+    t_{n,k}(x), & \text{se } P_n \text{ e } Q_k \text{ são verdadeiros}, \\
+    \vdots \\
+    r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
+\end{cases}$$
+
+Se \( P_n \implies Q_n \), então sempre que \( P_n \) é verdadeiro, \( Q_n \) também é verdadeiro. Isso nos permite simplificar ainda mais a expressão, removendo a necessidade de verificar $P_n$ para as subfunções $t_{n,m}(x)$:
+
+Como$P_n \implies Q_n$, temos que $Q_n$ é verdadeiro sempre que $P_n$ é verdadeiro. Portanto, as condições para $t_{n,m}(x)$ tornam-se simplesmente:
+
+$$
+f(x) = \begin{cases} 
+    r_0(x), & \text{se } P_0 \text{ é verdadeiro}, \\
+    r_1(x), & \text{se } P_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    t_{n,0}(x), & \text{se } Q_0 \text{ é verdadeiro}, \\
+    t_{n,1}(x), & \text{se } Q_1 \text{ é verdadeiro}, \\
+    \vdots \\
+    t_{n,k}(x), & \text{se } Q_k \text{ é verdadeiro}, \\
+    \vdots \\
+    r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
+\end{cases} 
+$$
+
+Portanto, ao assumirmos que $P_n \implies Q_n$, conseguimos simplificar a expressão original para uma que não requer verificar $P_n$ diretamente para as subfunções $t_{n,m}(x)$, pois a verdade de $P_n$ já garante a verdade de $Q_n$.
+
 
 # Trigonométricas
 
