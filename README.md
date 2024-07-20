@@ -393,9 +393,9 @@ $$f(x) = \begin{cases}
     r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
 \end{cases}$$
 
-Se \( P_n \implies Q_n \), então sempre que \( P_n \) é verdadeiro, \( Q_n \) também é verdadeiro. Isso nos permite simplificar ainda mais a expressão, removendo a necessidade de verificar $P_n$ para as subfunções $t_{n,m}(x)$:
+Se $P_n \implies Q_n$, então sempre que $P_n$ é verdadeiro, $Q_n$ também é verdadeiro. Isso nos permite simplificar ainda mais a expressão, removendo a necessidade de verificar $P_n$ para as subfunções $t_{n,m}(x)$:
 
-Como$P_n \implies Q_n$, temos que $Q_n$ é verdadeiro sempre que $P_n$ é verdadeiro. Portanto, as condições para $t_{n,m}(x)$ tornam-se simplesmente:
+Como $P_n \implies Q_n$, temos que $Q_n$ é verdadeiro sempre que $P_n$ é verdadeiro. Portanto, as condições para $t_{n,m}(x)$ tornam-se simplesmente:
 
 $$
 f(x) = \begin{cases} 
