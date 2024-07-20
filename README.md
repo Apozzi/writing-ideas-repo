@@ -295,54 +295,6 @@ Portanto, mostramos que uma função $f$ pode ser transformada em uma função p
 
 # Funções Piecewise Compostas
 
-Dado sequencias de proposições lógicas $P_n$ e $Q_n$ aonde para todo $m,n \in \mathbb{N}$ aonde $m \neq n$ temos $P_n \implies \neg P_m$ e $r_n$ e $t_{n,m}$ sendo duas sequencias de subfunções, e $k$ uma constante e $n \leq k$, dado um valor $n$ definimos:
-
-$$f(x)= \begin{cases} 
-    r_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
-    r_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    r_n(x), & \text{Se } P_n \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
-\end{cases}$$
-
-$$r_n(x)= \begin{cases} 
-    t_{n,0}(x), & \text{Se } Q_0 \text{ é Verdadeiro}, \\
-    t_{n,1}(x), & \text{Se } Q_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    t_{n,k}(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
-\end{cases}$$
-
-Podemos simplificar a expressão para:
-
-$$f(x)= \begin{cases} 
-    r_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
-    r_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    t_{n,0}(x), & \text{Se } P_n \text{ e } Q_0 \text{ é Verdadeiro}, \\
-    t_{n,1}(x), & \text{Se } P_n \text{ e } Q_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    t_{n,k}(x), & \text{Se } P_n \text{ e } Q_k \text{ é Verdadeiro} \\
-    \vdots, & \vdots, \\
-    r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
-\end{cases}$$
-
-Caso $P_n \implies Q_n$ é possivel simplificar a expressão ainda mais para:
-
-$$f(x)= \begin{cases} 
-    r_0(x), & \text{Se } P_0 \text{ é Verdadeiro}, \\
-    r_1(x), & \text{Se } P_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    t_{n,0}(x), & \text{Se } Q_0 \text{ é Verdadeiro}, \\
-    t_{n,1}(x), & \text{Se } Q_1 \text{ é Verdadeiro}, \\
-    \vdots, & \vdots, \\
-    t_{n,k}(x), & \text{Se } Q_k \text{ é Verdadeiro} \\
-    \vdots, & \vdots, \\
-    r_k(x), & \text{Se } P_k \text{ é Verdadeiro} \\
-\end{cases}$$
-
-##  Prova
-
 Dado sequências de proposições lógicas $P_n$ e $Q_n$ onde para todo $m, n \in \mathbb{N}$ com $m \neq n$, temos $P_n \implies \neg P_m$, e $r_n$ e \$t_{n,m}$ sendo duas sequências de subfunções, e $k$ uma constante com $n \leq k $, definimos:
 
 $$f(x) = \begin{cases} 
