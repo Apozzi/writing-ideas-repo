@@ -354,7 +354,7 @@ $$f(x) = \begin{cases}
     r_k(x), & \text{se } P_k \text{ é verdadeiro} \\
 \end{cases} $$
 
-onde cada \( r_n(x) \) é definido por:
+onde cada $r_n(x)$ é definido por:
 
 $$r_n(x) = \begin{cases} 
     t_{n,0}(x), & \text{se } Q_0 \text{ é verdadeiro}, \\
