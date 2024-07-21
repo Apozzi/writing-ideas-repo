@@ -401,7 +401,7 @@ $$\leadsto |x - \lceil{x}\rceil| = \begin{cases}
 
 $$\leadsto |x - \lceil{x}\rceil| = \begin{cases} 
     x - n, & \text{se } x \in [n,\infty) \cap [n,n+1), \\
-    -(x - n), & \text{se } x \in (\infty , n) \cap [n,n+1) \\
+    -(x - n), & \text{se } x \in (-\infty , n) \cap [n,n+1) \\
 \end{cases}$$
 
 
