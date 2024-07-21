@@ -383,8 +383,8 @@ $$x + \lceil{x}\rceil = x + n \quad \text{se} \quad x \in [n,n+1) $$
 Podemos então considerar a seguinte composição:
 
 $$|x + \lceil{x}\rceil| = \begin{cases} 
-    x + n, & \text{se } x \geq 0 \text{ e } x \in [n,n+1), \\
-    -x - n, & \text{se } x < 0 \text{ e } x \in [n,n+1) \\
+    x + n, & \text{se } x + n \geq 0 \text{ e } x \in [n,n+1), \\
+    -x - n, & \text{se } x + n < 0 \text{ e } x \in [n,n+1) \\
 \end{cases}$$
 
 ## Exemplo 2
