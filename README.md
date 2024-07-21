@@ -374,7 +374,7 @@ $$|x| = \begin{cases}
 
 Também definimos a função de teto como, dado $n \in \mathbb{Z}$:
 
-$$\ceil{x} = n \quad \text{se} \quad x \in [n,n+1] $$
+$$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1] $$
 
 
 # Trigonométricas
