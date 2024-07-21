@@ -378,7 +378,9 @@ $$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
 
 Portanto,
 
-$$x - \lceil{x}\rceil = x - n \quad \text{se} \quad x \in [n,n+1) $$
+$$\lceil{x + \alpha}\rceil = n \quad \text{se} \quad (x + \alpha) \in [n,n+1) $$
+
+$$x - \lceil{x + \alpha}\rceil = x - n \quad \text{se} \quad (x + \alpha) \in [n,n+1) $$
 
 Podemos então considerar a seguinte composição:
 
