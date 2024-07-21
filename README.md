@@ -363,6 +363,19 @@ $$
 
 Portanto, ao assumirmos que $P_n \implies Q_n$, conseguimos simplificar a expressão original para uma que não requer verificar $P_n$ diretamente para as subfunções $t_{n,m}(x)$, pois a verdade de $P_n$ já garante a verdade de $Q_n$.
 
+## Exemplo
+
+Dado a função do valor absoluto definida como:
+
+$$|x| = \begin{cases} 
+    x, & \text{se } x \geq 0, \\
+    -x, & \text{se } x < 0, \\
+\end{cases}$$
+
+Também definimos a função de teto como, dado $n \in \mathbb{Z}$:
+
+$$\ceil{x} = n \quad \text{se} \quad x \in [n,n+1] $$
+
 
 # Trigonométricas
 
