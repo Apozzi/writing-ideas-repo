@@ -435,8 +435,8 @@ $$\leadsto |x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases}
 Suponhamos que $\beta \in [\alpha, \alpha+1)$, então $n - \beta \in [n - \alpha, n - \alpha+1)$, logo:
 
 $$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases} 
-    x + \beta - n, & \text{se } x \in [n-\alpha,n - \beta), \\
-    -(x + \beta - n), & \text{se } x \in [n - \beta,n-\alpha+1) \\
+    x + \beta - n, & \text{se } x \in [n - \beta,n-\alpha+1), \\
+    -(x + \beta - n), & \text{se } x \in [n-\alpha,n - \beta) \\
 \end{cases}$$
 
 
