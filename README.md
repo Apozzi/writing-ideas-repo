@@ -378,30 +378,30 @@ $$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
 
 Portanto,
 
-$$x + \lceil{x}\rceil = x + n \quad \text{se} \quad x \in [n,n+1) $$
+$$x - \lceil{x}\rceil = x - n \quad \text{se} \quad x \in [n,n+1) $$
 
 Podemos então considerar a seguinte composição:
 
-$$|x + \lceil{x}\rceil| = \begin{cases} 
-    x + n, & \text{se } x + n \geq 0 \text{ e } x \in [n,n+1), \\
-    -(x + n), & \text{se } x + n < 0 \text{ e } x \in [n,n+1) \\
+$$|x - \lceil{x}\rceil| = \begin{cases} 
+    x - n, & \text{se } x - n \geq 0 \text{ e } x \in [n,n+1), \\
+    -(x - n), & \text{se } x - n < 0 \text{ e } x \in [n,n+1) \\
 \end{cases}$$
 
 Reescrevendo:
 
-$$|x + \lceil{x}\rceil| = \begin{cases} 
-    x + n, & \text{se } x  \geq -n \text{ e } x \in [n,n+1), \\
-    -(x + n), & \text{se } x  < -n \text{ e } x \in [n,n+1) \\
+$$|x - \lceil{x}\rceil| = \begin{cases} 
+    x - n, & \text{se } x  \geq n \text{ e } x \in [n,n+1), \\
+    -(x - n), & \text{se } x  < n \text{ e } x \in [n,n+1) \\
 \end{cases}$$
 
-$$\leadsto |x + \lceil{x}\rceil| = \begin{cases} 
-    x + n, & \text{se } x \in [-n,\infty) \text{ e } x \in [n,n+1), \\
-    -(x + n), & \text{se } x \in (-\infty , -n) \text{ e } x \in [n,n+1) \\
+$$\leadsto |x - \lceil{x}\rceil| = \begin{cases} 
+    x - n, & \text{se } x \in [n,\infty) \text{ e } x \in [n,n+1), \\
+    -(x - n), & \text{se } x \in (-\infty , n) \text{ e } x \in [n,n+1) \\
 \end{cases}$$
 
-$$\leadsto |x + \lceil{x}\rceil| = \begin{cases} 
-    x + n, & \text{se } x \in [-n,\infty) \cap [n,n+1), \\
-    -(x + n), & \text{se } x \in (-\infty , -n) \cap [n,n+1) \\
+$$\leadsto |x - \lceil{x}\rceil| = \begin{cases} 
+    x - n, & \text{se } x \in [n,\infty) \cap [n,n+1), \\
+    -(x - n), & \text{se } x \in (\infty , n) \cap [n,n+1) \\
 \end{cases}$$
 
 
