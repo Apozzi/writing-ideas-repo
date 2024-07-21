@@ -369,7 +369,7 @@ Dado a função do valor absoluto definida como:
 
 $$|x| = \begin{cases} 
     x, & \text{se } x \geq 0, \\
-    -x, & \text{se } x < 0, \\
+    -x, & \text{se } x < 0 \\
 \end{cases}$$
 
 Também definimos a função de teto como, dado $n \in \mathbb{Z}$:
@@ -384,7 +384,7 @@ temos a seguinte composição:
 
 $$|x + \lceil{x}\rceil| = \begin{cases} 
     x + n, & \text{se } x \geq 0 \text{ e } x \in [n,n+1), \\
-    -x - n, & \text{se } x < 0 \text{ e } x \in [n,n+1), \\
+    -x - n, & \text{se } x < 0 \text{ e } x \in [n,n+1) \\
 \end{cases}$$
 
 
