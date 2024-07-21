@@ -363,7 +363,31 @@ $$
 
 Portanto, ao assumirmos que $P_n \implies Q_n$, conseguimos simplificar a expressão original para uma que não requer verificar $P_n$ diretamente para as subfunções $t_{n,m}(x)$, pois a verdade de $P_n$ já garante a verdade de $Q_n$.
 
-## Exemplo
+## Exemplo 1
+
+Dado a função do valor absoluto definida como:
+
+$$|x| = \begin{cases} 
+    x, & \text{se } x \geq 0, \\
+    -x, & \text{se } x < 0 \\
+\end{cases}$$
+
+Também definimos a função de teto da seguinte forma: dado $x \in \mathbb{R}$ e $n \in \mathbb{Z}$, temos:
+
+$$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
+
+Portanto,
+
+$$x + \lceil{x}\rceil = x + n \quad \text{se} \quad x \in [n,n+1) $$
+
+Podemos então considerar a seguinte composição:
+
+$$|x + \lceil{x}\rceil| = \begin{cases} 
+    x + n, & \text{se } x \geq 0 \text{ e } x \in [n,n+1), \\
+    -x - n, & \text{se } x < 0 \text{ e } x \in [n,n+1) \\
+\end{cases}$$
+
+## Exemplo 2
 
 Dado a função do valor absoluto definida como:
 
