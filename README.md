@@ -376,6 +376,10 @@ Também definimos a função de teto como, dado $n \in \mathbb{Z}$:
 
 $$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
 
+De forma que:
+
+$$x + \lceil{x}\rceil = x + n \quad \text{se} \quad x \in [n,n+1) $$
+
 
 # Trigonométricas
 
