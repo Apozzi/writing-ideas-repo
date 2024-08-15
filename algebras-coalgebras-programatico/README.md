@@ -61,7 +61,7 @@ $$
 \Delta(x) = \left(\lfloor \frac{x}{2} \rfloor, \lfloor \frac{x}{2}\rfloor \right)
 $$
 
-(Comentário: segundo a minha análise inicial comultiplicação sempre vai aplicar produto tensorial em par elementos iguais, mesmo até quando está definida para uma expressão mais complexa (essa afirmação eu devo análisar futuramente))
+(Comentário: segundo a minha análise inicial comultiplicação sempre vai aplicar produto tensorial em par elementos iguais, mesmo até quando está definida ou escondida em uma expressão mais complexa (essa afirmação eu devo análisar futuramente))
 
 $$
 \epsilon(x_1, x_2) = x_1 + x_2 = x
