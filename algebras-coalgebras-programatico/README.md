@@ -55,7 +55,7 @@ Vamos definir uma coálgebra $(C, \Delta, \varepsilon)$ sobre um anel comutativo
 
 ## Criando exemplo de código
 
-Definimos uma co-algebra $(\R, \Delta, \varepsilon)$, aonde:
+Definimos uma co-algebra $(\mathbb{R}, \Delta, \varepsilon)$, aonde:
 
 $$
 \Delta(x) = \left(\lfloor \frac{x}{2} \rfloor, \lfloor \frac{x}{2}\rfloor \right)
