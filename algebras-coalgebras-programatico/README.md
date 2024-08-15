@@ -114,7 +114,7 @@ class Coalgebra:
         first = self.comultiply(x)
         second = (self.comultiply(first[0]), self.comultiply(first[1]))
         flattened = (second[0][0], second[0][1], second[1][0], second[1][1])
-        recombined = self.comultiply(x // 2), self.comultiply(x - x // 2)
+        recombined = self.comultiply(x // 2), self.comultiply(x // 2)
         recombined_flattened = (recombined[0][0], recombined[0][1], recombined[1][0], recombined[1][1])
         return flattened == recombined_flattened
 
