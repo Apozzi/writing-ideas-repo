@@ -16,9 +16,10 @@ Dados uma álgebra unitária associativa $(A, *)$ e um anel comutativo $(R, +_R,
 
 4. **Elemento Identidade:**  
    Como $A$ é uma álgebra unitária, existe um elemento identidade $1_A \in A$ tal que:
+   
    $$\forall a \in A, \quad a * 1_A = 1_A * a = a$$
 
-5. **Comutatividade (se aplicável):**  
+6. **Comutatividade (se aplicável):**  
    Em algumas álgebras, a operação $*$ pode ser comutativa:
    
    $$\forall a, b \in A, \quad a * b = b * a.$$
