@@ -42,16 +42,15 @@ Vamos definir uma coálgebra $(C, \Delta, \varepsilon)$ sobre um anel comutativo
 
 2. **Comultiplicação:**  
    A coálgebra possui um homomorfismo de $R$-módulos $\Delta: C \to C \otimes_R C$ chamado de **comultiplicação**, que deve satisfazer a propriedade de **coassociatividade**:
-   $$
-   (\Delta \otimes \text{id}) \circ \Delta = (\text{id} \otimes \Delta) \circ \Delta,
-   $$
+   
+   $$(\Delta \otimes \text{id}) \circ \Delta = (\text{id} \otimes \Delta) \circ \Delta$$
+   
    onde $\text{id}$ é o homomorfismo identidade em $C$.
 
-3. **Counidade:**  
+4. **Counidade:**  
    Além disso, há um homomorfismo $\varepsilon: C \to R$ chamado de **counidade**, que satisfaz a propriedade de **counidade**:
-   $$
-   (\varepsilon \otimes \text{id}) \circ \Delta = \text{id} = (\text{id} \otimes \varepsilon) \circ \Delta.
-   $$
+   
+   $$(\varepsilon \otimes \text{id}) \circ \Delta = \text{id} = (\text{id} \otimes \varepsilon) \circ \Delta$$
 
 
 ## Criando exemplo de código
