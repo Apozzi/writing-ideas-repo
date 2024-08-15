@@ -11,27 +11,22 @@ Dados uma álgebra unitária associativa $(A, *)$ e um anel comutativo $(R, +_R,
 2. **Multiplicação Bilinear:**  
 
    A operação $*: A \times A \to A$ é um mapeamento bilinear sobre $R$. Isto é, para todo $r \in R$ e $a, b, c \in A$, temos:
-   $$
-   r \cdot (a * b) = (r \cdot a) * b = a * (r \cdot b).
-   $$
+   
+   $$r \cdot (a * b) = (r \cdot a) * b = a * (r \cdot b).$$
 
-3. **Elemento Identidade:**  
+4. **Elemento Identidade:**  
    Como $A$ é uma álgebra unitária, existe um elemento identidade $1_A \in A$ tal que:
-   $$
-   \forall a \in A, \quad a * 1_A = 1_A * a = a.
-   $$
+   $$\forall a \in A, \quad a * 1_A = 1_A * a = a$$
 
-4. **Comutatividade (se aplicável):**  
+5. **Comutatividade (se aplicável):**  
    Em algumas álgebras, a operação $*$ pode ser comutativa:
-   $$
-   \forall a, b \in A, \quad a * b = b * a.
-   $$
+   
+   $$\forall a, b \in A, \quad a * b = b * a.$$
 
-5. **Associatividade:**  
+7. **Associatividade:**  
    A operação $*$ é associativa, ou seja:
-   $$
-   \forall a, b, c \in A, \quad (a * b) * c = a * (b * c).
-   $$
+   
+   $$\forall a, b, c \in A, \quad (a * b) * c = a * (b * c).$$
 
 Essas propriedades definem uma álgebra unitária associativa sobre um anel comutativo $R$.
 
