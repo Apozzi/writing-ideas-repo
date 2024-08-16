@@ -58,13 +58,13 @@ Vamos definir uma coálgebra $(C, \Delta, \varepsilon)$ sobre um anel comutativo
 Definimos uma co-algebra $(\mathbb{R}, \Delta, \varepsilon)$, aonde:
 
 $$
-\Delta(x) = \left( \frac{x}{2} ,  \frac{x}{2} \right)
+\Delta(x) = \left( x ,  x \right)
 $$
 
 (Comentário: segundo a minha análise inicial comultiplicação sempre vai aplicar produto tensorial em par elementos iguais, mesmo até quando está definida ou escondida em uma expressão mais complexa (essa afirmação eu devo análisar futuramente))
 
 $$
-\epsilon(x_1, x_2) = x_1 + x_2 = x
+\epsilon(x) = x
 $$
 
 Repare que seguindo essas definições as definiçoes de comultiplicação e counidade são satisfeitas.
@@ -132,10 +132,10 @@ class Coalgebra(Generic[T]):
 
 class RealCoalgebra(Coalgebra[float]):
     def comultiply(self, x: float) -> Tuple[float, float]:
-        return (x/2, x/2)
+        return (x, x)
 
     def counit(self, x: float) -> float:
-        return x * 2
+        return x
 
 def algebra_coalgebra_interaction(algebra: Algebra[T], coalgebra: Coalgebra[T], x: T) -> T:
     a, b = coalgebra.comultiply(x)
