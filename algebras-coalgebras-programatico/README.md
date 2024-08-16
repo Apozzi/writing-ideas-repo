@@ -53,7 +53,7 @@ Vamos definir uma coálgebra $(C, \Delta, \varepsilon)$ sobre um anel comutativo
    $$(\varepsilon \otimes \text{id}) \circ \Delta = \text{id} = (\text{id} \otimes \varepsilon) \circ \Delta$$
 
 
-## Criando exemplo de código (eis o motivo de eu colocar "programático")
+## Criando exemplo de código trivial (eis o motivo de eu colocar "programático")
 
 Definimos uma co-algebra $(\mathbb{R}, \Delta, \varepsilon)$, aonde:
 
