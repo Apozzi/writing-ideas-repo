@@ -70,68 +70,103 @@ $$
 Repare que seguindo essas definições as definiçoes de comultiplicação e counidade são satisfeitas.
 
 ```
-class Algebra:
-    def __init__(self):
-        self.unit = 1  # Unidade multiplicativa
+from typing import Generic, TypeVar, Tuple
 
-    def multiply(self, a, b):
-        return a * b
+T = TypeVar('T')
 
-    def add(self, a, b):
-        return a + b
+class Algebra(Generic[T]):
+    def __init__(self, unit: T):
+        self.unit = unit
 
-    def get_unit(self):
+    def multiply(self, a: T, b: T) -> T:
+        raise NotImplementedError("Subclasses must implement this")
+
+    def add(self, a: T, b: T) -> T:
+        raise NotImplementedError("Subclasses must implement this")
+
+    def get_unit(self) -> T:
         return self.unit
 
-    def verify_associativity(self, a, b, c):
+    def verify_associativity(self, a: T, b: T, c: T) -> bool:
         return self.multiply(self.multiply(a, b), c) == self.multiply(a, self.multiply(b, c))
 
-    def verify_commutativity(self, a, b):
+    def verify_commutativity(self, a: T, b: T) -> bool:
         return self.multiply(a, b) == self.multiply(b, a)
 
-    def verify_unit_property(self, x):
-        return self.multiply(x, self.get_unit()) == x
+    def verify_unit_property(self, x: T) -> bool:
+        return self.multiply(x, self.get_unit()) == x == self.multiply(self.get_unit(), x)
 
-    def verify_distributivity(self, a, b, c):
+    def verify_distributivity(self, a: T, b: T, c: T) -> bool:
         return self.multiply(a, self.add(b, c)) == self.add(self.multiply(a, b), self.multiply(a, c))
 
-class Coalgebra:
+class RealAlgebra(Algebra[float]):
     def __init__(self):
-        pass
+        super().__init__(1.0)
 
-    def comultiply(self, x):
-        return (x // 2, x // 2)
+    def multiply(self, a: float, b: float) -> float:
+        return a * b
 
-    def counit(self, parts):
-        return sum(parts)
+    def add(self, a: float, b: float) -> float:
+        return a + b
 
-    def verify_counit_property(self, x):
-        parts = self.comultiply(x)
-        result = self.counit(parts)
-        return result == x
+class Coalgebra(Generic[T]):
+    def comultiply(self, x: T) -> Tuple[T, T]:
+        raise NotImplementedError("Subclasses must implement this")
 
-    def verify_associativity(self, x):
-        first = self.comultiply(x)
-        second = (self.comultiply(first[0]), self.comultiply(first[1]))
-        flattened = (second[0][0], second[0][1], second[1][0], second[1][1])
-        recombined = self.comultiply(x // 2), self.comultiply(x // 2)
-        recombined_flattened = (recombined[0][0], recombined[0][1], recombined[1][0], recombined[1][1])
-        return flattened == recombined_flattened
+    def counit(self, x: T) -> T:
+        raise NotImplementedError("Subclasses must implement this")
 
-    def verify_co_commutativity(self, x):
-        parts = self.comultiply(x)
-        flipped_parts = (parts[1], parts[0])
-        return parts == flipped_parts
+    def verify_counit_property(self, x: T) -> bool:
+        a, b = self.comultiply(x)
+        return self.counit(a) == x == self.counit(b)
 
+    def verify_coassociativity(self, x: T) -> bool:
+        a, b = self.comultiply(x)
+        aa, ab = self.comultiply(a)
+        ba, bb = self.comultiply(b)
+        return (aa, ab, b) == (a, ba, bb)
 
-def algebra_coalgebra_interaction(algebra, coalgebra, x):
-    parts = coalgebra.comultiply(x)
-    multiplied = algebra.multiply(parts[0], parts[1])
-    counit_result = coalgebra.counit((multiplied,))
+    def verify_cocommutativity(self, x: T) -> bool:
+        a, b = self.comultiply(x)
+        return (a, b) == (b, a)
+
+class RealCoalgebra(Coalgebra[float]):
+    def comultiply(self, x: float) -> Tuple[float, float]:
+        return (x/2, x/2)
+
+    def counit(self, x: float) -> float:
+        return x * 2
+
+def algebra_coalgebra_interaction(algebra: Algebra[T], coalgebra: Coalgebra[T], x: T) -> T:
+    a, b = coalgebra.comultiply(x)
+    multiplied = algebra.multiply(a, b)
+    counit_result = coalgebra.counit(multiplied)
     return algebra.add(counit_result, multiplied)
 
+# Testes
+def run_tests():
+    algebra = RealAlgebra()
+    coalgebra = RealCoalgebra()
 
-algebra = Algebra()
-coalgebra = Coalgebra()
+    # Testes da Álgebra
+    print("Álgebra tests:")
+    print(f"Associativity: {algebra.verify_associativity(2.0, 3.0, 4.0)}")
+    print(f"Commutativity: {algebra.verify_commutativity(2.0, 3.0)}")
+    print(f"Unit property: {algebra.verify_unit_property(5.0)}")
+    print(f"Distributivity: {algebra.verify_distributivity(2.0, 3.0, 4.0)}")
+
+    # Testes da Coálgebra
+    print("\nCoálgebra tests:")
+    print(f"Counit property: {coalgebra.verify_counit_property(6.0)}")
+    print(f"Coassociativity: {coalgebra.verify_coassociativity(8.0)}")
+    print(f"Cocommutativity: {coalgebra.verify_cocommutativity(10.0)}")
+
+    # Teste da interação
+    x = 4.0
+    result = algebra_coalgebra_interaction(algebra, coalgebra, x)
+    print(f"\nInteraction result for x={x}: {result}")
+
+if __name__ == "__main__":
+    run_tests()
 
 ```
