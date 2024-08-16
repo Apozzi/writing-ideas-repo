@@ -58,7 +58,7 @@ Vamos definir uma coálgebra $(C, \Delta, \varepsilon)$ sobre um anel comutativo
 Definimos uma co-algebra $(\mathbb{R}, \Delta, \varepsilon)$, aonde:
 
 $$
-\Delta(x) = \left \frac{x}{2} ,  \frac{x}{2} \right)
+\Delta(x) = \left( \frac{x}{2} ,  \frac{x}{2} \right)
 $$
 
 (Comentário: segundo a minha análise inicial comultiplicação sempre vai aplicar produto tensorial em par elementos iguais, mesmo até quando está definida ou escondida em uma expressão mais complexa (essa afirmação eu devo análisar futuramente))
