@@ -439,6 +439,14 @@ $$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases}
     -(x + \beta - n), & \text{se } x \in [n-\alpha,n - \beta) \\
 \end{cases}$$
 
+Como $\forall n \in \mathbb{Z}$ temos $[n - \beta,n-\alpha+1)$ e $[n-\alpha,n - \beta)$ reparemos que podemos gerar $S$ e $S^c$, de forma que:
+
+$$S = \bigcup_{n \in \mathbb{Z}} [n-\alpha,n - \beta)$$ 
+
+$$S^c = \bigcup_{n \in \mathbb{Z}} [n - \beta,n-\alpha+1)$$
+
+
+Que são ***Conjunto dos Intervalos Repetidos Infinitos Complementares***.
 
 # Trigonométricas
 
