@@ -16,7 +16,7 @@ onde  $a_{n+1} = a_n + \delta + d$ para  $n \in \mathbb{Z}$ e também $a_n= a_0 
 
 ## Conjunto  $S$
 
-Podemos definir o conjunto  $S$ como a união de todos esses intervalos:
+Podemos definir o conjunto $S$ como a união de todos esses intervalos:
 
  $$S = \bigcup_{n \in \mathbb{Z}} I_n$$
 
