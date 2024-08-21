@@ -372,7 +372,7 @@ $$|x| = \begin{cases}
     -x, & \text{se } x < 0 \\
 \end{cases}$$
 
-Também definimos a função de teto da seguinte forma: dado $x \in \mathbb{R}$ e $n \in \mathbb{Z}$, temos:
+Também definimos a função de teto da seguinte forma: dado $x \in \mathbb{R}$ e $\forall n \in \mathbb{Z}$, temos:
 
 $$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
 
@@ -396,7 +396,7 @@ $$|x| = \begin{cases}
     -x, & \text{se } x < 0 \\
 \end{cases}$$
 
-Também definimos a função de teto da seguinte forma: dado $x \in \mathbb{R}$ e $n \in \mathbb{Z}$, temos:
+Também definimos a função de teto da seguinte forma: dado $x \in \mathbb{R}$ e $\forall n \in \mathbb{Z}$, temos:
 
 $$\lceil{x}\rceil = n \quad \text{se} \quad x \in [n,n+1) $$
 
@@ -439,14 +439,24 @@ $$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases}
     -(x + \beta - n), & \text{se } x \in [n-\alpha,n - \beta) \\
 \end{cases}$$
 
-Como $\forall n \in \mathbb{Z}$ temos $[n - \beta,n-\alpha+1)$ e $[n-\alpha,n - \beta)$ reparemos que podemos gerar $S$ e $S^c$, de forma que:
+
+
+### Utilizando Intervalos repetidos.
+
+Como $\forall n \in \mathbb{Z}$ temos $[n - \beta,n-\alpha+1)$ e $[n-\alpha,n - \beta)$, reparemos que podemos gerar $S$ e $S^c$, de forma que:
 
 $$S = \bigcup_{n \in \mathbb{Z}} [n-\alpha,n - \beta)$$ 
 
 $$S^c = \bigcup_{n \in \mathbb{Z}} [n - \beta,n-\alpha+1)$$
 
 
-Que são ***Conjunto dos Intervalos Repetidos Infinitos Complementares***, aonde $a_0=-\alpha$, $\delta = \alpha - \beta$ e $d=1$.
+Que são ***Conjunto dos Intervalos Repetidos Infinitos Complementares***, aonde $a_0=-\alpha$, $\delta = \alpha - \beta$ e $d=1$. Com isso em mente podemos escrever a formula sem precisar verificar para todo $n$, sabendo que condensamos todas as condicionais $\forall n \in \mathbb{Z}$ em $S$ e $S^c$ podemos substituir $n$ por $\lceil{x}\rceil$.
+
+$$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases} 
+    x + \beta - \lceil{x}\rceil, & \text{se } x \in S, \\
+    -(x + \beta - \lceil{x}\rceil), & \text{se } x \in S^c \\
+\end{cases}$$
+
 
 # Trigonométricas
 
