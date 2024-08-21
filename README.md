@@ -51,14 +51,14 @@ onde $J_n$  são intervalos de tamanho $d$ que complementam os intervalos $I_n$ 
 
 Vamos tomar $a_0 = 0$ e $\delta = 2$ e $d = 1$ logo:
 
-- Para intervalos fechados: $I_n = [2n, 2n+1]$.
-- Os intervalos complementares são $J_n = (2n+1, 2n+2)$.
+- Para intervalos fechados: $I_n = [2n, 2n+2]$.
+- Os intervalos complementares são $J_n = (2n+2, 2n+3)$.
 
 Então:
 
-$$S = \bigcup_{n \in \mathbb{Z}} [2n, 2n+1]$$ 
+$$S = \bigcup_{n \in \mathbb{Z}} [2n, 2n+2]$$ 
 
-$$S^c = \bigcup_{n \in \mathbb{Z}} (2n+1, 2n+2)$$
+$$S^c = \bigcup_{n \in \mathbb{Z}} (2n+2, 2n+3)$$
 
 ## Exemplo 2
 
