@@ -446,7 +446,7 @@ $$S = \bigcup_{n \in \mathbb{Z}} [n-\alpha,n - \beta)$$
 $$S^c = \bigcup_{n \in \mathbb{Z}} [n - \beta,n-\alpha+1)$$
 
 
-Que são ***Conjunto dos Intervalos Repetidos Infinitos Complementares***.
+Que são ***Conjunto dos Intervalos Repetidos Infinitos Complementares***, aonde $a_0=-\alpha$, $\delta = \alpha - \beta$ e $d=1$.
 
 # Trigonométricas
 
