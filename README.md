@@ -525,7 +525,7 @@ $$
  \sigma = \prod_{n=1}^{\infty} p_{a_n,b_n}
 $$
 
-De forma intuitiva a função pode ser tanto composta de infinitas permutações de pares de elementos (é um produtório de composição de funções) ou também pode ser definida de forma que $\exist m \in \mathbb{N}$ aonde $\forall n : n > m \implies a_n=b_n$ também implicando que $p_{a_n,b_n}=id_M$ fazendo assim que seja composta de uma quantidade limitada de permutação de pares de intervalos e é claro com esse fato podemos simplificar equação para $
+De forma intuitiva a função pode ser tanto composta de infinitas permutações de pares de elementos (é um produtório de composição de funções) ou também pode ser definida de forma que $\exists m \in \mathbb{N}$ aonde $\forall n : n > m \implies a_n=b_n$ também implicando que $p_{a_n,b_n}=id_M$ fazendo assim que seja composta de uma quantidade limitada de permutação de pares de intervalos e é claro com esse fato podemos simplificar equação para $
  \sigma = \prod_{n=1}^{m} p_{a_n,b_n}
 $.
 
