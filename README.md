@@ -493,7 +493,7 @@ $$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases}
 
 #  Permutações em espaços densos.
 
-Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para qualquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é um bijeção  $p_{\alpha,\beta}: M \to M$ aonde $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbritários $I_{\alpha}$ e $I_{\beta}$ de forma que:
+Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para qualquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é um bijeção  $p_{\alpha,\beta}: M \to M$ aonde $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbritários disjuntos $I_{\alpha}$ e $I_{\beta}$ em que $||I_{\alpha}||=||I_{\beta}||$ ou seja eles tem mesmo tamanho, de forma que:
 
 $$
  p_{\alpha,\beta}{(x)} = \begin{cases} 
@@ -519,7 +519,7 @@ Repare que também que para todo $\alpha,\beta \in \mathbb{N}$ temos $p_{\alpha,
 
 ## Função de permutação de espaços densos
 
-Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários $I_n$ e duas sequencia de números naturais $a_n$ e $b_n$, temos então:
+Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários disjuntos $I_n$ que tem o mesmo tamanho e duas sequencia de números naturais $a_n$ e $b_n$, temos então:
 
 $$
  \sigma = \prod_{n=1}^{\infty} p_{a_n,b_n}
