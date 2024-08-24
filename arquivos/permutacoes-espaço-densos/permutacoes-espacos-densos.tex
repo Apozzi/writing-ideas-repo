@@ -15,7 +15,7 @@
 
 \section{Permutações em espaços densos}
 
-Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para quaisquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é uma bijeção $p_{\alpha,\beta}: M \to M$ onde $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbitrários $I_{\alpha}$ e $I_{\beta}$ de forma que:
+Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para quaisquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é uma bijeção $p_{\alpha,\beta}: M \to M$ onde $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbitrários disjuntos $I_{\alpha}$ e $I_{\beta}$ em que $\|I_{\alpha}\|=\|I_{\beta}\|$ ou seja eles tem mesmo tamanho, de forma que:
 
 \begin{equation}
  p_{\alpha,\beta}{(x)} = \begin{cases} 
@@ -41,7 +41,7 @@ Repare que também para todo $\alpha,\beta \in \mathbb{N}$ temos $p_{\alpha,\bet
 
 \section{Função de permutação de espaços densos}
 
-Com isso podemos definir a função de permutação de espaços densos $\sigma$ onde $\sigma: M \to M$ de forma que dada uma sequência de intervalos arbitrários $\{I_n\}_{n\in\mathbb{N}}$ e duas sequências de números naturais $\{a_n\}_{n\in\mathbb{N}}$ e $\{b_n\}_{n\in\mathbb{N}}$, temos então:
+Com isso podemos definir a função de permutação de espaços densos $\sigma$ onde $\sigma: M \to M$ de forma que dada uma sequência de intervalos arbitrários disjuntos $\{I_n\}_{n\in\mathbb{N}}$ que tem o mesmo tamanho e duas sequências de números naturais $\{a_n\}_{n\in\mathbb{N}}$ e $\{b_n\}_{n\in\mathbb{N}}$, temos então:
 
 \begin{equation}
  \sigma = \prod_{n=1}^{\infty} p_{a_n,b_n}
