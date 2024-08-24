@@ -493,7 +493,7 @@ $$|x + \beta - \lceil{x + \alpha}\rceil| = \begin{cases}
 
 #  Permutações em espaços densos.
 
-Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para qualquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é um bijeção  $p_{\alpha,\beta}: M \to M$ aonde $x \in M$ e $\alpha,\beta \in \N$ e escolhemos 2 intervalos arbritários $I_{\alpha}$ e $I_{\beta}$ de forma que:
+Dado $(M, +, \leq)$ um monóide de adição, ordenado e denso de forma que para qualquer $a,b \in M$ com $a<b$, existe $c \in M$ tal que $a < c < b$, definimos a operação $p$ de permutação de par de intervalos para espaços densos que é um bijeção  $p_{\alpha,\beta}: M \to M$ aonde $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbritários $I_{\alpha}$ e $I_{\beta}$ de forma que:
 
 $$
  p_{\alpha,\beta}{(x)} = \begin{cases} 
@@ -515,17 +515,17 @@ $$
 
 Se $I_{\alpha} = I_{\beta}$ temos a permutação identidade de par de intervalos para espaços densos é fácilmente verificavel que a formula se reduz a seguinte forma de $p_{\beta,\beta}{(x)} = p_{\alpha,\alpha}{(x)} = x$.
 
-Repare que também que para todo $\alpha,\beta \in \N$ temos $p_{\alpha,\beta} = p_{\beta, \alpha}$ e também que $p_{\alpha,\beta} \circ p_{\alpha,\beta}= \text{id}_M$.
+Repare que também que para todo $\alpha,\beta \in \mathbb{N}$ temos $p_{\alpha,\beta} = p_{\beta, \alpha}$ e também que $p_{\alpha,\beta} \circ p_{\alpha,\beta}= \text{id}_M$.
 
 ## Função de permutação de espaços densos
 
-Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários $\{I_n\}_{n=1}^\infty$ e duas sequencia de números naturais $ \{a_n\}_{n=1}^\infty$ e $\{b _n\}_{n=1}^\infty$, temos então:
+Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários $\{I_n\}_{n=1}^\infty$ e duas sequencia de números naturais $\{a_n\}_{n=1}^\infty$ e $\{b _n\}_{n=1}^\infty$, temos então:
 
 $$
  \sigma = \prod_{n=1}^{\infty} p_{a_n,b_n}
 $$
 
-De forma intuitiva a função pode ser tanto composta de infinitas permutações de pares de elementos (é um produtório de composição de funções) ou também pode ser definida de forma que $\exist m \in \N$ aonde $\forall n : n > m \implies a_n=b_n$ também implicando que $p_{a_n,b_n}=id_M$ fazendo assim que seja composta de uma quantidade limitada de permutação de pares de intervalos e é claro com esse fato podemos simplificar equação para $
+De forma intuitiva a função pode ser tanto composta de infinitas permutações de pares de elementos (é um produtório de composição de funções) ou também pode ser definida de forma que $\exist m \in \mathbb{N}$ aonde $\forall n : n > m \implies a_n=b_n$ também implicando que $p_{a_n,b_n}=id_M$ fazendo assim que seja composta de uma quantidade limitada de permutação de pares de intervalos e é claro com esse fato podemos simplificar equação para $
  \sigma = \prod_{n=1}^{m} p_{a_n,b_n}
 $.
 
