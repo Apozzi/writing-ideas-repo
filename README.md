@@ -519,7 +519,7 @@ Repare que também que para todo $\alpha,\beta \in \mathbb{N}$ temos $p_{\alpha,
 
 ## Função de permutação de espaços densos
 
-Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários $\{I_n\}_{n=1}^\infty$ e duas sequencia de números naturais $\{a_n\}_{n=1}^\infty$ e $\{b _n\}_{n=1}^\infty$, temos então:
+Com isso podemos definir a função de permutação de espaços densos $\sigma$ aonde $\sigma: M \to M$ de forma que dado uma sequencia de intervalos arbitrários $\\{I_n\\}_{n=1}^\infty$ e duas sequencia de números naturais $\\{a_n\\}_{n=1}^\infty$ e $\\{b _n\\}_{n=1}^\infty$, temos então:
 
 $$
  \sigma = \prod_{n=1}^{\infty} p_{a_n,b_n}
