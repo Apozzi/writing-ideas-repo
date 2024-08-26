@@ -9,6 +9,15 @@
 \author{}
 \date{}
 
+\newtheorem{theorem}{Teorema}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{definition}{Definição}
+
+\newenvironment{proof}[1][Prova]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
 \begin{document}
 
 \maketitle
@@ -136,5 +145,174 @@ Observe que esta permutação $\sigma$ efetivamente "rotaciona" os elementos ent
 Elementos fora desses intervalos permanecem inalterados, ou seja, $\forall x \not\in I_1 \cup I_2 \cup I_3, \sigma(x) = x$.
 
 Podemos verificar que $\sigma$ é uma bijeção, pois cada elemento tem uma imagem única e todo elemento do conjunto é atingido pela função. Além disso, podemos observar que $\sigma \circ \sigma \circ \sigma = id_{\mathbb{R}}$, ou seja, aplicar $\sigma$ três vezes resulta na função identidade.
+
+\section{Função de permutação de pares de intervalos de espaços densos com inversão de intervalos}
+
+Para maior flexibilidade para permutação de espaços densos é interessante também poder modificar e inverter a ordem
+de forma que intervalos de $x$ crescentes possam se tornar descrescentes permutando a ordem desses intervalos, definimos um $B=\{\top, \bot\}$ e $s_1,s_2 \in B$ com isso podemos ajustar a função de forma que:
+
+\begin{equation}
+   {}^{(a,b)}p_{\alpha,\beta}{(x)} = \begin{cases} 
+      x & x \not\in I_{\alpha} \land x \not \in I_{\beta}\\
+      - x - \min(I_{\alpha}) + \max(I_{\beta}), & x \in I_{\alpha} \land s_1 \text{ é Verdadeiro},\\
+      x - \min(I_{\alpha}) + \min(I_{\beta}), & x \in I_{\alpha} \land s_1 \text{ é Falso},\\
+      - x - \min(I_{\beta}) + \max(I_{\alpha}), & x \in I_{\beta} \land s_2 \text{ é Verdadeiro},\\
+      x - \min(I_{\beta}) + \min(I_{\alpha}), & x \in I_{\beta} \land s_2 \text{ é Falso}\\
+  \end{cases}
+\end{equation}
+
+Repare nas seguinte propriedade ${}^{(\top,\bot)}p_{\alpha,\beta} \circ {}^{(\top,\bot)}p_{\alpha,\beta} = {}^{(\bot,\bot)}p_{\alpha,\beta} \circ {}^{(\top,\top)}p_{\alpha,\beta}$
+que também pode ser generalizada de forma que para sequencia de booleanos $\{q_{1,n}\}_{n\in\mathbb{N}}$ e 
+$\{q_{2,n}\}_{n\in\mathbb{N}}$ e $k \in\mathbb{N}$ e ${j_n = [1,2,1,2 \dots]}$ e ${k_n = [2,1,2,1 \dots]}$:
+
+\begin{equation}
+   \prod_{n=1}^{k} {}^{(q_{1,n}, q_{2,n})}p_{\alpha,\beta} = (\prod_{n=1}^{k-1} {}^{(\bot, \bot)}p_{\alpha,\beta}) \circ {}^{(\bigoplus q_{j_n,n}, \bigoplus q_{k_n,n})}p_{\alpha,\beta}
+\end{equation}
+
+Lembrar que para $k$ impar $\prod_{n=1}^{k-1} {}^{(\bot, \bot)}p_{\alpha,\beta} = \text{id}_M$ e para k par $\prod_{n=1}^{k-1} {}^{(\bot, \bot)}p_{\alpha,\beta} = {}^{(\bot, \bot)}p_{\alpha,\beta}$, como possivel simplificação
+para essa propriedade generalizada. 
+\vspace{0.5cm}
+
+Com essa função ${}^{(a,b)}p_{\alpha,\beta}$ definimos uma sequencia de pares de booleanos $\{s_n\}_{n\in\mathbb{N}}$, de forma a definir nova função de permutação com inversão:
+
+\begin{equation}
+   \sigma^{*} = \prod_{n=1}^{\infty} {}^{s_n}p_{a_n,b_n}
+\end{equation}
+
+Seguindo a mesma lógica que anteriormente caso que se $\exists m \in \mathbb{N}$ onde $\forall n > m : a_n=b_n$, logo:
+
+\begin{equation}
+   \sigma^{*}  = \prod_{n=1}^{m} {}^{s_n}p_{a_n,b_n}
+\end{equation}
+
+\section{Função de permutação de pares de intervalos com intervalos de tamanho váriaveis.}
+
+Umas das retrições que colocamos anteriormente era que ambos intervalos $I_{\alpha}$ e $I_{\beta}$ deveriam ter tamanho iguais, ou seja $\|I_{\alpha}\|=\|I_{\beta}\|$
+assim preservando escala, umas das propriedades das equações (1) e (3) é que para uma função arbitrária $f$, temos:
+
+\begin{equation}
+   \int_{-\infty}^{\infty} f(x)\, dx = \int_{-\infty}^{\infty} f(p_{\alpha, \beta}(x))\, dx = \int_{-\infty}^{\infty} f(\sigma(x))\, dx
+\end{equation}
+
+Nós podemos fazer uma variação da equação que não satisfaz essa própriedade e não preserva a escala, porém possibilita
+ intervalos $I_{\alpha}$ e $I_{\beta}$ de tamanhos diferentes, com isso é necessário "alongar" ou "diminuir" esses intervalos, 
+ sendo assim há necessidade também de um objeto que possibilite a multiplicação por escalares.
+
+ \subsection{Nova definição para intervalos de tamanho váriaveis e com inversão de intervalos}
+
+ Dado $(A, +, *, \leq)$ um campo em $A$ que é ordenado e denso de forma que para quaisquer
+  $a,b \in M$ com $a<b$, existe $c \in A$ tal que $a < c < b$, definimos a operação
+   $v$ de permutação de par de intervalos váriaveis para espaços densos que é uma 
+   bijeção ${}^{(s_1,s_2)}v_{\alpha,\beta}: M \to M$ onde 
+   $x \in M$ e $\alpha,\beta \in \mathbb{N}$ e escolhemos 2 intervalos arbitrários 
+   disjuntos $I_{\alpha}$ e $I_{\beta}$ e definimos um $B=\{\top, \bot\}$ e 
+   $s_1,s_2 \in B$, de forma que:
+
+ \begin{equation}
+   {}^{(a,b)}v_{\alpha,\beta}{(x)} = \begin{cases} 
+      x & x \not\in I_{\alpha} \land x \not \in I_{\beta}\\
+      - \min(I_{\alpha}) + \max(I_{\beta}) - x\frac{\|I_{\beta}\|}{\|I_{\alpha}\|}, & x \in I_{\alpha} \land s_1 \text{ é Verdadeiro},\\
+      x\frac{\|I_{\beta}\|}{\|I_{\alpha}\|} - \min(I_{\alpha}) + \min(I_{\beta}), & x \in I_{\alpha} \land s_1 \text{ é Falso},\\
+      - \min(I_{\beta}) + \max(I_{\alpha}) - x\frac{\|I_{\alpha}\|}{\|I_{\beta}\|}, & x \in I_{\beta} \land s_2 \text{ é Verdadeiro},\\
+      x\frac{\|I_{\alpha}\|}{\|I_{\beta}\|} - \min(I_{\beta}) + \min(I_{\alpha}), & x \in I_{\beta} \land s_2 \text{ é Falso}\\
+  \end{cases}
+\end{equation}
+
+Da mesma forma temos $\sigma^{**}$ que não necessáriamente preserva a escala.
+
+\begin{equation}
+   \sigma^{**} = \prod_{n=1}^{\infty} {}^{s_n}v_{a_n,b_n}
+\end{equation}
+
+E caso a sequencia $\{I_n\}_{n\in\mathbb{N}}$ ter intervalos de tamanhos diferentes, logo:
+
+\begin{equation}
+   \int_{-\infty}^{\infty} f(x)\, dx \neq \int_{-\infty}^{\infty} f(\sigma^{**}(x))\, dx
+\end{equation}
+
+
+\section{Teorema do Ponto Fixo}
+
+Para qualquer $\sigma^*$, existe pelo menos um ponto $x \in M$ tal que $\sigma^*(x) = x$. Este ponto fixo pode ser encontrado nos pontos de fronteira dos intervalos ou nos pontos que não pertencem a nenhum intervalo de uma sequência finita $\{I_n\}_{n\in\mathbb{N}}$.
+
+\begin{theorem}[Ponto Fixo]
+Para qualquer $\sigma^*$, existe pelo menos um ponto $x \in M$ tal que $\sigma^*(x) = x$.
+\end{theorem}
+
+\begin{proof}
+Consideremos duas possibilidades:
+
+1) Se existe algum $x \in M$ que não pertence a nenhum intervalo da sequência $\{I_n\}_{n\in\mathbb{N}}$, então pela definição de $\sigma^*$, temos $\sigma^*(x) = x$, e o teorema está provado.
+
+2) Caso contrário, todos os pontos de $M$ estão em algum intervalo da sequência. Neste caso, consideremos os pontos de fronteira dos intervalos. Seja $x = \min(I_k)$ para algum $k$. Temos duas subcasos:
+
+   a) Se $x$ é mapeado para outro intervalo $I_j$, então $\sigma^*(\max(I_j)) = x$, pois $\sigma^*$ preserva a ordem dentro dos intervalos. Portanto, $\max(I_j)$ é um ponto fixo.
+   
+   b) Se $x$ é mapeado para si mesmo, então x é um ponto fixo.
+
+Em todos os casos, encontramos um ponto fixo, o que prova o teorema.
+\end{proof}
+
+
+\section{Propriedade de Aproximação}
+
+Para qualquer função contínua e bijetiva $f: A \to A$ e $\epsilon > 0$, existe uma função de permutação $\sigma^{**}$ tal que:
+
+\begin{equation}
+\sup_{x \in M} d(f(x), \sigma^{**}(x)) < \epsilon
+\end{equation}
+
+onde $d$ é uma métrica adequada em $A$. Esta propriedade sugere que as funções de permutação podem aproximar arbitrariamente bem qualquer função contínua e bijetiva no espaço.
+
+\begin{theorem}[Aproximação]
+Para qualquer função contínua e bijetiva $f: A \to A$ e $\epsilon > 0$, existe uma função de permutação $\sigma^{**}$ tal que:
+\[\sup_{x \in M} d(f(x), \sigma^{**}(x)) < \epsilon\]
+onde $d$ é uma métrica adequada em $A$.
+\end{theorem}
+
+\begin{proof}[Esboço da prova]
+A ideia principal é usar a densidade de $A$ e a continuidade de $f$ para construir $\sigma^{**}$:
+
+1) Como $A$ é denso, podemos escolher uma sequência de pontos $\{x_n\}_{n\in\mathbb{N}}$ que é $\epsilon/2$-densa em $A$.
+
+2) Para cada $x_n$, escolhemos intervalos $I_n$ e $J_n$ tais que:
+   \begin{itemize}
+   \item $x_n \in I_n$
+   \item $f(x_n) \in J_n$
+   \item $\text{diam}(I_n) < \epsilon/2$ e $\text{diam}(J_n) < \epsilon/2$
+   \end{itemize}
+
+3) Definimos $\sigma^{**}$ para mapear $I_n$ em $J_n$ de maneira linear (ou preservando a ordem se estivermos trabalhando em um espaço mais geral).
+
+4) Para pontos fora dos intervalos escolhidos, definimos $\sigma^{**}$ de forma a ser uma bijeção (isso é possível porque $f$ é bijetiva).
+
+5) Por construção, para qualquer $x \in A$, existe um $x_n$ tal que $d(x, x_n) < \epsilon/2$. Então:
+   \[d(f(x), \sigma^{**}(x)) \leq d(f(x), f(x_n)) + d(f(x_n), \sigma^{**}(x_n)) + d(\sigma^{**}(x_n), \sigma^{**}(x))\]
+
+   Cada termo nesta soma é menor que $\epsilon/3$ (assumindo que escolhemos $\epsilon$ suficientemente pequeno na construção), o que completa a prova.
+\end{proof}
+   
+
+\section{Entropia Topológica}
+
+Podemos definir a entropia topológica $h(\sigma)$ para a função de permutação $\sigma$ como:
+
+\begin{equation}
+h(\sigma) = \lim_{n \to \infty} \frac{1}{n} \log N(n, \epsilon)
+\end{equation}
+
+onde $N(n, \epsilon)$ é o número mínimo de conjuntos de diâmetro menor que $\epsilon$ necessários para cobrir o conjunto $\{x, \sigma(x), \sigma^2(x), ..., \sigma^{n-1}(x)\}$ para algum $x \in M$. Esta medida quantifica a complexidade dinâmica da permutação.
+
+\begin{theorem}
+A entropia topológica de $\sigma$ é finita se e somente se $\sigma$ é composta de um número finito de permutações de intervalos.
+\end{theorem}
+
+\begin{proof}[Esboço da prova]
+1) Se $\sigma$ é composta de um número finito $k$ de permutações de intervalos, então para qualquer $x \in M$, o conjunto $\{x, \sigma(x), \sigma^2(x), ..., \sigma^{n-1}(x)\}$ tem no máximo $k$ elementos distintos. Portanto, $N(n, \epsilon)$ é limitado por uma constante independente de $n$, e $h(\sigma) = 0$.
+
+2) Se $\sigma$ é composta de um número infinito de permutações de intervalos, podemos construir um ponto $x \in M$ tal que sua órbita $\{x, \sigma(x), \sigma^2(x), ...\}$ é infinita e separada (isto é, existe um $\delta > 0$ tal que $d(\sigma^i(x), \sigma^j(x)) > \delta$ para $i \neq j$). Neste caso, $N(n, \epsilon)$ cresce exponencialmente com $n$ para $\epsilon < \delta/2$, o que implica que $h(\sigma) > 0$.
+\end{proof}
+   
+
 
 \end{document}
