@@ -9,9 +9,11 @@ Esse conceito pode ser utilizado para generalizar a noção de betweenness em di
 Os axiomas (que eu mesmo nomei) que definem o relação de Betwenness são:
 
 1. **Axioma da Distinção**
+
  $$\mathcal{B}(A, B, C) \implies A, B, C \text{ são objetos distintos}$$
 
 2. **Axioma da Simetria**
+
 $$\mathcal{B}(A, B, C) \implies \mathcal{B}(C, B, A)$$
 
 3. **Axioma da Assimetria Interna**
