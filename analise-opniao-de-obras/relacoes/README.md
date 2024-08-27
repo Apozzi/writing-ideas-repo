@@ -12,9 +12,7 @@ Os axiomas (que eu mesmo nomei) que definem o relação de Betwenness são:
  $$\mathcal{B}(A, B, C) \implies A, B, C \text{ são objetos distintos}$$
 
 2. **Axioma da Simetria**
-$$
-\mathcal{B}(A, B, C) \implies \mathcal{B}(C, B, A)
-$$
+$$\mathcal{B}(A, B, C) \implies \mathcal{B}(C, B, A)$$
 
 3. **Axioma da Assimetria Interna**
 
