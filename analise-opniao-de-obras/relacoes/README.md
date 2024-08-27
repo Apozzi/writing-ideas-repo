@@ -2,7 +2,7 @@
 
 # Betwenness (Definição de Peter Gärdenfors, 2000)
 
-Uma das forma de relação axiomatica simples do conceito de "entre dois objetos" é relação terciaria $ \mathcal{B}(A, B, C)$.
+Uma das forma de relação axiomatica simples do conceito de "entre dois objetos" é relação terciária $\mathcal{B}(A, B, C)$.
 
 Esse conceito pode ser utilizado para generalizar a noção de betweenness em diferentes contextos matemáticos, como em geometria e teoria dos grafos.
 
