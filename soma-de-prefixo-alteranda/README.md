@@ -56,6 +56,8 @@ $$
 m_{-}(i, f) = \frac{M^{-}_f}{M^{-}_i}
 $$
 
+definimos assim uma função $m_{\alpha}$:
+
 
 
 TODO: Fazer o resto...
