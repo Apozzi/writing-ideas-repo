@@ -32,12 +32,10 @@ $$
 op(B)= \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2i-1 +\alpha} \prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha} )
 $$
 
-Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
-
-Repare que $\prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha}$ é uma multiplicatória comum que envolve apenas valores pares ou impares, com isso usamos versão alterada do somda de prefixos (que seria multiplicação de prefixos) aonde:
+Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar. Repare que $\prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha}$ é uma multiplicatória comum que envolve apenas valores pares ou impares, com isso usamos versão alterada do soma de prefixos (que seria multiplicação de prefixos) aonde:
 
 $
-M^{+} = []
+M^{+} = [a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
 $
 
 TODO: Fazer o resto...
