@@ -8,7 +8,7 @@ $$
 op([a,b,c,d,e,f...])= (((((a+b)\times c)+d)\times e)+f)\times ...
 $$
 
-Aquin está uma implementação em python:
+Aqui está uma implementação em python:
 
 ```python
 def alternated_sum_mul(arr):
