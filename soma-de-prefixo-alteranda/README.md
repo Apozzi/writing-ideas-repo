@@ -49,11 +49,11 @@ Matriz com valores impares.
 Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice inicial $\alpha$ e indice final $\beta$ :
 
 $$
-m_{+}(\alpha, \beta) = \frac{1}{M_{\alpha}^{-}}
+m_{+}(\alpha, \beta) = \frac{M_{\beta}^{+}}{M_{\alpha}^{+}}
 $$
 
 $$
-m_{-}(\alpha, \beta) = \frac{M^{-}_{\beta}}{M^{-}_{\alpha}}
+m_{-}(\alpha, \beta) = \frac{M_{\beta}^{-}}{M_{\alpha}^{-}}
 $$
 
 
