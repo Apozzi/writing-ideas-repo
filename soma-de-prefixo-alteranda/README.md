@@ -41,7 +41,7 @@ $$
 Matriz com valores pares.
 
 $$
-M^{-} = [a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
+M^{-} = [a_1, a_1 \cdot a_3, a_1 \cdot a_3 \cdot a_5, a_1 \cdot a_3 \cdot a_5 \cdot a_7, \dots]
 $$
 
 Matriz com valores impares.
