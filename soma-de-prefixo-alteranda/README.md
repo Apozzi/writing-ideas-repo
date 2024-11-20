@@ -50,6 +50,7 @@ Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice
 
 $$
 m_{+}(\alpha, \beta) = 
+$$
 
 $$
 m_{-}(\alpha, \beta) = 
