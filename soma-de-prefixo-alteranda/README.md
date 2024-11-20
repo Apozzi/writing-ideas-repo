@@ -8,7 +8,6 @@ $$
 op([a,b,c,d,e,f...])= (((((a+b)\times c)+d)\times e)+f)\times ...
 $$
 
-
 Aquin está uma implementação em python:
 
 ```python
