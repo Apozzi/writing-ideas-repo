@@ -60,8 +60,8 @@ definimos assim uma função $m_{\alpha}$:
 
 $$
 m_{\alpha}(i, f) = \begin{cases}
-m_{-}(i, f) \text{ e } \alpha é impar \\
-m_{+}(i, f) \text{ e } \alpha é par \\
+m_{-}(i, f) \text{ e } \alpha \text{ é impar } \\
+m_{+}(i, f) \text{ e } \alpha \text{ é par } \\
 \end{cases}
 $$
 
