@@ -49,11 +49,11 @@ Matriz com valores impares.
 Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice inicial $i$ e indice final $f$:
 
 $$
-m_{+}(i, f) = $frac{M^{+}_f}{M^{+}_i}
+m_{+}(i, f) = $\frac{M^{+}_f}{M^{+}_i}
 $$
 
 $$
-m_{-}(i, f) = $frac{M^{-}_f}{M^{-}_i}
+m_{-}(i, f) = $\frac{M^{-}_f}{M^{-}_i}
 $$
 
 
