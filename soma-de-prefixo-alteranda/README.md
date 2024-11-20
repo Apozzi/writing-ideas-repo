@@ -4,19 +4,21 @@
 
 Dado uma sequencia $A_n$, nós definimos uma função alternada $op(A)$ que segue:
 
-$$
+$
 op([a_0,a_1,a_2,a_3,a_4,a_5...])= (((((a_0+a_1)\times a_2)+a_3)\times a_4)+a_5)\times ...
-$$
+$
 
 Dado $|A|=k$ podemos escrever a equação utilizando a propriedade distributiva de forma que:
 
-$$
+$
 op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1(a_0 \cdot a_2 \cdot a_4 \cdot a_6 \dots) a_{2i} + a_1 (a_2 \cdot a_4 \cdot a_6 \dots) + a_3 (a_4 \cdot a_6 \dots) + a_ 5 (a_6 \dots) ...
-$$
+$
 
-$$
+Utilizando notação de produtório:
+
+$
 op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 \prod_{i=1}^{\lfloor k/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor k/2 \rfloor - 1} a_{2i} + a_3 \prod_{i=1}^{\lfloor k/2 \rfloor - 2} a_{2i} + a_ 5 \prod_{i=1}^{\lfloor k/2 \rfloor - 3} a_{2i} ...
-$$
+$
 
 Aqui está uma implementação em python:
 
