@@ -32,6 +32,8 @@ $$
 op(B)= \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2(i+\alpha)-1} \prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2(j+\alpha)} )
 $$
 
+Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $a\alpha$ impar temos $2(j+\alpha)$
+
 TODO: Fazer o resto...
 
 Aqui está uma implementação em python:
