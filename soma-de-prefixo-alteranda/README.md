@@ -34,6 +34,12 @@ $$
 
 Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
 
+Repare que $ \prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha} $ é uma multiplicatória comum que envolve apenas valores pares ou impares, com isso usamos versão alterada do somda de prefixos (que seria multiplicação de prefixos) aonde:
+
+$
+M^{+} = []
+$
+
 TODO: Fazer o resto...
 
 Aqui está uma implementação em python:
