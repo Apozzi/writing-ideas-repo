@@ -46,23 +46,29 @@ $$
 
 Matriz com valores impares.
 
-Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice inicial $i$ e indice final $f$:
+Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice inicial $\alpha$ e indice final $\beta$:
 
 $$
-m_{+}(i, f) = \frac{M^{+}_f}{M^{+}_i}
+m_{+}(\alpha, f) = \frac{M^{+}_\beta}{M^{+}_\alpha}
 $$
 
 $$
-m_{-}(i, f) = \frac{M^{-}_f}{M^{-}_i}
+m_{-}(\alpha, f) = \frac{M^{-}_\beta}{M^{-}_\alpha}
 $$
 
-definimos assim uma função $m_{\alpha}$:
+definimos assim uma função para impares e pares $m$:
 
 $$
-m_{\alpha}(i, f) = \begin{cases}
-m_{-}(i, f) \text{ e } \alpha \text{ é impar } \\
-m_{+}(i, f) \text{ e } \alpha \text{ é par } \\
+m(\alpha, \beta) = \begin{cases}
+m_{-}(\alpha, \beta) \text{ e } \alpha \text{ é impar } \\
+m_{+}(\alpha, \beta) \text{ e } \alpha \text{ é par } \\
 \end{cases}
+$$
+
+Podemos simplificar a equação de forma que:
+
+$$
+op(B)= \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2i-1 +\alpha} m(\alpha, \lfloor s/2 \rfloor - i) )
 $$
 
 
