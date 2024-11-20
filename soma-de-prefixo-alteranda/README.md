@@ -11,7 +11,7 @@ $$
 Dado $|A|=k$ podemos escrever a equação utilizando a propriedade distributiva de forma que:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1(a_0 \cdot a_2 \cdot a_4 \cdot a_6 \dots) a_{2i} + a_1 (a_2 \cdot a_4 \cdot a_6 \dots) + a_3 (a_4 \cdot a_6 \dots) + a_ 5 (a_6 \dots) ...
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1(a_0 \cdot a_2 \cdot a_4 \cdot a_6 \dots)} + a_1 (a_2 \cdot a_4 \cdot a_6 \dots) + a_3 (a_4 \cdot a_6 \dots) + a_ 5 (a_6 \dots) ...
 $$
 
 Utilizando notação de produtório:
