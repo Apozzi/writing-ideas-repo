@@ -11,7 +11,7 @@ $$
 Dado $|A|=k$ podemos escrever a equação utilizando a propriedade distributiva de forma que:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 \prod_{i=1}^{\lfloor k/2 \rfloor} a_{2i} + a_1 + a_3 + a_ 5 ...
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 \prod_{i=1}^{\lfloor k/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor k/2 \rfloor - 1} a_{2i} + a_3 \prod_{i=1}^{\lfloor k/2 \rfloor - 2} a_{2i} + a_ 5 \prod_{i=1}^{\lfloor k/2 \rfloor - 3} a_{2i} ...
 $$
 
 Aqui está uma implementação em python:
