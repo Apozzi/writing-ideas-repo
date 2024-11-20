@@ -32,7 +32,7 @@ $$
 op(B)= \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2i-1 +\alpha} \prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha} )
 $$
 
-Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impa.
+Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
 
 TODO: Fazer o resto...
 
