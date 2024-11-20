@@ -5,7 +5,13 @@
 Dado uma sequencia $A_n$, nós definimos uma função alternada $op(A)$ que segue:
 
 $$
-op([a,b,c,d,e,f...])= (((((a_0+a_1)\times a_2)+a_3)\times a_4)+a_5)\times ...
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= (((((a_0+a_1)\times a_2)+a_3)\times a_4)+a_5)\times ...
+$$
+
+Dado $|A|=k$ podemos escrever a equação de forma que:
+
+$$
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 + a_1 + a_3 + a_ 5 ...
 $$
 
 Aqui está uma implementação em python:
