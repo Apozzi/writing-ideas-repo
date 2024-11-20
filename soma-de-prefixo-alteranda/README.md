@@ -52,9 +52,11 @@ $$
 m_{+}(\alpha, f) = \frac{M^{+}_\beta}{M^{+}_\alpha}
 $$
 
+
 $$
 m_{-}(\alpha, f) = \frac{M^{-}_\beta}{M^{-}_\alpha}
 $$
+
 
 definimos assim uma função para impares e pares $m$:
 
