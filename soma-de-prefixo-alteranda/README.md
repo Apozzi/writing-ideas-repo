@@ -35,13 +35,13 @@ $$
 Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar. Também repare que $\prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha}$ é uma multiplicatória comum que envolve apenas valores pares ou impares, portanto nesse trecho podemos usar versão alterada do soma de prefixos (que seria multiplicação de prefixos) para multiplicações de indices impares e outra para multiplicações de indices pares aonde:
 
 $$
-M^{+} = [a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
+M^{+} = [ a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
 $$
 
 Matriz com valores pares.
 
 $$
-M^{-} = [a_1, a_1 \cdot a_3, a_1 \cdot a_3 \cdot a_5, a_1 \cdot a_3 \cdot a_5 \cdot a_7, \dots]
+M^{-} = [ a_1, a_1 \cdot a_3, a_1 \cdot a_3 \cdot a_5, a_1 \cdot a_3 \cdot a_5 \cdot a_7, \dots]
 $$
 
 Matriz com valores impares.
