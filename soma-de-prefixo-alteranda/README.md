@@ -29,7 +29,7 @@ $$
 para uma sub-sequencia ordenada $B_n$ em um intervalo de indices, aonde $B \subset A$, $B= [a_\alpha,a_{\alpha+1},a_{\alpha+2},a_{\alpha+3},a_{\alpha+4},a_{\alpha+4}...]$ e $|B|= s < k $, temos para $op(B)$:
 
 $$
-op(B)= \sum_{i=\alpha}^{\lfloor s/2 \rfloor} ( a_{2i-1} \prod_{j=\alpha}^{\lfloor s/2 \rfloor - i} a_{2j} )
+op(B)= \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2(i+\alpha)-1} \prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2(j+\alpha)} )
 $$
 
 TODO: Fazer o resto...
