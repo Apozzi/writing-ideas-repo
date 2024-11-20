@@ -37,11 +37,13 @@ Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades m
 $$
 M^{+} = [a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
 $$
+
 Matriz com valores pares.
 
 $$
 M^{-} = [a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
 $$
+
 Matriz com valores impares.
 
 TODO: Fazer o resto...
