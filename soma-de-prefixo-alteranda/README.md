@@ -49,7 +49,7 @@ Matriz com valores impares.
 Com isso conseguimos montar duas funções $m_{+}$ e $m_{-}$ que utilizam indice inicial $\alpha$ e indice final $\beta$:
 
 $$
-m_{+}(\alpha, f) = \frac{M^{+}_{\beta}}{M^{+}_{\alpha}}
+m_{+}(i, f) = \frac{M^{+}_{i}}{M^{+}_{j}}
 $$
 
 
