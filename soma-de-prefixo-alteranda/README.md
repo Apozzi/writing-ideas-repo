@@ -26,6 +26,8 @@ $$
 op([a_0,a_1,a_2,a_3,a_4,a_5...])= \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=1}^{\lfloor k/2 \rfloor - i} a_{2j} )
 $$
 
+TODO: Antes de passar para próximo passo explicar como funciona remoção de indices finais.
+
 para uma sub-sequencia ordenada $B_n$ em um intervalo de indices, aonde $B \subset A$, $B= [a_\alpha,a_{\alpha+1},a_{\alpha+2},a_{\alpha+3},a_{\alpha+4},a_{\alpha+4}...]$ e $|B|= s = k - \beta < k $, temos para $op(B)$:
 
 $$
