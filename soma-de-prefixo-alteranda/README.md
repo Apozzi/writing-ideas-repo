@@ -5,7 +5,7 @@
 Dado uma sequencia $A_n$, nós definimos uma função alternada $op(A)$ que segue:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5...])= (((((a_0+a_1)\times a_2)+a_3)\times a_4)+a_5)\times ...
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= (((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ...
 $$
 
 Dado $|A|=k$ podemos escrever a equação utilizando a propriedade distributiva de forma que:
