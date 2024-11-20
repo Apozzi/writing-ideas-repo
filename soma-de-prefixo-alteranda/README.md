@@ -58,6 +58,13 @@ $$
 
 definimos assim uma função $m_{\alpha}$:
 
+$$
+m_ = \begin{cases}
+I_1 \text{ e } \alpha é impar \\
+I_1 \text{ e } \alpha é par \\
+\end{cases}
+$$
+
 
 
 TODO: Fazer o resto...
