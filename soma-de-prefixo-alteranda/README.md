@@ -173,9 +173,9 @@ Q.E.D
 Podemos generalizar a formula, aonde $k-\alpha > 0$ para:
 
 $$
-op(A_{[1,k-\alpha-1]})= \begin{cases}
-op(A_{[1,k-\alpha]}) - a_{k-\alpha} \text{ e } k-\alpha \text{ é impar } \\
-\frac{op(A_{[1,k-\alpha]})}{a_{k-\alpha}} \text{ e } k-\alpha \text{ é par } \\
+op(A_{[1,k-\alpha]})= \begin{cases}
+op(A_{[1,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } \\
+\frac{op(A_{[1,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha+1 \text{ é par } \\
 \end{cases}
 $$
 
