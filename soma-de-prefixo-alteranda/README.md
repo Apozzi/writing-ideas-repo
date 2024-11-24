@@ -17,32 +17,96 @@ $$
 Utilizando notação de produtório:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 \prod_{i=0}^{\lfloor k/2 \rfloor} a_{2i} + a_1 \prod_{i=0}^{\lfloor k/2 \rfloor - 1} a_{2i} + a_3 \prod_{i=0}^{\lfloor k/2 \rfloor - 2} a_{2i} + a_ 5 \prod_{i=0}^{\lfloor k/2 \rfloor - 3} a_{2i} ...
+op([a_0,a_1,a_2,a_3,a_4,a_5...])= 1 \prod_{i=0}^{\lfloor k/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor k/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor k/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor k/2 \rfloor} a_{2i} ...
 $$
 
-e de forma compacta:
+E de forma compacta:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5...])=\prod_{j=0}^{\lfloor k/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=0}^{\lfloor k/2 \rfloor - i} a_{2j} )
+op([a_0,a_1,a_2,a_3,a_4,a_5...])=\prod_{j=0}^{\lfloor k/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor (k+1)/2 \rfloor} ( a_{2i-1} \prod_{j=i}^{\lfloor k/2 \rfloor} a_{2j} )
 $$
 
 Suponhamos que exista um $S$ tal que $A \subset S$ e $s_{-1} = 1$ e $s_n=a_n$, logo podemos expressar a formula da seguinte maneira:
 
 $$
-op(A)=\sum_{i=0}^{\lfloor k/2 \rfloor} ( s_{2i-1} \prod_{j=0}^{\lfloor k/2 \rfloor - i} s_{2j} )
+op(A)=\sum_{i=0}^{\lfloor (k+1)/2 \rfloor} ( s_{2i-1} \prod_{j=i}^{\lfloor k/2 \rfloor} s_{2j} )
 $$
 
 Aonde $s \in S$.
 
-TODO: Antes de passar para próximo passo explicar como funciona remoção de indices finais e introduza outra parte da lógica e indução e a notação.
-
 para uma sub-sequencia ordenada $B_n$ em um intervalo de indices, aonde $B \subset A$, $B= [a_\alpha,a_{\alpha+1},a_{\alpha+2},a_{\alpha+3},a_{\alpha+4},a_{\alpha+4}...]$ e $|B|= s = k - \beta < k $, temos para $op(B)$:
 
 $$
-op(B)= \prod_{j=0}^{\lfloor k/2 \rfloor } a_{2j +\alpha} + \sum_{i=1}^{\lfloor s/2 \rfloor} ( a_{2i-1 +\alpha} \prod_{j=0}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha} )
+op(B)= \prod_{j=0}^{\lfloor s/2 \rfloor } a_{2j +\alpha} + \sum_{i=1}^{\lfloor (s+1)/2 \rfloor} ( a_{2i-1 +\alpha} \prod_{j=i}^{\lfloor s/2 \rfloor} a_{2j +\alpha} )
 $$
 
-Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar. Também repare que $\prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha}$ é uma multiplicatória comum que envolve apenas valores pares ou impares, portanto nesse trecho podemos usar versão alterada do soma de prefixos (que seria multiplicação de prefixos) para multiplicações de indices impares e outra para multiplicações de indices pares aonde:
+Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
+Vamos definir a sub-sequencias $A_{[1,k-1]}$ que não ultimo indice de forma que:
+$A_{[1,k-1]} = [a_0,a_1,a_2,.., a_{k-1}]$ temos que:
+
+$$
+op(A_{>1})= \begin{cases}
+op(A) - a_k \text{ e } k \text{ é impar } \\
+\frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
+\end{cases}
+$$
+
+
+### Prova
+
+Isso devido pois $|A_{[1,k-1]}| = k - 1$ e $\alpha = 0$
+
+$$
+op(A_{[1,k-1]})= \prod_{j=0}^{\lfloor (k-1)/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=i}^{\lfloor (k-1)/2 \rfloor} a_{2j} )
+$$
+
+#### Caso 1 - $k$ sendo um valor par.
+
+para $k$ par temos $\lfloor (k-1)/2 \rfloor = k/2 - 1$ e $\lfloor k/2 \rfloor = k/2$
+
+$$
+op(A_{[1,k-1]})= \prod_{j=0}^{k/2 - 2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 2} a_{2j} )
+$$
+
+$$
+= \prod_{j=0}^{k/2 - 1} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 1} a_{2j} )
+$$
+
+Através da propriedade distributiva conseguimos chegar no seguinte resultado:
+
+$$
+= \frac{\prod_{j=0}^{k/2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2} a_{2j} )}{a_{2(k/2)}}
+$$
+
+Simultaneamente para $k$ par temos também $\lfloor (k+1)/2 \rfloor = k/2$ ou seja para formula de $op(A)$:
+
+$$
+op(A)=\prod_{j=0}^{k/2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2} a_{2j} )
+$$
+
+ou seja
+
+$$
+op(A_{[1,k-1]}) = \frac{op(A)}{a_{k}}
+$$
+
+#### Caso 2 - $k$ sendo um valor impar.
+
+
+
+
+
+
+
+
+
+
+TODO: Antes de passar para próximo passo explicar como funciona remoção de indices finais e introduza outra parte da lógica e indução e a notação.
+
+
+
+
+Também repare que $\prod_{j=1}^{\lfloor s/2 \rfloor - i} a_{2j +\alpha}$ é uma multiplicatória comum que envolve apenas valores pares ou impares, portanto nesse trecho podemos usar versão alterada do soma de prefixos (que seria multiplicação de prefixos) para multiplicações de indices impares e outra para multiplicações de indices pares aonde:
 
 $$
 M^{+} = [ a_0, a_0 \cdot a_2, a_0 \cdot a_2 \cdot a_4, a_0 \cdot a_2 \cdot a_4 \cdot a_6, \dots]
