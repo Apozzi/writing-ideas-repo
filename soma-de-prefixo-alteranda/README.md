@@ -170,6 +170,15 @@ Q.E.D
 
 ---
 
+Podemos generalizar a formula para:
+
+$$
+op(A_{[1,k-\alpha]})= \begin{cases}
+op(A) - a_{k+\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } \\
+\frac{op(A)}{a_{k+\alpha+1}} \text{ e } k-\alpha+1 \text{ é par } \\
+\end{cases}
+$$
+
 
 
 
