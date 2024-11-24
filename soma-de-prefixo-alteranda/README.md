@@ -58,16 +58,16 @@ $$
 Temos duas possibilidades, para k impar:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= (((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ... + a_{k]}
+op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= (((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ... + a_{k}
 $$
 
 e para k par:
 
 $$
-op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= ((((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ...) a_{k]}
+op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= ((((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ...) a_{k}
 $$
 
-com isso:
+sabemos $op(A_{[1,k-1]})$ é op(A) sem ultimo elemento, logo:
 
 $$
 op(A_{[1,k-1]})= \begin{cases}
