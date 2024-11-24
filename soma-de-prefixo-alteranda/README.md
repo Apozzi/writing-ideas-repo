@@ -170,7 +170,7 @@ Q.E.D
 
 ---
 
-Podemos generalizar a formula, aonde $k-\alpha > 0$ para:
+Podemos generalizar a formula, aonde $k > k-\alpha > 0$ para:
 
 $$
 op(A_{[1,k-\alpha]})= \begin{cases}
@@ -179,7 +179,16 @@ op(A_{[1,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } 
 \end{cases}
 $$
 
+equivalente a:
 
+$$
+op(A_{[1,k-\alpha]})= \begin{cases}
+op(A_{[1,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha \text{ é par } \\
+\frac{op(A_{[1,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha \text{ é impar } \\
+\end{cases}
+$$
+
+aplicando de forma iterada temos, sabemos que se $op(A_{[1,k-\alpha]})$ entrou na condição par, logo $op(A_{[1,k-\alpha+1]})$ entra na condição impar:
 
 
 
