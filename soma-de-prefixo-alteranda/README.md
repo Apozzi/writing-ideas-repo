@@ -45,12 +45,13 @@ Vamos definir a sub-sequencias $A_{[1,k-1]}$ que não ultimo indice de forma que
 $A_{[1,k-1]} = [a_0,a_1,a_2,.., a_{k-1}]$ temos que:
 
 $$
-op(A_{>1})= \begin{cases}
+op(A_{[1,k-1]})= \begin{cases}
 op(A) - a_k \text{ e } k \text{ é impar } \\
 \frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
 \end{cases}
 $$
 
+---
 
 ### Prova
 
@@ -65,7 +66,7 @@ $$
 para $k$ par temos $\lfloor (k-1)/2 \rfloor = k/2 - 1$ e $\lfloor k/2 \rfloor = k/2$
 
 $$
-op(A_{[1,k-1]})= \prod_{j=0}^{k/2 - 2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 2} a_{2j} )
+op(A_{[1,k-1]})= \prod_{j=0}^{k/2 - 1} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 1} a_{2j} )
 $$
 
 $$
@@ -78,13 +79,13 @@ $$
 = \frac{\prod_{j=0}^{k/2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2} a_{2j} )}{a_{2(k/2)}}
 $$
 
-Simultaneamente para $k$ par temos também $\lfloor (k+1)/2 \rfloor = k/2$ ou seja para formula de $op(A)$:
+Simultaneamente para $k$ par temos também $\lfloor (k+1)/2 \rfloor = k/2$ ou seja para formula a seguinte formula de $op(A)$:
 
 $$
 op(A)=\prod_{j=0}^{k/2} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2} a_{2j} )
 $$
 
-ou seja
+através de substituição:
 
 $$
 op(A_{[1,k-1]}) = \frac{op(A)}{a_{k}}
@@ -92,8 +93,54 @@ $$
 
 #### Caso 2 - $k$ sendo um valor impar.
 
+para $k$ impar temos $\lfloor (k-1)/2 \rfloor = \lfloor k/2 \rfloor = (k-1)/2$ e $\lfloor (k+1)/2 \rfloor = (k+1)/2$, primeiramente para formula de $op(A)$:
 
+$$
+op(A)=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
+$$
 
+e para formula de $op(A_{[1,k-1]})$:
+
+$$
+op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k-1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
+$$
+
+sabemos que $(k-1)/2=(k+1)/2 - 1$ portanto:
+
+$$
+op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2 - 1} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
+$$
+
+$$
+=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} ) - a_{2((k-1)/2)-1} \prod_{j=(k-1)/2}^{(k-1)/2} a_{2j} 
+$$
+
+Através de simplificação e o cancelamento do multiplicatório aonde indice inicial e final são iguais que é uma [multiplicatória vacuosa](https://en.wikipedia.org/wiki/Empty_product) sempre é igual a 1:
+
+$$
+op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} ) - a_k \cancel{\prod_{j=(k-1)/2}^{(k-1)/2} a_{2j}}
+$$
+
+logo substituindo a expressão resultante:
+
+$$
+op(A_{[1,k-1]})=op(A) - a_k
+$$
+
+#### Juntando Caso 1 e Caso 2.
+
+com isso provamos que :
+
+$$
+op(A_{[1,k-1]})= \begin{cases}
+op(A) - a_k \text{ e } k \text{ é impar } \\
+\frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
+\end{cases}
+$$
+
+Q.E.D
+
+---
 
 
 
