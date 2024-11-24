@@ -41,11 +41,11 @@ op(B)= \prod_{j=0}^{\lfloor s/2 \rfloor } a_{2j +\alpha} + \sum_{i=1}^{\lfloor (
 $$
 
 Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
-Vamos definir a sub-sequencias $A_{[1,k-1]}$ que não ultimo indice de forma que:
-$A_{[1,k-1]} = [a_0,a_1,a_2,.., a_{k-1}]$ temos que:
+Vamos definir a sub-sequencias $A_{[0,k-1]}$ que não ultimo indice de forma que:
+$A_{[0,k-1]} = [a_0,a_1,a_2,.., a_{k-1}]$ temos que:
 
 $$
-op(A_{[1,k-1]})= \begin{cases}
+op(A_{[0,k-1]})= \begin{cases}
 op(A) - a_k \text{ e } k \text{ é impar } \\
 \frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
 \end{cases}
@@ -67,10 +67,10 @@ $$
 op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= ((((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ...) a_{k}
 $$
 
-sabemos $op(A_{[1,k-1]})$ é op(A) sem ultimo elemento, logo:
+sabemos $op(A_{[0,k-1]})$ é op(A) sem ultimo elemento, logo:
 
 $$
-op(A_{[1,k-1]})= \begin{cases}
+op(A_{[0,k-1]})= \begin{cases}
 op(A) - a_k \text{ e } k \text{ é impar } \\
 \frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
 \end{cases}
@@ -83,10 +83,10 @@ Q.E.D
 
 ### Prova 2 (pouco deselegante, mas decidi mostrar)
 
-Sabemos que $|A_{[1,k-1]}| = k - 1$ e $\alpha = 0$, logo aplicando a definição:
+Sabemos que $|A_{[0,k-1]}| = k - 1$ e $\alpha = 0$, logo aplicando a definição:
 
 $$
-op(A_{[1,k-1]})= \prod_{j=0}^{\lfloor (k-1)/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=i}^{\lfloor (k-1)/2 \rfloor} a_{2j} )
+op(A_{[0,k-1]})= \prod_{j=0}^{\lfloor (k-1)/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=i}^{\lfloor (k-1)/2 \rfloor} a_{2j} )
 $$
 
 #### Caso 1 - $k$ sendo um valor par.
@@ -94,7 +94,7 @@ $$
 para $k$ par temos $\lfloor (k-1)/2 \rfloor = k/2 - 1$ e $\lfloor k/2 \rfloor = k/2$
 
 $$
-op(A_{[1,k-1]})= \prod_{j=0}^{k/2 - 1} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 1} a_{2j} )
+op(A_{[0,k-1]})= \prod_{j=0}^{k/2 - 1} a_{2j} + \sum_{i=1}^{k/2} ( a_{2i-1} \prod_{j=i}^{k/2 - 1} a_{2j} )
 $$
 
 $$
@@ -116,7 +116,7 @@ $$
 através de substituição:
 
 $$
-op(A_{[1,k-1]}) = \frac{op(A)}{a_{k}}
+op(A_{[0,k-1]}) = \frac{op(A)}{a_{k}}
 $$
 
 #### Caso 2 - $k$ sendo um valor impar.
@@ -127,16 +127,16 @@ $$
 op(A)=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
 $$
 
-e para formula de $op(A_{[1,k-1]})$:
+e para formula de $op(A_{[0,k-1]})$:
 
 $$
-op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k-1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
+op(A_{[0,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k-1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
 $$
 
 sabemos que $(k-1)/2=(k+1)/2 - 1$ portanto:
 
 $$
-op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2 - 1} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
+op(A_{[0,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2 - 1} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} )
 $$
 
 $$
@@ -146,13 +146,13 @@ $$
 Através de simplificação e o cancelamento do multiplicatório aonde indice inicial e final são iguais que é uma [multiplicatória vacuosa](https://en.wikipedia.org/wiki/Empty_product) sempre é igual a 1:
 
 $$
-op(A_{[1,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} ) - a_k \cancel{\prod_{j=(k-1)/2}^{(k-1)/2} a_{2j}}
+op(A_{[0,k-1]})=\prod_{j=0}^{(k-1)/2} a_{2j} + \sum_{i=1}^{(k+1)/2} ( a_{2i-1} \prod_{j=i}^{(k-1)/2} a_{2j} ) - a_k \cancel{\prod_{j=(k-1)/2}^{(k-1)/2} a_{2j}}
 $$
 
 logo substituindo a expressão resultante:
 
 $$
-op(A_{[1,k-1]})=op(A) - a_k
+op(A_{[0,k-1]})=op(A) - a_k
 $$
 
 #### Juntando Caso 1 e Caso 2.
@@ -160,7 +160,7 @@ $$
 com isso provamos que :
 
 $$
-op(A_{[1,k-1]})= \begin{cases}
+op(A_{[0,k-1]})= \begin{cases}
 op(A) - a_k \text{ e } k \text{ é impar } \\
 \frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
 \end{cases}
@@ -173,23 +173,34 @@ Q.E.D
 Podemos generalizar a formula, aonde $k > k-\alpha > 0$ para:
 
 $$
-op(A_{[1,k-\alpha]})= \begin{cases}
-op(A_{[1,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } \\
-\frac{op(A_{[1,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha+1 \text{ é par } \\
+op(A_{[0,k-\alpha]})= \begin{cases}
+op(A_{[0,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } \\
+\frac{op(A_{[0,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha+1 \text{ é par } \\
 \end{cases}
 $$
 
 equivalente a:
 
 $$
-op(A_{[1,k-\alpha]})= \begin{cases}
-op(A_{[1,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha \text{ é par } \\
-\frac{op(A_{[1,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha \text{ é impar } \\
+op(A_{[0,k-\alpha]})= \begin{cases}
+op(A_{[0,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha \text{ é par } \\
+\frac{op(A_{[0,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha \text{ é impar } \\
 \end{cases}
 $$
 
-aplicando de forma iterada temos, sabemos que se $op(A_{[1,k-\alpha]})$ entrou na condição par, logo $op(A_{[1,k-\alpha+1]})$ entra na condição impar:
+aplicando de forma iterada temos, sabemos que se $op(A_{[0,k-\alpha]})$ entrou na condição par, logo $op(A_{[0,k-\alpha+1]})$ entra na condição impar, ou seja ele divide e subtrai os termos de forma alternada:
 
+$$
+op(A_{[0,k-\alpha]}) = ((\dots op(A) \dots)-a_{k-3})/a_{k-2} - a_{k}
+$$
+
+ou 
+
+$$
+op(A_{[0,k-\alpha]}) = (((\dots op(A) \dots)/a_{k-3}) - a_{k-2} )/ a_{k}
+$$
+
+----
 
 
 
