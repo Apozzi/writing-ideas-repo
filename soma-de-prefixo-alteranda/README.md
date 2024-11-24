@@ -170,7 +170,7 @@ Q.E.D
 
 ---
 
-Podemos generalizar a formula, aonde $k-\alpha \geq 0$ para:
+Podemos generalizar a formula, aonde $k-\alpha > 0$ para:
 
 $$
 op(A_{[1,k-\alpha]})= \begin{cases}
