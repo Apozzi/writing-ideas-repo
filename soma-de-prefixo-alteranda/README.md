@@ -83,7 +83,7 @@ Q.E.D
 
 ### Prova 2 (pouco deselegante, mas decidi mostrar)
 
-Isso devido pois $|A_{[1,k-1]}| = k - 1$ e $\alpha = 0$
+Sabemos que $|A_{[1,k-1]}| = k - 1$ e $\alpha = 0$, logo aplicando a definição:
 
 $$
 op(A_{[1,k-1]})= \prod_{j=0}^{\lfloor (k-1)/2 \rfloor } a_{2j} + \sum_{i=1}^{\lfloor k/2 \rfloor} ( a_{2i-1} \prod_{j=i}^{\lfloor (k-1)/2 \rfloor} a_{2j} )
