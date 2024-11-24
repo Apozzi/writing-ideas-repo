@@ -53,7 +53,35 @@ $$
 
 ---
 
-### Prova
+### Prova 1
+
+Temos duas possibilidades, para k impar:
+
+$$
+op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= (((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ... + a_{k]}
+$$
+
+e para k par:
+
+$$
+op([a_0,a_1,a_2,a_3,a_4,a_5... a_{k-1]})= ((((((a_0+a_1)\cdot a_2)+a_3)\cdot a_4)+a_5)\cdot ...) a_{k]}
+$$
+
+com isso:
+
+$$
+op(A_{[1,k-1]})= \begin{cases}
+op(A) - a_k \text{ e } k \text{ é impar } \\
+\frac{op(A)}{a_k} \text{ e } k \text{ é par } \\
+\end{cases}
+$$
+
+Q.E.D
+
+
+---
+
+### Prova 2 (pouco deselegante, mas decidi mostrar)
 
 Isso devido pois $|A_{[1,k-1]}| = k - 1$ e $\alpha = 0$
 
