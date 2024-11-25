@@ -22,7 +22,7 @@ $$
 ## Equação do Polinomio Radical do Segundo Grau.
 
 
-Para resolvermos uma equação quadratica Radical:
+Para resolvermos uma equação quadratica radical:
 
 $$
 a\sqrt{x} + bx + c = 0.
