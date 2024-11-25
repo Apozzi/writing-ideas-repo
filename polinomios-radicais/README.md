@@ -13,16 +13,16 @@ $$
 
 Onde os expoentes $1/i$ pertencem ao conjunto das frações unitárias $1/2, 1/3, \dots, 1/n$, e $a_i$ são os coeficientes. 
 
-Para o caso especifico de um polinomio radial de grau 3 temos:
+Para o caso especifico de um polinomio radical de grau 3 temos:
 
 $$
 \mathcal{P}(x) = a\sqrt[3]{x} + b\sqrt{x} + cx + d = 0.
 $$
 
-## Equação do Polinomio Radial do Segundo Grau.
+## Equação do Polinomio Radical do Segundo Grau.
 
 
-Para resolvermos uma equação quadratica radial:
+Para resolvermos uma equação quadratica Radical:
 
 $$
 a\sqrt{x} + bx + c = 0.
@@ -38,7 +38,7 @@ Aonde $\Delta_{\text{rad}}= a^2-4bc$
 
 ## Prova
 
-`Intuição: Para resolvermos uma equação quadrática radial devemos convertê-la para uma equação quadrática comum.`
+`Intuição: Para resolvermos uma equação quadrática Radical devemos convertê-la para uma equação quadrática comum.`
 
 
 Dado
@@ -142,7 +142,7 @@ $$
 x = \frac{a^2 \pm a\sqrt{a^2-4bc}}{2b^2}- \frac{c}{b}
 $$
 
-Definiremos nossa $\Delta_{\text{rad}}= a^2-4bc$, logo a formula para resolução os coeficientes de Polinomio Radial do Segundo Grau é a seguinte:
+Definiremos nossa $\Delta_{\text{rad}}= a^2-4bc$, logo a formula para resolução os coeficientes de Polinomio Radical do Segundo Grau é a seguinte:
 
 $$
 x = \frac{a^2 \pm a\sqrt{\Delta_{\text{rad}}}}{2b^2}- \frac{c}{b}.
@@ -155,7 +155,7 @@ x = \frac{a}{b}\left(\frac{a \pm \sqrt{\Delta_{\text{rad}}}}{2b}\right)- \frac{c
 $$
 
 
-## Teorema dos Polinomios Radiais (Para equações de Grau 2)
+## Teorema dos Polinomios Radicais (Para equações de Grau 2)
 
 Para toda equação no formato:
 
@@ -189,7 +189,7 @@ $$
 
 ### Prova
 
-O $x$ da equação do Polinomio Radial do Segundo Grau é definida por:
+O $x$ da equação do Polinomio Radical do Segundo Grau é definida por:
 
 $$
 x = \frac{a}{b}\left(\frac{a \pm \sqrt{\Delta_{\text{rad}}}}{2b}\right)- \frac{c}{b}
@@ -241,7 +241,7 @@ Com isso provamos a existencia do mapeamento linear a cima.
 Q.E.D
 
 
-## Teorema Generalizado dos Polinomios Radiais
+## Teorema Generalizado dos Polinomios Radicais
 
 // TODO
 
