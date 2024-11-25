@@ -38,6 +38,9 @@ Aonde $\Delta_{\text{rad}}= a^2-4bc$
 
 ## Prova
 
+`Intuição: Para resolvermos uma equação quadrática radial devemos convertê-la para uma equação quadrática comum.`
+
+
 Dado
 
 $$
