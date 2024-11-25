@@ -99,6 +99,7 @@ $$
 $$
 
 Expandindo o termo $(2bc - a^2)^2$:
+
 $$
 (2bc - a^2)^2 = 4b^2c^2 - 4a^2bc + a^4.
 $$
