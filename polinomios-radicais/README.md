@@ -105,11 +105,13 @@ $$
 $$
 
 Agora subtraímos $ 4b^2c^2 $:
+
 $$
 \Delta = (4b^2c^2 - 4a^2bc + a^4) - 4b^2c^2.
 $$
 
 Cancelando $ 4b^2c^2 $:
+
 $$
 \Delta = -4a^2bc + a^4.
 $$
