@@ -22,7 +22,7 @@ $$
 ## Equação do Polinomio Radial do Segundo Grau.
 
 
-Para resolvermos uma equação quadratica radial devemos converte-la para uma equação quadratica comum, dado:
+Para resolvermos uma equação quadratica radial:
 
 $$
 a\sqrt{x} + bx + c = 0.
