@@ -163,8 +163,12 @@ $$
 Definimos as seguintes contantes:
 
 $$
-\alpha = b \\
-\beta = -a \\
+\alpha = b
+$$
+$$
+\beta = -a
+$$
+$$
 \gamma = c
 $$
 
