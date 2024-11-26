@@ -253,7 +253,7 @@ $$
 
 Aonde $|A|=k$
 
-Temos a seguinte formula como válida para todo $\alpha < \beta < k$ e $\alpha, \beta \in \mathbb{N}$
+Temos a seguinte formula como válida para todo $\alpha < \beta < k$ e $\alpha, \beta \in \mathbb{N}$:
 
 $$
 op(A_{[\alpha, \beta]}) = \begin{cases}
