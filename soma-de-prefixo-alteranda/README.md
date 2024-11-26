@@ -344,7 +344,7 @@ fazemos também substituicão na expressão original:
 
 $$
 op(A_{[\alpha, \beta]}) = \begin{cases}
-op(A_{[1,\beta-1]}) + \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i-1} \cdot (a_\alpha - op(A_{[1,\alpha-1]})) & \text{se } \alpha \text{ é ímpar} \\[10pt]
+op(A_{[1,\beta-1]}) + \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i-1} \cdot (a_\alpha - op(A_{[1,\alpha-1]})) & \text{se } \alpha \text{ é ímpar} \\
 op(A_{[0,\beta]}) + \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} \cdot (a_\alpha - op(A_{[0,\alpha]})) & \text{se } \alpha \text{ é par}
 \end{cases}
 $$
