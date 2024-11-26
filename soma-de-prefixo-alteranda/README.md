@@ -45,23 +45,30 @@ $$
 ou também podemos escrever, para $\alpha$ par:
 
 $$
-op(A_{[\alpha, \beta]})=  a_{\alpha} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+2} \prod_{i=\lfloor \alpha/2 \rfloor +1}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+4} \prod_{i=\lfloor \alpha/2 \rfloor+2}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor}
+op(A_{[\alpha, \beta]})=  a_{\alpha} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+1} \prod_{i=\lfloor \alpha/2 \rfloor +1}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+3} \prod_{i=\lfloor \alpha/2 \rfloor+2}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor}
 a_{2i}
 $$
 
-pois:
+Aonde é escrito de forma extensa e é feita uma mudança de indices, e também pois:
 
 $$
-op([a_{\alpha},a_{\alpha+1},a_{\alpha+2},...,a_{\beta}])= a_{\alpha}(a_{\alpha+2}  \cdot a_{\alpha+4} \cdot a_{\alpha+6}  \cdot \dots \cdot a_\beta) + a_1 (a_{\alpha+4} \cdot a_{\alpha+6}  \cdot \dots \cdot a_\beta) + a_3 (a_{\alpha+6}  \cdot \dots a_\beta) + a_ 5 (\dots a_\beta) ...
+op([a_{\alpha},a_{\alpha+1},a_{\alpha+2},...,a_{\beta}])= a_{\alpha}(a_{\alpha+2}  \cdot a_{\alpha+4} \cdot a_{\alpha+6}  \cdot \dots \cdot a_\beta) + a_{\alpha+1} (a_{\alpha+4} \cdot a_{\alpha+6}  \cdot \dots \cdot a_\beta) + a_{\alpha+3} (a_{\alpha+6}  \cdot \dots a_\beta) + a_{\alpha+5} (\dots a_\beta) ...
 $$
 
-Aonde é escrito de forma extensa e é feita uma mudança de indices, e para $\alpha$ impar:
+ e para $\alpha$ impar:
 
 $$
 op(A_{[\alpha, \beta]})=  a_{\alpha} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i-1} + a_{\alpha+2} \prod_{i=\lfloor \alpha/2 \rfloor +1}^{\lfloor\beta/2\rfloor} a_{2i-1} + a_{\alpha+4} \prod_{i=\lfloor \alpha/2 \rfloor+2}^{\lfloor\beta/2\rfloor } a_{2i-1} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i-1}
 $$
 
-Respectivamente.
+pois, respectivamente:
+
+$$
+op([a_{\alpha},a_{\alpha+1},a_{\alpha+2},...,a_{\beta}])= a_{\alpha}(a_{\alpha+1}  \cdot a_{\alpha+3} \cdot a_{\alpha+5}  \cdot \dots \cdot a_\beta) + a_{\alpha+2} (a_{\alpha+3} \cdot a_{\alpha+5}  \cdot \dots \cdot a_\beta) + a_{\alpha+4} (a_{\alpha+5}  \cdot \dots a_\beta) + a_{\alpha+6} (\dots a_\beta) ...
+$$
+
+
+
 
 
 Repare que para a subsequencia dependendendo do valor de $\alpha$ as paridades mudam de forma que para $\alpha$ impar temos $2j+\alpha$ impar e $2i-1+\alpha$ par, e se $\alpha$ é par temos $2j+\alpha$ par e $2i-1+\alpha$ impar.
@@ -194,37 +201,7 @@ Q.E.D
 
 ---
 
-Podemos generalizar a formula, aonde $k > k-\alpha > 0$ para:
 
-$$
-op(A_{[0,k-\alpha]})= \begin{cases}
-op(A_{[0,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha+1 \text{ é impar } \\
-\frac{op(A_{[0,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha+1 \text{ é par } \\
-\end{cases}
-$$
-
-equivalente a:
-
-$$
-op(A_{[0,k-\alpha]})= \begin{cases}
-op(A_{[0,k-\alpha+1]}) - a_{k-\alpha+1} \text{ e } k-\alpha \text{ é par } \\
-\frac{op(A_{[0,k-\alpha+1]})}{a_{k-\alpha+1}} \text{ e } k-\alpha \text{ é impar } \\
-\end{cases}
-$$
-
-aplicando de forma iterada temos, sabemos que se $op(A_{[0,k-\alpha]})$ entrou na condição par, logo $op(A_{[0,k-\alpha+1]})$ entra na condição impar, ou seja ele divide e subtrai os termos de forma alternada:
-
-$$
-op(A_{[0,k-\alpha]}) = ((\dots op(A) \dots)-a_{k-3})/a_{k-2} - a_{k}
-$$
-
-ou 
-
-$$
-op(A_{[0,k-\alpha]}) = (((\dots op(A) \dots)/a_{k-3}) - a_{k-2} )/ a_{k}
-$$
-
-...
 
 ----
 
@@ -292,7 +269,6 @@ $$
 ### Prova do Algoritmo
 
 Dado a seguinte formula:
-
 $$
 op(A_{[\alpha, \beta]}) = \begin{cases}
 P^{-}_{\beta-1} + \Delta \cdot (a_\alpha - P^{-}_{\alpha-1}) & \text{se } \alpha \text{ é ímpar} \\[10pt]
@@ -301,7 +277,6 @@ P^{+}_{\beta} + \Delta \cdot (a_\alpha - P^{+}_{\alpha}) & \text{se } \alpha \te
 $$
 
 Temos a seguintes sequencias:
-
 $$
 P^{+} = [ op(A_{[0,0]}), op(A_{[0,1]}), op(A_{[0,2]}), op(A_{[0,3]}) \dots op(A_{[0,k]})]
 $$
@@ -421,6 +396,43 @@ com isso fica claro que:
 $$
 op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = a_{\alpha+1} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+3} \prod_{i=\lfloor \alpha/2 \rfloor+1}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor}
 $$
+
+somando $ a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor}$, nós temos:
+
+$$
+op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} =a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} +  a_{\alpha+1} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+3} \prod_{i=\lfloor \alpha/2 \rfloor+1}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor}
+$$
+
+Que é precisamente a definição de $op(A_{[\alpha, \beta]})$, então:
+
+$$
+op(A_{[\alpha, \beta]}) = op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor}
+$$
+
+ou seja:
+
+$$
+op(A_{[\alpha, \beta]}) = op(A_{[0,\beta]}) + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} 
+$$
+
+Com isso provamos para $\alpha$ par a expressão equivale a $op(A_{[\alpha, \beta]}) $.
+
+### Caso 2 - $\alpha$ sendo impar:
+
+
+Vamos analisar a expressão:
+
+$$
+op(A_{[1,\beta-1]}) + \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i-1} \cdot (a_\alpha - op(A_{[1,\alpha-1]})) 
+$$
+
+expandindo:
+
+$$
+op(A_{[0,\beta]}) + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} 
+$$
+
+
 
 
 
