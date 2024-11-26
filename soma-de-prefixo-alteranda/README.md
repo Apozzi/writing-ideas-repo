@@ -255,8 +255,9 @@ Aonde $|A|=k$
 
 Temos a seguinte formula como válida para todo $\alpha < \beta < k$ e $\alpha, \beta \in \mathbb{N}$:
 
-$$op(A_{[\alpha, \beta]}) = \begin{cases}
-P^{-}_{\beta-1} + \Delta \cdot (a_\alpha - P^{-}_{\alpha-1}) & \text{se } \alpha \text{ é ímpar} \\[10pt]
+$$
+op(A_{[\alpha, \beta]}) = \begin{cases}
+P^{-}_{\beta-1} + \Delta \cdot (a_\alpha - P^{-}_{\alpha-1}) & \text{se } \alpha \text{ é ímpar} \\
 P^{+}_{\beta} + \Delta \cdot (a_\alpha - P^{+}_{\alpha}) & \text{se } \alpha \text{ é par}
 \end{cases}
 $$
@@ -264,8 +265,9 @@ $$
 ### Prova do Algoritmo
 
 Dado a seguinte formula:
-$$op(A_{[\alpha, \beta]}) = \begin{cases}
-P^{-}_{\beta-1} + \Delta \cdot (a_\alpha - P^{-}_{\alpha-1}) & \text{se } \alpha \text{ é ímpar} \\[10pt]
+$$
+op(A_{[\alpha, \beta]}) = \begin{cases}
+P^{-}_{\beta-1} + \Delta \cdot (a_\alpha - P^{-}_{\alpha-1}) & \text{se } \alpha \text{ é ímpar} \\
 P^{+}_{\beta} + \Delta \cdot (a_\alpha - P^{+}_{\alpha}) & \text{se } \alpha \text{ é par}
 \end{cases}
 $$
