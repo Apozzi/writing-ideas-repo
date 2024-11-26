@@ -285,7 +285,7 @@ Podemos fazer a simples substuição:
 
 $$
 op(A_{[\alpha, \beta]}) = \begin{cases}
-op(A_{[1,\beta-1]}) + \Delta \cdot (a_\alpha - op(A_{[1,\alpha-1]})) & \text{se } \alpha \text{ é ímpar} \\[10pt]
+op(A_{[1,\beta-1]}) + \Delta \cdot (a_\alpha - op(A_{[1,\alpha-1]})) & \text{se } \alpha \text{ é ímpar} \\
 op(A_{[0,\beta]}) + \Delta \cdot (a_\alpha - op(A_{[0,\alpha]})) & \text{se } \alpha \text{ é par}
 \end{cases}
 $$
