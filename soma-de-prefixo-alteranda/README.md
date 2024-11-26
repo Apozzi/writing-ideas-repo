@@ -291,9 +291,7 @@ op(A_{[0,\beta]}) + \Delta \cdot (a_\alpha - op(A_{[0,\alpha]})) & \text{se } \a
 $$
 
 
-é trivial repararmos que para todo indice $m$ o elemento da matriz de prefixos de multiplicação é:
-
-$M^{+}_{m} = \prod_{i=0}^{m}{a_{2i}}$
+é trivial repararmos que para todo indice $m$ o elemento da matriz de prefixos de multiplicação é:$M^{+}_{m} = \prod_{i=0}^{m}{a_{2i}}$
 
 $M^{-}_{m} = \prod_{i=0}^{m}{a_{2i-1}}$
 
