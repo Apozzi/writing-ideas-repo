@@ -292,7 +292,6 @@ $$
 
 
 é trivial repararmos que para todo indice $m$ o elemento da matriz de prefixos de multiplicação é:
-
 $$
 M^{+}_{m} = \prod_{i=0}^{m} a_{2i}
 $$
