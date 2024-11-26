@@ -291,9 +291,15 @@ op(A_{[0,\beta]}) + \Delta \cdot (a_\alpha - op(A_{[0,\alpha]})) & \text{se } \a
 $$
 
 
-é trivial repararmos que para todo indice $m$ o elemento da matriz de prefixos de multiplicação é:$M^{+}_{m} = \prod_{i=0}^{m}{a_{2i}}$
+é trivial repararmos que para todo indice $m$ o elemento da matriz de prefixos de multiplicação é:
 
-$M^{-}_{m} = \prod_{i=0}^{m}{a_{2i-1}}$
+$$
+M^{+}_{m} = \prod_{i=0}^{m}{a_{2i}}
+$$
+
+$$
+M^{-}_{m} = \prod_{i=0}^{m}{a_{2i-1}}
+$$
 
 e temos:
 
@@ -361,30 +367,30 @@ $$
 temos:
 
 $$
-op(A_{[0,\beta]}) = 1 \prod_{i=0}^{\lfloor \beta/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \beta/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \beta/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \beta/2 \rfloor} a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor \beta/2 \rfloor}
+op(A_{[0,\beta]}) = 1 \prod_{i=0}^{\lfloor \beta/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \beta/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \beta/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \beta/2 \rfloor} a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor \beta/2 \rfloor} a_{2i}
 $$
 
 $$
-op(A_{[0,\alpha]}) = 1 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor}
+op(A_{[0,\alpha]}) = 1 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor} a_{2i}
 $$
 
 também:
 
 $$
-op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} (1 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor})
+op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} (1 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor} a_{2i})
 $$
 
 podemos mudar os indices de todos os multiplicatórios:
 
 
 $$
-op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = 1 \prod_{i=0}^{\lfloor\beta/2\rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor\beta/2\rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor\beta/2\rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor\beta/2\rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor}
+op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = 1 \prod_{i=0}^{\lfloor\beta/2\rfloor} a_{2i} + a_1 \prod_{i=1}^{\lfloor\beta/2\rfloor } a_{2i} + a_3 \prod_{i=2}^{\lfloor\beta/2\rfloor} a_{2i} + a_ 5 \prod_{i=3}^{\lfloor\beta/2\rfloor} a_{2i} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i}
 $$
 
 com isso fica claro que:
 
 $$
-op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = a_{\alpha+1} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+3} \prod_{i=\lfloor \alpha/2 \rfloor+1}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor}
+op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = a_{\alpha+1} \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_{\alpha+3} \prod_{i=\lfloor \alpha/2 \rfloor+1}^{\lfloor\beta/2\rfloor } a_{2i} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor\beta/2\rfloor} a_{2i}
 $$
 
 somando $ a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor}$, nós temos:
@@ -396,7 +402,7 @@ $$
 Que é precisamente a definição de $op(A_{[\alpha, \beta]})$, então:
 
 $$
-op(A_{[\alpha, \beta]}) = op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor}
+op(A_{[\alpha, \beta]}) = op(A_{[0,\beta]}) - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i}
 $$
 
 ou seja:
@@ -419,9 +425,24 @@ $$
 expandindo:
 
 $$
-op(A_{[0,\beta]}) + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} - op(A_{[0,\alpha]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} 
+op(A_{[1,\beta-1]}) + a_\alpha\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} - op(A_{[1,\alpha-1]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} 
 $$
 
+temos:
+
+$$
+op(A_{[1,\beta-1]}) = a_0 \prod_{i=0}^{\lfloor \beta/2 \rfloor} a_{2i-1} + a_2 \prod_{i=1}^{\lfloor \beta/2 \rfloor } a_{2i-1} + a_4 \prod_{i=2}^{\lfloor \beta/2 \rfloor} a_{2i-1} + a_6 \prod_{i=3}^{\lfloor \beta/2 \rfloor} a_{2i-1} + \dots + a_\beta \prod_{i=\lfloor \beta/2 \rfloor}^{\lfloor \beta/2 \rfloor} a_{2i-1}
+$$
+
+$$
+op(A_{[1,\alpha-1]}) = a_0 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + a_2 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i-1} + a_4 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + a_6 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor} a_{2i-1}
+$$
+
+também:
+
+$$
+op(A_{[1,\alpha-1]})\prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} = \prod_{i=\lfloor\alpha/2\rfloor}^{\lfloor\beta/2\rfloor} a_{2i} (a_0 \prod_{i=0}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + a_2 \prod_{i=1}^{\lfloor \alpha/2 \rfloor } a_{2i-1} + a_4 \prod_{i=2}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + a_6 \prod_{i=3}^{\lfloor \alpha/2 \rfloor} a_{2i-1} + \dots + a_\alpha \prod_{i=\lfloor \alpha/2 \rfloor}^{\lfloor \alpha/2 \rfloor} a_{2i-1})
+$$
 
 
 
