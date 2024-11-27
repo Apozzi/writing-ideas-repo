@@ -351,6 +351,8 @@ $$
 
 ### Caso 1 - $\alpha$ sendo par:
 
+`Talvez eu necessite ajustar isso para usar uma notação mais compacta.`
+
 Vamos analisar a expressão:
 
 $$
