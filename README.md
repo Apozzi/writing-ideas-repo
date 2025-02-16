@@ -626,7 +626,7 @@ Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é n
 Para todos os outros valores de $x$ as determinadas funções acima retornam indefinido.
 
 ## Simplificação 1
-$\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil(\frac{x}{2\pi})\rceil|-\frac{\pi}{2}$
+$\arcsin(\cos(x)) = 2\pi|\frac{x}{2\pi}+\frac{1}{2}-\lceil\frac{x}{2\pi}\rceil|-\frac{\pi}{2}$
 
 Aqui está uma implementação eficiente da função, utiliza modulo ao invés de gambiarras matématicas, ignore a formula anterior e de preferencia a essa:
 ```python
@@ -640,7 +640,7 @@ def arcsin_cos(x):
 
 
 ## Simplificação 2
-$\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil(\frac{x}{2\pi}+\frac{1}{4})\rceil|$
+$\arccos(\sin(x)) = 2\pi|\frac{x}{2\pi}+\frac{3}{4}-\lceil\frac{x}{2\pi}+\frac{1}{4}\rceil|$
 
 Implementação eficiente desta função, usando a mesma lógica que o anterior:
 ```python
