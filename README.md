@@ -634,8 +634,8 @@ tau = 2 * math.pi
 half_pi = math.pi / 2
 
 def arcsin_cos(x):
-    x_normalized = (x + math.pi) % tau
-    return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3*half_pi
+    x_normalized = x % tau
+    return half_pi - x_normalized if x_normalized < math.pi else x_normalized - 3 * half_pi
 ```
 
 
