@@ -620,7 +620,7 @@ Para dominio $x \in [n\pi - \frac{\pi}{4}, n\pi + \frac{\pi}{4}]$ aonde $n$ é n
  $\arccos(\arccos(x))+\arcsin(\arccos(x)) = \frac{\pi}{2}$  <br/>
 
 3.  Subrelação 1.3 \
- Para dominio $x \in [\sin(1), -\sin(1)]$ temos: <br/>
+ Para dominio $x \in [-\sin(1), \sin(1)]$ temos: <br/>
  $\arccos(\arcsin(x))+\arcsin(\arcsin(x)) = \frac{\pi}{2}$  <br/>
 
 Para todos os outros valores de $x$ as determinadas funções acima retornam indefinido.
