@@ -736,7 +736,7 @@ $$
 
 ## Trivial 1
 
-Dado $a,b,c \in \mathbb{N} $ e $c < b$, temos a seguinte formula: 
+Dado $a,b,c \in \mathbb{N}$ e $c < b$, temos a seguinte formula: 
 
 
 $$
