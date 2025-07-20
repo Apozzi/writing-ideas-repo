@@ -58,8 +58,9 @@ onde:
 \end{itemize}
 
 O conjunto de vértices no caminho \( P_V \) é \( Vert(P_V) = \{ v_0, v_1, \dots, v_k \} \).
+\newpage
 
-Um ultra-caminho \( P_H = (w_0, \dots, w_k) \) é válido em Ultragrafo com Relações se, além de satisfazer as condições de ultra-arestas em \( E_V \), todos os seus prefixos consecutivos \( P_H' = (w_0, \dots, w_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_H'' = (w_0, \dots, w_{j-1}) \) se \( j \geq 2 \) (e \( P_H'' \) vazio se \( j = 1 \), com \( \bigcup_{w \in UVert(P_H'')} w = \emptyset \)):
+Um ultra-caminho \( P_H = (w_0, \dots, w_k) \) é válido em Ultragrafo com Relações se, além de satisfazer as condições de ultra-arestas em \( E_V \), todos os seus prefixos consecutivos \( P_H' = (w_0, \dots, w_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_H'' = (w_0, \dots, w_{j-1}) \) se \( j \geq 2 \) (e \( P_H'' \) vazio se \( j = 1 \), com \( \bigcup_{w \in UVert(P_H'')} w = \emptyset \))  as seguintes restrições:
 
 \begin{itemize}
     \item \( \forall (A_d, B_d, \implies) \in R_V: (B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \to (A_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \), e se \( (B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \wedge (B_d \cap \bigcup_{w \in UVert(P_H'')} w = \emptyset) \), então \( (A_d \cap \bigcup_{w \in UVert(P_H'')} w \neq \emptyset) \).
@@ -67,7 +68,7 @@ Um ultra-caminho \( P_H = (w_0, \dots, w_k) \) é válido em Ultragrafo com Rela
     \item \( \forall v \in V: |\{ w \in UVert(P_H') \mid v \in w \}| \leq M(v) \).
 \end{itemize}
 
-Um caminho \( P_V = (v_0, \dots, v_k) \) é válido se todos os seus prefixos consecutivos \( P_V' = (v_0, \dots, v_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_V'' = (v_0, \dots, v_{j-1}) \) se \( j \geq 2 \) (e \( P_V'' \) vazio se \( j = 1 \), com \( \{v_i \mid i \in \emptyset \} = \emptyset \)):
+Um caminho \( P_V = (v_0, \dots, v_k) \) é válido se todos os seus prefixos consecutivos \( P_V' = (v_0, \dots, v_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_V'' = (v_0, \dots, v_{j-1}) \) se \( j \geq 2 \) (e \( P_V'' \) vazio se \( j = 1 \), com \( \{v_i \mid i \in \emptyset \} = \emptyset \)) as seguintes restrições:
 
 \begin{itemize}
     \item \( \forall (A_d, B_d, \implies) \in R_V: (B_d \cap \{v_0, \dots, v_j\} \neq \emptyset) \to (A_d \cap \{v_0, \dots, v_j\} \neq \emptyset) \), e se \( (B_d \cap \{v_0, \dots, v_j\} \neq \emptyset) \wedge (B_d \cap \{v_0, \dots, v_{j-1}\} = \emptyset) \), então \( (A_d \cap \{v_0, \dots, v_{j-1}\} \neq \emptyset) \).
@@ -77,7 +78,7 @@ Um caminho \( P_V = (v_0, \dots, v_k) \) é válido se todos os seus prefixos co
 
 \section{Teoremas}
 
-\begin{theorem}[Contradição por Dependencia Cíclica]
+\begin{theorem}[Contradição por Dependência Cíclica]
 \hfill
 
 Seja \( S_R = \bigcup_{(A_d, B_d, \implies) \in R_V} \{ A_d, B_d \} \).
