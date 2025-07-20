@@ -27,7 +27,7 @@ Um Ultragrafo com Relações é definido por \( U = (V, H, E_V, R_V, M) \), onde
 
 \begin{itemize}
     \item \( V \) é um conjunto finito de elementos chamados vértices (ou nós).
-    \item \( H \) é um conjunto finito de conjuntos disjuntos de vértices, chamados de Ultra-vértices.
+    \item \( H \) é um conjunto finito de conjuntos que é uma partição das vértices chamada de Ultra-vértices.
     \item \( E_V \) é um conjunto de Ultra-arestas direcionadas. Cada Ultra-aresta \( e \in E_V \) é um par ordenado \( e = (A_e, B_e) \), com \( A_e, B_e \subseteq V \), \( A_e \neq \emptyset \) e \( B_e \neq \emptyset \).
     \item \( R_V \), chamada de ultra-arestas de relação, é um conjunto de ultra-arestas direcionadas. Cada ultra-aresta de relação \( d \in R_V \) é um triplo ordenado \( d = (A_d, B_d, R_d) \), com \( A_d, B_d \subseteq V \), \( A_d \neq \emptyset \) e \( B_d \neq \emptyset \), e \( R_d \in \{\implies, \not\!\!\!\implies\} \).
     \item \( M: V \to \mathbb{N} \cup \{\infty\} \), onde \( M(v) \) é o número máximo de visitas permitidas ao vértice \( v \) em um caminho.

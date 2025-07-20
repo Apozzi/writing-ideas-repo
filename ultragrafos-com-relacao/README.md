@@ -8,7 +8,7 @@ Um Ultragrafo com Relações é definido por $U = (V,H, E_V, R_V,M)$, onde:
 
 $V$ é um conjunto finito de elementos chamados vértices (ou nós).
 
-$H$ é um conjunto finito de conjunto disjuntos de vértices chamada de Ultra-vértices.
+$H$ é um conjunto finito de conjuntos que é uma partição das vértices chamada de Ultra-vértices.
 
 $E_V$ é um conjunto de Ultra-arestas direcionadas, cada Ultra-aresta $e \in E$ é um par ordenado $e = (A_e, B_e)$, com $A_e, B_e \subseteq V$, $A_e \neq \emptyset$ e $B_e \neq \emptyset$.
 
