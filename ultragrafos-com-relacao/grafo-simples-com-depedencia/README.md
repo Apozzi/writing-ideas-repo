@@ -4,6 +4,10 @@ Implementação em Kotlin de um Grafo Simples com Dependencia e algoritmo BFS (m
 
 `Grafo bastante util para jogos de puzzle que inclui movimentos e movimentos que tem dependencias de outros movimentos aonde o objetivo é chegar em uma vertice/estado especifico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o maximo) de peças do tabuleiro (Caminho mais profundo).`
 
+Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante e pouco generalizado mas e por fim performatico e também pois tinha imaginado na minha cabeça um algoritmo BFS que cria multiplos caminhos imaginando multiplos ramos sobrepostos.
+
+Infelizmente como tinha imaginado o algoritmo BFS  (multi-branching) tem ponto fraco aonde precisa fazer copia de array multiplas vezes, `caminhoAtual.toMutableList()` é aonde ele copia Lista em outra Lista, que é `O(n)` e executado a cada iteração, apesar disso sei que é possivel criar hardwares dedicados para copia de trechos de memória paralelamente em blocos o que é bem próximo de `O(1)`.
+
 ```kotlin
 data class Vertice(val nome:String, val M: Int) {}
 
