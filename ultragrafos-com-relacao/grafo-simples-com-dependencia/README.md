@@ -2,9 +2,9 @@
 
 Implementação em Kotlin de um Grafo Simples com Dependência e algoritmo BFS (multi-branching) modificado para esse grafo, e Caminho Máximo usando DFS.
 
-`Grafo bastante util para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vertice/estado especifico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o maximo) de peças do tabuleiro (Caminho mais profundo).`
+`Grafo bastante útil para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vértice/estado específico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o máximo) de peças do tabuleiro (Caminho mais profundo).`
 
-Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante e pouco generalizado mas também por fim performatico e também pois tinha imaginado na minha cabeça um algoritmo BFS que cria multiplos caminhos imaginando multiplos ramos sobrepostos.
+Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante e pouco generalizado mas também por fim performático e também pois tinha imaginado na minha cabeça um algoritmo BFS que cria multiplos caminhos imaginando multiplos ramos sobrepostos.
 
 Infelizmente o algoritmo BFS  (multi-branching) tem ponto fraco aonde precisa fazer copia de array multiplas vezes, `caminhoAtual.toMutableList()` é aonde ele copia Lista em outra Lista, que é `O(n)` e executado a cada iteração, apesar disso alegremente eu sei que é possivel criar hardwares dedicados para copia de trechos de memória paralelamente em blocos o que é bem próximo de `O(1)`.
 
