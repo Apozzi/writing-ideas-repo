@@ -132,7 +132,7 @@ Construa um ultragrafo $U' = (V', H', E_H', \emptyset, M')$ sem relações, onde
 - $M'(v) = M(v)$ para $v \in V$, $M'(v^d) = M(v)$ para $v^d \in V_d$.
 
 #### Teorema: Existe tal ultragrafo $U'$ sem relações cujo conjunto de ultra-caminhos válidos $P'_H$ coincide com o $P_V$ e $P_H$ de $U$ via mapeamente bijetivo. 
-Exemplo.: $P'_H = \delta(P_v)$ e $P'_H = \delta(\pi(P_H))$ dado $\pi$ uma função que seleciona elemento em $V$ dentro de $w$.
+Exemplo.: $P'_H = \delta(P_v)$ e $P'_H = \delta(\pi(P_H))$ dado $\pi$ uma função que seleciona elemento em $V$ (Elemento Original) dentro de $w$.
 
 ## Esboço Prova:
 
