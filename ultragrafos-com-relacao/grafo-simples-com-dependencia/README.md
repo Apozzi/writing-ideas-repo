@@ -2,9 +2,9 @@
 
 ## Explicação
 
-Implementação em Kotlin de um Grafo Simples com Dependência e algoritmo BFS (multi-branching) modificado para esse grafo, e o Caminho Máximo.
+Implementação em Kotlin de um Grafo Simples com Dependência e algoritmo BFS (multi-branching) modificado para esse grafo, e o Maior caminho entre caminhos minimos.
 
-`Grafo bastante útil para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vértice/estado específico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o máximo) de peças do tabuleiro (Caminho mais profundo dado coleção de caminhos minimos entre todas vertices).`
+`Grafo bastante útil para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vértice/estado específico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o máximo) de peças do tabuleiro de forma eficiente (Caminho mais profundo dado coleção de caminhos minimos entre todas vertices).`
 
 Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante e pouco generalizado mas também por fim performático e também pois tinha imaginado na minha cabeça um algoritmo BFS que cria multiplos caminhos imaginando multiplos ramos sobrepostos.
 
@@ -104,7 +104,7 @@ class GrafoComDependencia {
         return emptyList()
     }
 
-    fun buscaCaminhoOptimoMaximo(origem: Vertice): List<Vertice> {
+    fun buscaMaiorCaminhoMinimo(origem: Vertice): List<Vertice> {
         if (!vertices.contains(origem)) return emptyList()
         val minPaths = mutableMapOf<Vertice, List<Vertice>>()
         val fila = ArrayDeque<MutableList<Vertice>>()
