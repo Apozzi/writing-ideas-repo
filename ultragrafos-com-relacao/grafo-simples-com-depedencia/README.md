@@ -9,7 +9,7 @@ Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante
 Infelizmente o algoritmo BFS  (multi-branching) tem ponto fraco aonde precisa fazer copia de array multiplas vezes, `caminhoAtual.toMutableList()` é aonde ele copia Lista em outra Lista, que é `O(n)` e executado a cada iteração, apesar disso alegremente eu sei que é possivel criar hardwares dedicados para copia de trechos de memória paralelamente em blocos o que é bem próximo de `O(1)`.
 
 
-
+##Código
 
 ```kotlin
 data class Vertice(val nome:String, val M: Int) {}
