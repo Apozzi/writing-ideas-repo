@@ -2,9 +2,9 @@
 
 ## Explicação
 
-Implementação em Kotlin de um Grafo Simples com Dependência e algoritmo BFS (multi-branching) modificado para esse grafo, e Caminho Máximo usando DFS.
+Implementação em Kotlin de um Grafo Simples com Dependência e algoritmo BFS (multi-branching) modificado para esse grafo, e o Caminho Máximo.
 
-`Grafo bastante útil para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vértice/estado específico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o máximo) de peças do tabuleiro (Caminho mais profundo).`
+`Grafo bastante útil para jogos de puzzle que inclui movimentos e movimentos que tem dependências de outros movimentos aonde o objetivo é chegar em uma vértice/estado específico (Busca BFS), ou aonde jogador deve sobreviver maior tempo possivel/remover todas(ou o máximo) de peças do tabuleiro (Caminho mais profundo dado coleção de caminhos minimos entre todas vertices).`
 
 Decidi incluir nesse arquivo pois as vezes precisamos de algo simples e elegante e pouco generalizado mas também por fim performático e também pois tinha imaginado na minha cabeça um algoritmo BFS que cria multiplos caminhos imaginando multiplos ramos sobrepostos.
 
@@ -104,29 +104,35 @@ class GrafoComDependencia {
         return emptyList()
     }
 
-    fun buscaCaminhoMaximo(origem: Vertice, destino: Vertice): List<Vertice> {
-        if (!vertices.contains(origem) || !vertices.contains(destino)) return emptyList()
-        var caminhoMaximo: List<Vertice> = emptyList()
-        fun dfs(currentPath: MutableList<Vertice>) {
-            val current = currentPath.last()
-            if (current == destino) {
-                if (currentPath.size > caminhoMaximo.size) caminhoMaximo = currentPath.toList()
-                return
+    fun buscaCaminhoOptimoMaximo(origem: Vertice): List<Vertice> {
+        if (!vertices.contains(origem)) return emptyList()
+        val minPaths = mutableMapOf<Vertice, List<Vertice>>()
+        val fila = ArrayDeque<MutableList<Vertice>>()
+        fila.add(mutableListOf(origem))
+
+        while (fila.isNotEmpty()) {
+            val caminhoAtual = fila.removeFirst()
+            val atual = caminhoAtual.last()
+
+            if (atual !in minPaths) {
+                minPaths[atual] = caminhoAtual
             }
-            val vizinhos = getVizinhosArestas(current)
+
+            val vizinhos = getVizinhosArestas(atual)
             for (vizinho in vizinhos) {
-                if (currentPath.count { it == vizinho } < vizinho.M &&
+                val countVizinho = caminhoAtual.count { it == vizinho }
+                if (countVizinho < vizinho.M &&
                     getDependencias(vizinho).all { dependencia ->
-                        dependencia.familiar.any { it in currentPath }
+                        dependencia.familiar.any { it in caminhoAtual }
                     }) {
-                    currentPath.add(vizinho)
-                    dfs(currentPath)
-                    currentPath.removeLast()
+                    val novoCaminho = caminhoAtual.toMutableList().apply { add(vizinho) }
+                    fila.add(novoCaminho)
                 }
             }
         }
-        dfs(mutableListOf(origem))
-        return caminhoMaximo
+
+        if (minPaths.isEmpty()) return emptyList()
+        return minPaths.values.maxByOrNull { it.size } ?: emptyList()
     }
 }
 ```
