@@ -79,12 +79,15 @@ Um caminho \( P_V = (v_0, \dots, v_k) \) é válido se todos os seus prefixos co
 
 \begin{theorem}[Contradição por Dependência Cíclica]
 \hfill
-
+\\
+\\
 Seja \( S_R = \bigcup_{(A_d, B_d, \implies) \in R_V} \{ A_d, B_d \} \).
-
+\\
+\\
 Seja \( G_{+} = (S_R, E_R) \) o grafo dirigido com \( E_R = \{ (A_d, B_d) \mid (A_d, B_d, \implies) \in R_V \} \).
+\\
 
-Se \( G_{+} \) contém um ciclo dirigido, então não existe \( P_H \) válido nem \( P_V \) válido em \( U \) que comece de um ultra-vértice \( u \) ou vértice \( v_0 \) tal que os vértices ativados no início não pertençam aos conjuntos do ciclo (i.e., \( u \cap \left( \bigcup_{S_i \in C} S_i \right) = \emptyset \) para \( P_H \), ou \( v_0 \notin \bigcup_{S_i \in C} S_i \) para \( P_V \), onde \( C \) é o ciclo).
+\textbf{Se \( G_{+} \) contém um ciclo dirigido, então não existe \( P_H \) válido nem \( P_V \) válido em \( U \) que comece de um ultra-vértice \( u \) ou vértice \( v_0 \) tal que os vértices ativados no início não pertençam aos conjuntos do ciclo (i.e., \( u \cap \left( \bigcup_{S_i \in C} S_i \right) = \emptyset \) para \( P_H \), ou \( v_0 \notin \bigcup_{S_i \in C} S_i \) para \( P_V \), onde \( C \) é o ciclo).}
 \end{theorem}
 
 \begin{proof}
@@ -103,6 +106,7 @@ Propagando para trás no ciclo, a entrada de fora requer uma ativação prévia 
 Assim, nenhum caminho de fora pode entrar no ciclo sem contradição, implicando ausência de tais \( P_H \) válidos.
 \end{proof}
 
+\newpage
 \begin{theorem}[Troca de Relações Inversas em Caminhos Paralelos]
 \hfill
 
@@ -117,8 +121,9 @@ Seja \( U = (V, H, E_V, R, M) \) um ultragrafo com relações, onde:
 \end{itemize}
 
 Seja \( U' = (V, H, E_V, R', M) \), com \( R' = \{ (A_2, A_r, \not\!\!\!\implies) \} \), onde \( A_2 \subseteq V \) contém \( v_2 \) mas não \( v_1 \).
+\\
 
-Os conjuntos de ultra-caminhos válidos \( P_H \) e caminhos válidos \( P_V \) de ultra-vértices contendo \( i \) para ultra-vértices contendo \( v_r \) em \( U \) coincidem com os de \( U' \).
+\textbf{Os conjuntos de ultra-caminhos válidos \( P_H \) e caminhos válidos \( P_V \) de ultra-vértices contendo \( i \) para ultra-vértices contendo \( v_r \) em \( U \) coincidem com os de \( U' \).}
 \end{theorem}
 
 \begin{proof}
@@ -131,42 +136,57 @@ Em \( U' \): Para via \( v_1 \), \( A_2 \) não ativado, satisfazendo \( \not\!\
 Logo, apenas caminhos via \( v_1 \) são válidos em ambos. Análogo para \( P_V \).
 \end{proof}
 
-\begin{theorem}[Ultragrafos com Relações Isomórficos a Ultragrafos sem Relações]
-\hfill
+\newpage
 
-Um ultragrafo com relações \( U = (V, H, E_V, R, M) \) é tal que cada ultra-vértice em \( H \) contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em \( V \) (i.e., \( H = \{ \{v\} \mid v \in V \} \)), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
+\begin{theorem}[Ultra-Grafos com Relações Isomórficos a Ultragrafos sem Relações]
+Um ultragrafo com relações \( U = (V, H, E_H, R, M) \) é tal que cada ultra-vértice em \( H \) contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em \( V \) (i.e., \( H = \{ \{v\} \mid v \in V \} \)), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
 
 Suponha que exista uma relação \( (A_i, A_j, \implies) \in R \), com \( A_i = \{v_i\} \), \( A_j = \{v_j\} \), tal que \( v_i \) é necessária para qualquer caminho válido que contenha \( v_j \) ou ative vértices além de \( v_j \) em subgrafos dependentes.
 
-Suponha também que existam caminhos paralelos de um vértice inicial \( s \in V \) para um vértice convergente \( t \in V \) (fechamento de caminhos): um ramo passando por \( v_i \) (permitindo \( v_j \) e além), outro por \( v_2 \in V \) (sem \( v_i \), e portanto incapaz de ativar \( v_j \) ou além devido à relação).
+Suponha também que existam caminhos paralelos de um vértice inicial \( s \in V \) para um vértice convergente \( t \in V \) (fechamento de caminhos): um ramo passando por \( v_i \) (permitindo \( v_j \) e além), outro por \( v_x \in V \) (sem \( v_i \), e portanto incapaz de ativar \( v_j \) ou além devido à relação).
 
 Os caminhos podem ser separados em com \( v_i \) (válidos para além de \( v_j \)) e sem \( v_i \) (limitados, não alcançando além de \( v_j \)).
 
-Construa um ultragrafo \( U' = (V', H', E_V', \emptyset, M') \) sem relações, onde:
+Construa um ultragrafo \( U' = (V', H', E_H', \emptyset, M') \) sem relações, onde:
 
 \begin{itemize}
-    \item \( V' = V \cup V_d \), com \( V_d \) duplicata de vértices a partir do ponto de convergência \( t \) e subgrafos além (incluindo duplicatas de \( v_j^d \), \( t^d \)).
-    \item \( H' = \{ \{v\} \mid v \in V' \} \) (mantendo singletons para consistência com \( U \)).
-    \item \( E_V' \) inclui ultra-arestas (que são arestas simples, pois singletons):
-        \begin{itemize}
-            \item Arestas originais de \( E_V \) até a ramificação.
-            \item Para ramo com \( v_i \): arestas para \( v_j \), \( t \), e subgrafo além.
-            \item Para ramo sem \( v_i \) (via \( v_2 \)): arestas para duplicatas \( V_d \), mas com corte abrupto (sem arestas além do correspondente a \( v_j^d \), representando proibição estrutural; hiper-arestas não necessárias, pois singletons, mas conexões pares preservadas via duplicatas).
-        \end{itemize}
+    \item \( V' = V \cup V_d \), com \( V_d \) é inserido duplicata de vértices a partir do ponto de ramificação \( s \) e subgrafos além (incluindo duplicatas de \( v_j^d \), \( t^d \)) até chegar no vértice convergente \( t \).
+    \item \( E_H' \) inclui ultra-arestas:
+
+    \subitem Ultra-arestas originais de \( E_H \) até a ramificação.
+    \subitem Para ramo com \( v_i \): ultra-arestas para \( v_j \), \( t \), e subgrafo além.
+    \subitem Para ramo sem \( v_i \) (via \( v_x \)): ultra-arestas para duplicatas \( V_d \) de forma similar às vértices originárias conectadas com outras \( v^d \) e \( v_x \), mas com corte abrupto (sem ultra-arestas além do correspondente a \( v_j^d \), representando proibição estrutural).
+
+    \item \( \forall v \in V: |\{ i \mid 0 \leq i \leq j, v_i = v \}| \leq M(v) \).
     \item \( M'(v) = M(v) \) para \( v \in V \), \( M'(v^d) = M(v) \) para \( v^d \in V_d \).
 \end{itemize}
 
-Existe tal ultragrafo \( U' \) sem relações cujo conjunto de caminhos válidos \( P_H \) e \( P_V \) coincide com o de \( U \) (módulo mapeamento de duplicatas para originais em caminhos válidos, preservando singletons).
+
+\textbf{Existe tal ultragrafo \( U' \) sem relações cujo conjunto de ultra-caminhos válidos \( P'_H \) coincide com o \( P_V \) e \( P_H \) de \( U \) via mapeamento bijetivo.}
+\\
+Exemplo: \( P'_H = \delta(P_v) \) e \( P'_H = \delta(\pi(P_H)) \) dado \( \pi \) uma função que seleciona elemento em \( V \) dentro de \( w \).
 \end{theorem}
 
-\section{Esboço da Prova}
+\begin{proof}
+A construção de \( U' \) utiliza duplicatas nos ultra-vértices via \( \delta \) para codificar "modos" de ativação: o modo original (\( v \)) para caminhos que satisfazem a relação \( \implies \) (i.e., passando por \( v_i \)), e o modo duplicado (\( v^d \)) para caminhos que tentam violar a relação (sem \( v_i \)). Os ultra-vértices compostos \( \delta(v) = \{v, v^d\} \) permitem escolha implícita no caminho induzido \( P_V' \), mas as ultra-arestas \( E_H' \) são definidas de forma a cortar progressão no modo duplicado após \( v_j^d \), replicando a restrição lógica sem \( R \).
 
-A construção duplica o subgrafo pós-convergência para o ramo sem \( v_i \), cortando continuidade além de \( v_j^d \) via \( E_V' \), simulando a dependência \( \implies \) sem \( R \).
+Defina o mapeamento bijetivo \( \phi: P_V(U) \to P_H'(U') \) (e similarmente para \( P_H(U) \), pois \( H \) são singletons, \( P_H(U) \equiv P_V(U) \) via \( \pi(w) = v \in w \)) como \( \phi(P_V) = (\delta(v_0), \delta(v_1), \dots, \delta(v_k)) \), onde para caminhos válidos em \( U \) (que passam por \( v_i \) para ativar \( v_j \) e além), a escolha no caminho induzido em \( U' \) usa o modo original \( v \); para tentativas inválidas, o modo \( v^d \) é forçado pelo ramo via \( v_x \), mas cortado.
 
-Caminhos em \( U \) ativando \( v_j \) ou além requerem \( v_i \) pela relação em prefixos; em \( U' \), ramos sem \( v_i \) param abruptamente (sem ativação de subgrafos dependentes), enquanto com \( v_i \) continuam. Valididade em \( U' \) depende só de \( E_V' \) e \( M' \), replicando restrições.
+\textbf{Passo 1: Todo \( P_V \) válido em \( U \) mapeia para \( P_H' \) válido em \( U' \).}
 
-O mapeamento bijetivo colapsa duplicatas para originais em caminhos com \( v_i \), preservando conjuntos. etc... etc... preciso formalizar.
+Seja \( P_V = (v_0 = s, \dots, v_k) \) válido em \( U \). Como válido, se ativa \( v_j \) ou além, deve ter passado por \( v_i \), satisfazendo \( \implies \) em prefixos. O ramo é via \( v_i \), então em \( U' \), as ultra-arestas preservam conexões originais: \( E_H' \) inclui arestas de \( E_H \) para o modo original. Assim, \( P_H' = \phi(P_V) = (\delta(v_0), \dots, \delta(v_k)) \) satisfaz as condições de ultra-caminho em \( E_H' \) (arestas originais conectam subconjuntos nos modos \( v \)), e as visitas respeitam \( M' \) (idêntico a \( M \)). Como não usa modos \( v^d \) (forçados apenas no ramo sem \( v_i \)), não há corte, e \( P_H' \) é válido.
 
+\textbf{Passo 2: Todo \( P_H' \) válido em \( U' \) mapeia para \( P_V \) válido em \( U \).}
+
+Seja \( P_H' = (w_0, \dots, w_k) \) válido em \( U' \). Como \( R = \emptyset \), validade depende só de \( E_H' \) e \( M' \). Defina o inverso \( \phi^{-1}(P_H') = (\pi'(w_0), \dots, \pi'(w_k)) \), onde \( \pi'(w) = v \) se \( w = \{v\} \) ou o componente original \( v \in w = \{v, v^d\} \) (colapsando duplicatas para originais apenas se o caminho induzido usa modo válido). Para \( P_H' \) válido que alcança além de \( v_j \) (e.g., subgrafos dependentes), deve usar o modo original nos ultra-vértices \( \delta(v) \), pois o modo \( v^d \) é cortado em \( E_H' \) após \( v_j^d \) (sem arestas além). Caminhos que tentam modo \( v^d \) (via ramo \( v_x \)) param em \( v_j^d \), não alcançando o final. Assim, \( P_H' \) válidos completos correspondem a caminhos usando modo \( v \), que mapeiam para \( P_V \) em \( U \) via colapso, e como usam ramo \( v_i \), satisfazem \( \implies \) e outras condições (edges e \( M \) preservados).
+\newpage
+
+\textbf{Passo 3: O mapeamento é bijetivo.}
+
+\( \phi \) é injetivo: caminhos distintos em \( U \) levantam para ultra-caminhos distintos em \( U' \) (modos originais preservam estrutura). Surjetivo sobre válidos: todo \( P_H' \) válido em \( U' \) usa modo original (como duplicados cortam), colapsando bijetivamente para \( P_V \) válido em \( U \). Exemplo: \( P'_H = \delta(P_V) \) preserva validade, e \( \phi^{-1} = \pi \circ \delta^{-1} \) (selecionando original).
+
+Portanto, os conjuntos coincidem via o mapeamento.
+\end{proof}
 \bigskip
 
 TODO: Eu ainda tenho que verificar se todas as provas estão corretas e os teoremas e definições.
