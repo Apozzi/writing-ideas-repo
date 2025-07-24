@@ -2,6 +2,8 @@
 
 Estive pensando nessa ideia faz um tempo, comecei com "Hyper-grafos com Dependencias" mas logo reparei que havia relaçoes mais interessantes e mais generalizaveis implicação e implicação com negação, quis criar condiçoes mais interessantes que dependesse do caminho escolhido inventei a ideia de Meta-Hypervertices (que é um conjunto de vertices), a ideia foi se expandindo e se tornou algo extremamente generalizavel.
 
+Inicialmente tinha pensado no nome "Ultragrafo" mas logo foi contradição com Ultragrafos da C*-Algebra (https://en.wikipedia.org/wiki/Ultragraph_C*-algebra) apesar que prefixo "Ultra" da ideia de algo mais generalizavel que "Hyper" parece que Hypergrafos são mais gerais que Ultragrafos o que pra mim é uma falta consistência grande, pensei também Megagrafos por questão de simplicidade e unicidade, mas simplesmente preferi "Meta-Hypergrafos" que é mais consistênte com a ideia em si, fique livre a referenciar o autor caso precisar de algo mais especifico.
+
 <!-- Em relação nomenclatura de conceitos ``Meta-Hipergrafos com Relações'' é o mais adequado, agora caso necessite ser mais especifico ``Grafo do Pozzi``. -->
 
 
