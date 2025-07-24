@@ -9,7 +9,7 @@
 
 \newtheorem{theorem}{Teorema}
 
-\title{Megagrafos com Relações}
+\title{Mega-grafos com Relações}
 \author{} 
 
 \begin{document}
@@ -22,7 +22,7 @@ Estive pensando nessa ideia há algum tempo. Comecei com ``Hipergrafos com Depen
 
 \section{Definições}
 
-Um Megagrafo com Relações é definido por \( U = (V, H, E_V, R_V, M) \), onde:
+Um Mega-grafo com Relações é definido por \( U = (V, H, E_V, R_V, M) \), onde:
 
 \begin{itemize}
     \item \( V \) é um conjunto finito de elementos chamados vértices (ou nós).
@@ -59,7 +59,7 @@ onde:
 O conjunto de vértices no caminho \( P_V \) é \( Vert(P_V) = \{ v_0, v_1, \dots, v_k \} \).
 \newpage
 
-Um Mega-caminho \( P_H = (w_0, \dots, w_k) \) é válido em Megagrafo com Relações se, além de satisfazer as condições de Mega-arestas em \( E_V \), todos os seus prefixos consecutivos \( P_H' = (w_0, \dots, w_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_H'' = (w_0, \dots, w_{j-1}) \) se \( j \geq 2 \) (e \( P_H'' \) vazio se \( j = 1 \), com \( \bigcup_{w \in UVert(P_H'')} w = \emptyset \))  as seguintes restrições:
+Um Mega-caminho \( P_H = (w_0, \dots, w_k) \) é válido em Mega-grafo com Relações se, além de satisfazer as condições de Mega-arestas em \( E_V \), todos os seus prefixos consecutivos \( P_H' = (w_0, \dots, w_j) \) (para cada \( 1 \leq j \leq k \)) satisfazem, definindo \( P_H'' = (w_0, \dots, w_{j-1}) \) se \( j \geq 2 \) (e \( P_H'' \) vazio se \( j = 1 \), com \( \bigcup_{w \in UVert(P_H'')} w = \emptyset \))  as seguintes restrições:
 
 \begin{itemize}
     \item \( \forall (A_d, B_d, \implies) \in R_V: (B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \to (A_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \), e se \( (B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \wedge (B_d \cap \bigcup_{w \in UVert(P_H'')} w = \emptyset) \), então \( (A_d \cap \bigcup_{w \in UVert(P_H'')} w \neq \emptyset) \).
@@ -110,7 +110,7 @@ Assim, nenhum caminho de fora pode entrar no ciclo sem contradição, implicando
 \begin{theorem}[Troca de Relações Inversas em Caminhos Paralelos]
 \hfill
 
-Seja \( U = (V, H, E_V, R, M) \) um Megagrafo com relações, onde:
+Seja \( U = (V, H, E_V, R, M) \) um Mega-grafo com relações, onde:
 
 \begin{itemize}
     \item Existem vértices iniciais \( i \in V \), finais \( f \in V \), e \( v_r \in V \) tal que caminhos de \( i \) para \( v_r \) passam obrigatoriamente por \( f \).
@@ -138,8 +138,8 @@ Logo, apenas caminhos via \( v_1 \) são válidos em ambos. Análogo para \( P_V
 
 \newpage
 
-\begin{theorem}[Mega-Grafos com Relações Isomórficos a Megagrafos sem Relações]
-Um Megagrafo com relações \( U = (V, H, E_H, R, M) \) é tal que cada Mega-vértice em \( H \) contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em \( V \) (i.e., \( H = \{ \{v\} \mid v \in V \} \)), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
+\begin{theorem}[Mega-Grafos com Relações Isomórficos a Mega-grafos sem Relações]
+Um Mega-grafo com relações \( U = (V, H, E_H, R, M) \) é tal que cada Mega-vértice em \( H \) contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em \( V \) (i.e., \( H = \{ \{v\} \mid v \in V \} \)), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
 
 Suponha que exista uma relação \( (A_i, A_j, \implies) \in R \), com \( A_i = \{v_i\} \), \( A_j = \{v_j\} \), tal que \( v_i \) é necessária para qualquer caminho válido que contenha \( v_j \) ou ative vértices além de \( v_j \) em subgrafos dependentes.
 
@@ -147,7 +147,7 @@ Suponha também que existam caminhos paralelos de um vértice inicial \( s \in V
 
 Os caminhos podem ser separados em com \( v_i \) (válidos para além de \( v_j \)) e sem \( v_i \) (limitados, não alcançando além de \( v_j \)).
 
-Construa um Megagrafo \( U' = (V', H', E_H', \emptyset, M') \) sem relações, onde:
+Construa um Mega-grafo \( U' = (V', H', E_H', \emptyset, M') \) sem relações, onde:
 
 \begin{itemize}
     \item \( V' = V \cup V_d \), com \( V_d \) é inserido duplicata de vértices a partir do ponto de ramificação \( s \) e subgrafos além (incluindo duplicatas de \( v_j^d \), \( t^d \)) até chegar no vértice convergente \( t \).
@@ -162,7 +162,7 @@ Construa um Megagrafo \( U' = (V', H', E_H', \emptyset, M') \) sem relações, o
 \end{itemize}
 
 
-\textbf{Existe tal Megagrafo \( U' \) sem relações cujo conjunto de Mega-caminhos válidos \( P'_H \) coincide com o \( P_V \) e \( P_H \) de \( U \) via mapeamento bijetivo.}
+\textbf{Existe tal Mega-grafo \( U' \) sem relações cujo conjunto de Mega-caminhos válidos \( P'_H \) coincide com o \( P_V \) e \( P_H \) de \( U \) via mapeamento bijetivo.}
 \\
 \\
 Exemplo: \( P'_H = \delta(P_v) \) e \( P'_H = \delta(\pi(P_H)) \) dado \( \pi \) uma função que seleciona elemento em \( V \) (Elemento Original) dentro de \( w \).
