@@ -4,9 +4,9 @@ Estive pensando nessa ideia faz um tempo, comecei com "Hyper-grafos com Dependen
 
 
 
-# Megagrafos com Relações
+# Mega-grafos com Relações
 
-Um Megagrafo com Relações é definido por $U = (V,H, E_V, R_V,M)$, onde:
+Um Mega-grafo com Relações é definido por $U = (V,H, E_V, R_V,M)$, onde:
 
 $V$ é um conjunto finito de elementos chamados vértices (ou nós).
 
@@ -38,7 +38,7 @@ $R_V$ chamada de Mega-arestas de relação é um conjunto de Mega-arestas direci
 
 $M: V \to \mathbb{N} \cup \{\infty\}$, onde $M(v)$ é o número máximo de visitas permitidas ao vértice $v$ em um caminho.
 
-Um Mega-caminho $P_H = (w_0, \dots, w_k)$ é válido em Megagrafo com Relações se, além de satisfazer as condições de Mega-arestas em $E_H$, todos os seus prefixos consecutivos $P_H' = (w_0, \dots, w_j)$ (para cada $1 \leq j \leq k$) satisfazem, definindo $P_H'' = (w_0, \dots, w_{j-1})$ se $j \geq 2$ (e $P_H''$ vazio se $j = 1$, com $\bigcup_{w \in UVert(P_H'')} w = \emptyset$):
+Um Mega-caminho $P_H = (w_0, \dots, w_k)$ é válido em Mega-grafo com Relações se, além de satisfazer as condições de Mega-arestas em $E_H$, todos os seus prefixos consecutivos $P_H' = (w_0, \dots, w_j)$ (para cada $1 \leq j \leq k$) satisfazem, definindo $P_H'' = (w_0, \dots, w_{j-1})$ se $j \geq 2$ (e $P_H''$ vazio se $j = 1$, com $\bigcup_{w \in UVert(P_H'')} w = \emptyset$):
 
 - $\forall (A_d, B_d, \implies) \in R: (B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \to (A_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset)$, e se $(B_d \cap \bigcup_{w \in UVert(P_H')} w \neq \emptyset) \wedge (B_d \cap \bigcup_{w \in UVert(P_H'')} w = \emptyset)$, então $(A_d \cap \bigcup_{w \in UVert(P_H'')} w \neq \emptyset)$.
 
@@ -81,7 +81,7 @@ Assim, nenhum caminho de fora pode entrar no ciclo sem contradição, implicando
 
 ## Teorema 2.0 (Troca de Relaçoes Inversas caminhos paralelos)
 
-Seja $U = (V, H, E_H, R, M)$ um Megagrafo com relações, onde:
+Seja $U = (V, H, E_H, R, M)$ um Mega-grafo com relações, onde:
 
 - Existem vértices iniciais $i \in V$, finais $f \in V$, e $v_r \in V$ tal que caminhos de $i$ para $v_r$ passam obrigatoriamente por $f$.
 
@@ -109,9 +109,9 @@ Logo, apenas caminhos via $v_1$ são válidos em ambos. Análogo para $P_V$.
 
 ### Q.E.D.
 
-## Teorema 3.0 (Mega-Grafos com Relaçoes Isomorficos a Megagrafos sem Relaçoes)
+## Teorema 3.0 (Mega-Grafos com Relaçoes Isomorficos a Mega-grafos sem Relaçoes)
 
-Um Megagrafo com relações $U = (V, H, E_H, R, M)$ é tal que cada Mega-vértice em $H$ contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em $V$ (i.e., $H = \{ \{v\} \mid v \in V \}$), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
+Um Mega-grafo com relações $U = (V, H, E_H, R, M)$ é tal que cada Mega-vértice em $H$ contém apenas um elemento (singleton), correspondente ao seu vértice respectivo em $V$ (i.e., $H = \{ \{v\} \mid v \in V \}$), simulando um grafo direcionado padrão com relações lógicas sobre ativações de vértices.
 
 Suponha que exista uma relação $(A_i, A_j, \implies) \in R$, com $A_i = \{v_i\}$, $A_j = \{v_j\}$, tal que $v_i$ é necessária para qualquer caminho válido que contenha $v_j$ ou ative vértices além de $v_j$ em subgrafos dependentes.
 
@@ -119,7 +119,7 @@ Suponha também que existam caminhos paralelos de um vértice inicial $s \in V$ 
 
 Os caminhos podem ser separados em com $v_i$ (válidos para além de $v_j$) e sem $v_i$ (limitados, não alcançando além de $v_j$).
 
-Construa um Megagrafo $U' = (V', H', E_H', \emptyset, M')$ sem relações, onde:
+Construa um Mega-grafo $U' = (V', H', E_H', \emptyset, M')$ sem relações, onde:
 
 - $V' = V \cup V_d$, com $V_d$ é inserido duplicata de vértices a partir do ponto de ramificação $s$ e subgrafos além (incluindo duplicatas de $v_j^d$, $t^d$) até chegar no vertice convergente $t$.
 
@@ -133,7 +133,7 @@ Construa um Megagrafo $U' = (V', H', E_H', \emptyset, M')$ sem relações, onde:
 
 - $M'(v) = M(v)$ para $v \in V$, $M'(v^d) = M(v)$ para $v^d \in V_d$.
 
-#### Teorema: Existe tal Megagrafo $U'$ sem relações cujo conjunto de Mega-caminhos válidos $P'_H$ coincide com o $P_V$ e $P_H$ de $U$ via mapeamente bijetivo. 
+#### Teorema: Existe tal Mega-grafo $U'$ sem relações cujo conjunto de Mega-caminhos válidos $P'_H$ coincide com o $P_V$ e $P_H$ de $U$ via mapeamente bijetivo. 
 Exemplo.: $P'_H = \delta(P_v)$ e $P'_H = \delta(\pi(P_H))$ dado $\pi$ uma função que seleciona elemento em $V$ (Elemento Original) dentro de $w$.
 
 ## Esboço Prova:
