@@ -324,7 +324,7 @@ O inverso desse processo lógico também é válido.
 
 Portanto, mostramos que uma função $f$ pode ser transformada em uma função piecewise usando subfunções $g_n$, que dependem de $p_n(x)$.
 
-# Funções Piecewise Compostas
+# Funções Piecewise com Subfunções Piecewise Simplificação Generalizada
 
 Dado sequências de proposições lógicas $P_n$ e $Q_n$ onde para todo $m, n \in \mathbb{N}$ com $m \neq n$, temos $P_n \implies \neg P_m$, e $r_n$ e \$t_{n,m}$ sendo duas sequências de subfunções, e $k$ uma constante com $n \leq k $, definimos:
 
