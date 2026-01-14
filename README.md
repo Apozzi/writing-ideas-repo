@@ -730,7 +730,7 @@ $$
 f \bmod a_1 \bmod a_2 \ldots \bmod a_n = f \bmod \left(\min(a_1, a_2, \ldots, a_n)\right)
 $$
 
-Para uma sequencia aleatória podemos identificar sub-sequencias crescentes e performar uma simplificação.
+Para uma sequencia aleatória podemos identificar sub-sequencias crescentes - e criar uma sequencia de minimo prefixos e performar uma simplificação.
 
 
 (Algumas pessoas podem estar acostumadas com notação de congruencia, é importante saber que essa notação também é válida). 
