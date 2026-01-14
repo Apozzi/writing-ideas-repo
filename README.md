@@ -730,7 +730,11 @@ $$
 f \bmod a_1 \bmod a_2 \ldots \bmod a_n = f \bmod \left(\min(a_1, a_2, \ldots, a_n)\right)
 $$
 
-Para uma sequencia aleatória podemos identificar sub-sequencias crescentes - e criar uma sequencia de minimo prefixos e performar uma simplificação de forma a tornar $f \bmod a_1 \bmod a_2 \ldots \bmod a_n = f \bmod p_1 \bmod p_2 \ldots \bmod p_m =$.
+Para uma sequencia aleatória podemos identificar sub-sequencias crescentes - e criar uma sequencia de minimo prefixos $p_m$ e performar uma simplificação de forma a tornar 
+
+$$
+f \bmod a_1 \bmod a_2 \ldots \bmod a_n = f \bmod p_1 \bmod p_2 \ldots \bmod p_m
+$$.
 
 
 (Algumas pessoas podem estar acostumadas com notação de congruencia, é importante saber que essa notação também é válida). 
