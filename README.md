@@ -724,7 +724,7 @@ def triangle_wave_point(t, frequency, amplitude):
 
 ## Simplificação 1
 
-Suponha que temos uma função arbitrária $f$ e uma sequência de números inteiros positivos $a_1, a_2, \ldots, a_n$. A seguinte relação é válida:
+Suponha que temos uma função arbitrária $f$ e uma sequência crescente de números inteiros positivos $a_1, a_2, \ldots, a_n$. A seguinte relação é válida:
 
 $$
 f \bmod a_1 \bmod a_2 \ldots \bmod a_n = f \bmod \left(\min(a_1, a_2, \ldots, a_n)\right)
