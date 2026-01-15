@@ -20,7 +20,7 @@ $$(a,b)_K := \\{\\{a\\}, \\{a,b\\}\\}$$
 
 ## Caso degenerado.
 
-Trivialmente, logo de início, podemos observar que:
+Apesar do autor ter remendado com uma condição extra se removermos essa, trivialmente, logo de início, podemos observar que:
 
 $$(a,a)_K := \\{\\{a\\}, \\{a,a\\}\\}$$
 
