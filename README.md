@@ -753,4 +753,3 @@ $$
 \frac{a \bmod b}{gcd(b,c)} < 1
 $$
 
-
